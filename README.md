@@ -5,10 +5,10 @@ Welcome to my [Python Portfolio!](https://ashrick12.github.io/) Here you'll find
 
 ## Projects
 ### Featured Projects
-#### Fitness Tracker
+#### [Fitness Tracker](https://github.com/Ashrick12/Fitness-Tracker-App)
 An app to track various fitness metrics, including weight, strength for any exercise, cardio, and meditation.
 
-#### Personal Library
+#### [Personal Library](https://github.com/Ashrick12/Personal-Library)
 A library app to keep track of my books and my progress in them.
 
 ## Contact
