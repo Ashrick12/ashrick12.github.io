@@ -11,7 +11,7 @@
 
 **Aerospace Engineering Transfer Student &bull; CAD Modeling, Flight Simulation & Additive Prototyping**
 
-[🌐 Live Interactive Website](https://ashrick12.github.io/aerospace-portfolio/) &bull; [📄 Download Resume (PDF)](assets/Ashton_Hendrickson_Resume.pdf) &bull; [💼 LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [✉️ Email](mailto:ashtonh1204@gmail.com)
+[🌐 Live Interactive Website](https://ashrick12.github.io/) &bull; [📄 Download Resume (PDF)](assets/Ashton_Hendrickson_Resume.pdf) &bull; [💼 LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [✉️ Email](mailto:ashtonh1204@gmail.com)
 
 </div>
 
@@ -212,7 +212,7 @@ Hands-on launch experience with commercial kits (Alpha 3 and Hi-Flier) at Freest
 
 The full web version of this portfolio features an interactive dark-mode theme, full-screen zoomable lightbox for CAD models, schematics, and simulation plots, and responsive mobile-friendly layouts.
 
-* 🚀 **Online Website:** [**ashrick12.github.io/aerospace-portfolio**](https://ashrick12.github.io/aerospace-portfolio/)
+* 🚀 **Online Website:** [**ashrick12.github.io**](https://ashrick12.github.io/)
 * 💻 **Local Viewing:** Open [`index.html`](index.html) directly in any modern web browser (Chrome, Edge, Safari, Firefox).
 
 ---

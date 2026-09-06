@@ -161,4 +161,5 @@ Before designing the custom airframe, I launched commercial Estes kits (Alpha 3 
 - **LinkedIn:** [linkedin.com/in/ashton-hendrickson-55508a262](https://www.linkedin.com/in/ashton-hendrickson-55508a262)
 - **GitHub:** [github.com/ashrick12](https://github.com/ashrick12)
 - **Resume:** [Download PDF](assets/Ashton_Hendrickson_Resume.pdf)
+- **Live Portfolio Website:** [ashrick12.github.io](https://ashrick12.github.io/)
 - **Interactive Webpage:** [Open index.html](index.html)

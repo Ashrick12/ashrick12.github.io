@@ -10,7 +10,7 @@
 
 **Aerospace Engineering Transfer Student &bull; CAD Designer &bull; Flight Simulation & Additive Prototyping**
 
-[🌐 Portfolio Website](https://ashrick12.github.io/aerospace-portfolio/) &bull; [💼 LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [📄 Resume (PDF)](https://github.com/Ashrick12/aerospace-portfolio/blob/main/assets/Ashton_Hendrickson_Resume.pdf) &bull; [✉️ Email](mailto:ashtonh1204@gmail.com)
+[🌐 Portfolio Website](https://ashrick12.github.io/) &bull; [💼 LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [📄 Resume (PDF)](https://github.com/Ashrick12/ashrick12.github.io/blob/main/assets/Ashton_Hendrickson_Resume.pdf) &bull; [✉️ Email](mailto:ashtonh1204@gmail.com)
 
 </div>
 
@@ -43,25 +43,25 @@ I am an **Aerospace Engineering student** transferring from Chandler-Gilbert Com
 
 ### 🌟 Featured Engineering Projects
 
-#### 🚀 [Scratch-Built Mid-Power Sounding Rocket](https://github.com/Ashrick12/aerospace-portfolio#1-scratch-built-mid-power-sounding-rocket-in-progress) *(In Progress &bull; Unlaunched)*
+#### 🚀 [Scratch-Built Mid-Power Sounding Rocket](https://github.com/Ashrick12/ashrick12.github.io#1-scratch-built-mid-power-sounding-rocket-in-progress) *(In Progress &bull; Unlaunched)*
 * Custom 2.6" (BT-80) airframe modeled in **SolidWorks** with integrated coupler shoulders and a 4-legged shock cord anchor arch.
 * Simulated in **OpenRocket** with birch plywood fin geometry to achieve a simulated **1.49 cal static stability margin**.
 * Full-scale ogive nose cone and payload bay 3D-printed on a **Bambu Lab A1**; currently bench-testing RP2040 and sensor telemetry.
 * Driven by failure modes (parachute drift & wadding fire) identified during preliminary commercial Estes kit test flights.
 
-#### 📐 [10-Part Parametric SolidWorks Desk Fan](https://github.com/Ashrick12/aerospace-portfolio#2-10-part-parametric-solidworks-desk-fan-assembly) *(ECE 103 &bull; Grade A)*
+#### 📐 [10-Part Parametric SolidWorks Desk Fan](https://github.com/Ashrick12/ashrick12.github.io#2-10-part-parametric-solidworks-desk-fan-assembly) *(ECE 103 &bull; Grade A)*
 * Fully constrained 10-part assembly modeled from dimensioned sketches to functional assembly with concentric, coincident, and rotational mates.
 * Performed clearance checking between blades and cage; created 2D ANSI manufacturing drawings with standard tolerances.
 
-#### ☀️ [Solar Energy Systems Modeling & NPV Optimization](https://github.com/Ashrick12/aerospace-portfolio#3-solar-energy-systems-modeling--npv-optimization-matlab) *(MATLAB)*
+#### ☀️ [Solar Energy Systems Modeling & NPV Optimization](https://github.com/Ashrick12/ashrick12.github.io#3-solar-energy-systems-modeling--npv-optimization-matlab) *(MATLAB)*
 * Primary mathematical modeler on a 5-person team sizing off-grid residential solar power and battery storage in Chandler, AZ.
 * Modeled seasonal solar angles and hourly demand curves; calculated 25-year Net Present Value (NPV) lifecycle economics.
 
-#### 📅 [Smart Schedule Finder Desktop Application](https://github.com/Ashrick12/aerospace-portfolio#4-smart-schedule-finder-desktop-application) *(Python & Streamlit)*
+#### 📅 [Smart Schedule Finder Desktop Application](https://github.com/Ashrick12/ashrick12.github.io#4-smart-schedule-finder-desktop-application) *(Python & Streamlit)*
 * Route-optimized scheduling tool for Mobile Hearing Solutions interfacing with the Google Calendar API via OAuth2.
 * Analyzes existing technician routes to recommend schedule openings that reduce driving time, saving 2–3 hours weekly.
 
-#### 🔍 [Local Document OCR Extraction Pipeline](https://github.com/Ashrick12/aerospace-portfolio#5-local-document-ocr-extraction-pipeline) *(Python & Edge AI)*
+#### 🔍 [Local Document OCR Extraction Pipeline](https://github.com/Ashrick12/ashrick12.github.io#5-local-document-ocr-extraction-pipeline) *(Python & Edge AI)*
 * Offline document processing tool using EasyOCR and 4-bit quantized vision models to extract structured patient records locally, ensuring strict HIPAA privacy and zero API costs.
 
 ---
@@ -81,8 +81,8 @@ I am an **Aerospace Engineering student** transferring from Chandler-Gilbert Com
 
 ### 📬 Let's Connect
 
-* **Portfolio:** [ashrick12.github.io/aerospace-portfolio](https://ashrick12.github.io/aerospace-portfolio/)
+* **Portfolio:** [ashrick12.github.io](https://ashrick12.github.io/)
 * **LinkedIn:** [linkedin.com/in/ashton-hendrickson-55508a262](https://www.linkedin.com/in/ashton-hendrickson-55508a262)
 * **Email:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com)
-* **Resume:** [Download Resume PDF](https://github.com/Ashrick12/aerospace-portfolio/blob/main/assets/Ashton_Hendrickson_Resume.pdf)
+* **Resume:** [Download Resume PDF](https://github.com/Ashrick12/ashrick12.github.io/blob/main/assets/Ashton_Hendrickson_Resume.pdf)
 
