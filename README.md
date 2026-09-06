@@ -36,10 +36,6 @@ Currently designing and prototyping a custom scratch-built sounding rocket while
 
 The portfolio is available both as an interactive dark-mode web application ([`index.html`](index.html)) and as a comprehensive markdown document ([`portfolio.md`](portfolio.md)).
 
-<p align="center">
-  <img src="assets/portfolio_preview_honest.png" alt="Aerospace Engineering Portfolio Preview" width="850">
-</p>
-
 ---
 
 ## 📂 Table of Contents
