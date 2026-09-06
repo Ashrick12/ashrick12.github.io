@@ -11,7 +11,7 @@
 
 **Aerospace Engineering Transfer Student &bull; CAD Modeling, Flight Simulation & Additive Prototyping**
 
-[🌐 Live Interactive Website](#-how-to-deploy--view-live) &bull; [📄 Download Resume (PDF)](assets/Ashton_Hendrickson_Resume.pdf) &bull; [💼 LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [✉️ Email](mailto:ashtonh1204@gmail.com)
+[🌐 Live Interactive Website](https://ashrick12.github.io/) &bull; [📄 Download Resume (PDF)](assets/Ashton_Hendrickson_Resume.pdf) &bull; [💼 LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [✉️ Email](mailto:ashtonh1204@gmail.com)
 
 </div>
 
@@ -52,7 +52,7 @@ The portfolio is available both as an interactive dark-mode web application ([`i
   * [6. Aerospace Industry Exposure: Able Aerospace (Textron Aviation)](#6-aerospace-industry-exposure-able-aerospace-textron-aviation)
 * [Technical Competencies Matrix](#-technical-competencies-matrix)
 * [Repository Structure](#-repository-structure)
-* [How to Deploy & View Live](#-how-to-deploy--view-live)
+* [Live Interactive Website](#-live-interactive-website)
 * [Contact Information](#-contact-information)
 
 ---
@@ -208,26 +208,12 @@ Hands-on launch experience with commercial kits (Alpha 3 and Hi-Flier) at Freest
 
 ---
 
-## 🌐 How to Deploy & View Live
+## 🌐 Live Interactive Website
 
-### Option 1: Free Hosting on GitHub Pages (Recommended)
-This repository is 100% configured for GitHub Pages out-of-the-box:
+The full web version of this portfolio features an interactive dark-mode theme, full-screen zoomable lightbox for CAD models, schematics, and simulation plots, and responsive mobile-friendly layouts.
 
-1. Push this repository to GitHub:
-   ```bash
-   git remote add origin https://github.com/ashrick12/aerospace-portfolio.git
-   git branch -M main
-   git push -u origin main
-   ```
-2. On GitHub, navigate to **Settings** &rarr; **Pages**.
-3. Under **Build and deployment** &gt; **Branch**, select `main` and `/ (root)`, then click **Save**.
-4. In ~60 seconds, your portfolio will be live at:
-   ```text
-   https://ashrick12.github.io/aerospace-portfolio/
-   ```
-
-### Option 2: Run Locally
-Simply double-click [`index.html`](index.html) or open it in any web browser (Chrome, Edge, Firefox).
+* 🚀 **Online Website:** [**ashrick12.github.io**](https://ashrick12.github.io/)
+* 💻 **Local Viewing:** Open [`index.html`](index.html) directly in any modern web browser (Chrome, Edge, Safari, Firefox).
 
 ---
 
