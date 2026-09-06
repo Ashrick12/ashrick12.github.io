@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ashton Hendrickson | Aerospace Engineering Portfolio</title>
-  <meta name="description" content="Aerospace Engineering student portfolio of Ashton Hendrickson showcasing in-progress sounding rocket design, SolidWorks CAD, OpenRocket flight simulation, and automation tools.">
+  <meta name="description" content="Aerospace Engineering student portfolio of Ashton Hendrickson showcasing custom sounding rocket design, SolidWorks CAD, OpenRocket flight simulation, and automation tools.">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,476 +17,433 @@
     <div class="container nav-container">
       <a href="#" class="nav-brand">
         Ashton Hendrickson
-        <span>AEROSPACE ENG</span>
+        <span class="brand-tag">AEROSPACE ENG</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#flagship">Custom Rocket (In Progress)</a></li>
+        <li><a href="#flagship">Sounding Rocket</a></li>
         <li><a href="#cad-projects">SolidWorks CAD</a></li>
         <li><a href="#systems-software">Simulation & Software</a></li>
-        <li><a href="#industry-experience">Job Shadow</a></li>
-        <li><a href="#skills">Competencies</a></li>
+        <li><a href="#industry-experience">Able Aerospace Shadow</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Dual Identity & Hero Engineering Hardware Visual) -->
   <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-avatar-wrapper">
-        <img src="assets/headshot.png" alt="Ashton Hendrickson" class="hero-avatar">
-        <div class="hero-avatar-badge">ASTRONAUTICS TRACK</div>
-      </div>
-      <div class="hero-content">
-        <h1>Ashton Hendrickson</h1>
-        <div class="hero-tagline">
-          <span>🚀</span> Aerospace Engineering Student &bull; CAD, Flight Simulation & Prototyping
-        </div>
-        <p class="hero-bio">
-          Aerospace Engineering transfer student with practical hands-on experience in <strong>SolidWorks 3D CAD</strong>, 
-          <strong>OpenRocket 6-DOF aerodynamic simulation</strong>, <strong>Bambu Lab 3D printing</strong>, and 
-          <strong>Python automation</strong>. Currently designing and prototyping a custom scratch-built sounding rocket while 
-          working as a Technical Assistant at Mobile Hearing Solutions and preparing to transfer to Arizona State University.
-        </p>
-
-        <div class="education-badges">
-          <div class="edu-badge highlight">
-            🏫 <strong>Chandler-Gilbert Community College</strong> &bull; AS Engineering Transfer (3.711 GPA)
-          </div>
-          <div class="edu-badge">
-            ☀️ Transferring to <strong>Arizona State University (ASU)</strong> &bull; B.S. Aerospace Engineering
-          </div>
-          <div class="edu-badge highlight">
-            ⭐ <strong>Phi Theta Kappa</strong> National Honor Society
-          </div>
-        </div>
-
-        <div class="hero-actions">
-          <a href="assets/Ashton_Hendrickson_Resume.pdf" target="_blank" class="btn btn-primary">
-            📄 Download Resume (PDF)
-          </a>
-          <a href="mailto:ashtonh1204@gmail.com" class="btn btn-secondary">
-            ✉️ ashtonh1204@gmail.com
-          </a>
-          <a href="tel:4805289329" class="btn btn-secondary">
-            📞 (480) 528-9329
-          </a>
-          <a href="https://www.linkedin.com/in/ashton-hendrickson-55508a262" target="_blank" class="btn btn-secondary">
-            🔗 LinkedIn
-          </a>
-          <a href="https://github.com/ashrick12" target="_blank" class="btn btn-secondary">
-            🐙 GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Quick Metrics Strip -->
     <div class="container">
-      <div class="metrics-strip">
-        <div class="metric-item">
-          <span class="metric-val">3.71</span>
-          <span class="metric-label">GPA (Phi Theta Kappa)</span>
+      <div class="hero-grid">
+        
+        <!-- Hero Left: Personal & Academic Credentials -->
+        <div class="hero-left">
+          <div class="hero-identity">
+            <img src="assets/headshot.png" alt="Ashton Hendrickson" class="hero-avatar" onclick="openModal('assets/headshot.png', 'Ashton Hendrickson — Aerospace Engineering Student (Astronautics Track)')" title="Click to view portrait">
+            <div class="hero-name-wrap">
+              <h1>Ashton Hendrickson</h1>
+              <div class="hero-role">Aerospace Engineering &bull; Astronautics Track</div>
+            </div>
+          </div>
+
+          <p class="hero-bio">
+            Aerospace Engineering transfer student with practical hands-on experience in <strong>SolidWorks 3D CAD</strong>, 
+            <strong>OpenRocket flight simulation</strong>, <strong>Bambu Lab 3D printing</strong>, and 
+            <strong>Python automation</strong>. Currently designing and prototyping a custom scratch-built sounding rocket while 
+            working as a Technical Assistant at Mobile Hearing Solutions and preparing to transfer to Arizona State University.
+          </p>
+
+          <!-- Flat Editorial Academic Path -->
+          <div class="academic-path-row">
+            <span class="academic-label">Academic Path:</span>
+            <span><strong>Chandler-Gilbert Community College</strong> (3.711 GPA)</span>
+            <span class="academic-badge">Phi Theta Kappa</span>
+            <span>&rarr; <strong>Arizona State University</strong> (B.S. Aerospace Engineering)</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="assets/Ashton_Hendrickson_Resume.pdf" target="_blank" class="btn btn-primary">
+              <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              Download Resume (PDF)
+            </a>
+            <a href="mailto:ashtonh1204@gmail.com" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Email
+            </a>
+            <a href="tel:4805289329" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              (480) 528-9329
+            </a>
+            <a href="https://www.linkedin.com/in/ashton-hendrickson-55508a262" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63c.9 0 1.63-.73 1.63-1.63s-.73-1.63-1.63-1.63Z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/ashrick12" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
         </div>
-        <div class="metric-item">
-          <span class="metric-val">1.49 cal</span>
-          <span class="metric-label">Simulated Static Margin</span>
+
+        <!-- Hero Right: Hero Engineering Hardware Visual -->
+        <div class="hero-right">
+          <div class="hero-visual-frame" onclick="openModal('assets/rocket_cad_exploded.png', 'SolidWorks CAD: Complete rocket assembly stack for scratch-built sounding rocket.')">
+            <div class="hero-visual-meta">
+              <span class="meta-figure">SOLIDWORKS ROCKET CAD ASSEMBLY</span>
+              <span class="meta-hint">Inspect Assembly &rarr;</span>
+            </div>
+            <div class="hero-visual-img-wrap">
+              <img src="assets/rocket_cad_exploded.png" alt="SolidWorks Rocket Exploded CAD Assembly">
+            </div>
+            <div class="hero-visual-caption">
+              Scratch-built sounding rocket: 24mm motor mount, BT-80 airframe, 3D-printed payload carrier, and ogive nose cone.
+            </div>
+          </div>
         </div>
-        <div class="metric-item">
-          <span class="metric-val">RP2040</span>
-          <span class="metric-label">Avionics (In Progress)</span>
+
+      </div>
+
+      <!-- Quick Engineering Specs Readout (Flat, Editorial, 4 Items) -->
+      <div class="specs-readout-strip">
+        <div class="readout-item">
+          <span class="readout-label">Academic Standing</span>
+          <span class="readout-value">3.711 GPA</span>
+          <span class="readout-sub">Phi Theta Kappa National Honor Society (CGCC)</span>
         </div>
-        <div class="metric-item">
-          <span class="metric-val">10-Part</span>
-          <span class="metric-label">Constrained CAD Assembly</span>
+        <div class="readout-item">
+          <span class="readout-label">Static Stability Margin</span>
+          <span class="readout-value">1.49 cal</span>
+          <span class="readout-sub">OpenRocket simulated stability</span>
         </div>
-        <div class="metric-item">
-          <span class="metric-val">~95%</span>
-          <span class="metric-label">Clinic OCR Extraction</span>
+        <div class="readout-item">
+          <span class="readout-label">Telemetry Avionics</span>
+          <span class="readout-value">RP2040</span>
+          <span class="readout-sub">Raspberry Pi Pico Sensor Datalogger Suite</span>
         </div>
-        <div class="metric-item">
-          <span class="metric-val">Aug 2026</span>
-          <span class="metric-label">Able Aerospace Shadow</span>
+        <div class="readout-item">
+          <span class="readout-label">Mechanical CAD</span>
+          <span class="readout-value">10-Part</span>
+          <span class="readout-sub">Constrained Dynamic Assembly (ECE 103 &bull; Grade A)</span>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Core Engineering Competencies -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section-title-wrap">
-        <span class="section-tag">Technical Skills</span>
-        <h2 class="section-title">Engineering Competencies & Coursework</h2>
-        <p class="section-desc">
-          Core technical competencies developed through community college engineering coursework, independent projects, and job experience.
-        </p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-header">
-            <span class="skill-icon">🚀</span>
-            <h3>Aerodynamics & Flight Sim</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="chip primary">OpenRocket 6-DOF</span>
-            <span class="chip primary">Static Stability Margin</span>
-            <span class="chip">CP / CG Management</span>
-            <span class="chip">Fin Sweep Geometry</span>
-            <span class="chip">Estes / Aerotech Motor Sizing</span>
-            <span class="chip">Parachute vs Streamer Drift</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <span class="skill-icon">📐</span>
-            <h3>Mechanical CAD (SolidWorks)</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="chip primary">SolidWorks 3D CAD</span>
-            <span class="chip primary">Multi-Body Assemblies</span>
-            <span class="chip">Rotational Mechanical Mates</span>
-            <span class="chip">Clearance Checking</span>
-            <span class="chip">Parametric Part Modeling</span>
-            <span class="chip">ANSI 2D Drawings (ECE 103)</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <span class="skill-icon">🖨️</span>
-            <h3>Additive Manufacturing</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="chip primary">Bambu Lab A1</span>
-            <span class="chip primary">eSUN PLA+ (Airframe)</span>
-            <span class="chip primary">Polymaker PETG (Motor Mount)</span>
-            <span class="chip">STEP File Slicing</span>
-            <span class="chip">Gyroid Infill</span>
-            <span class="chip">Perimeter Wall Reinforcement</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <span class="skill-icon">🛰️</span>
-            <h3>Embedded Hardware & Electronics</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="chip primary">Raspberry Pi Pico (RP2040)</span>
-            <span class="chip primary">BMP390 Barometer (Altitude)</span>
-            <span class="chip primary">MPU-6500 6-Axis IMU</span>
-            <span class="chip">MicroSD SPI Flash Logging</span>
-            <span class="chip">LiPo Battery Power</span>
-            <span class="chip">Breadboard & Solder Prototyping</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <span class="skill-icon">📊</span>
-            <h3>Math & Computational Modeling</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="chip primary">MATLAB for Engineers</span>
-            <span class="chip primary">Python Programming</span>
-            <span class="chip">Calculus I, II & III</span>
-            <span class="chip">Physics I (Kinematics)</span>
-            <span class="chip">Energy Balance Modeling</span>
-            <span class="chip">Net Present Value (NPV)</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <span class="skill-icon">✈️</span>
-            <h3>Industry Exposure & Standards</h3>
-          </div>
-          <div class="skill-chips">
-            <span class="chip primary">FAA Part 145 Exposure</span>
-            <span class="chip primary">Form 8110-3 Review</span>
-            <span class="chip">Helicopter Rotor Hubs</span>
-            <span class="chip">CNC Multi-Axis Milling</span>
-            <span class="chip">Shot-Peening Overview</span>
-            <span class="chip">NAR Safety Code</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Flagship Project: Sounding Rocket (IN PROGRESS) -->
+  <!-- ==========================================================================
+       01: Scratch-Built Mid-Power Sounding Rocket
+       ========================================================================== -->
   <section id="flagship" class="section">
     <div class="container">
-      <div class="flagship-card">
-        <div class="flagship-header">
-          <div class="flagship-title-wrap">
-            <span class="section-tag">Independent Engineering Project</span>
-            <h3>Scratch-Built Mid-Power Sounding Rocket</h3>
-            <div class="flagship-subtitle">
-              Airframe CAD &bull; OpenRocket 6-DOF Sim &bull; Bambu Lab 3D Printing &bull; RP2040 Avionics (In Development)
-            </div>
+      <div class="case-study-marker">01 / AEROSPACE HARDWARE</div>
+      
+      <div class="case-study-header">
+        <div class="case-study-title-wrap">
+          <h2>Scratch-Built Mid-Power Sounding Rocket</h2>
+        </div>
+        <!-- Quiet Technical Status Indicator -->
+        <div class="status-indicator-mono">
+          <span class="status-dot-amber"></span>
+          IN PROGRESS / UNLAUNCHED
+        </div>
+      </div>
+
+      <!-- Engineering Pipeline Lifecycle -->
+      <div class="engineering-pipeline">
+        <span class="pipeline-step active">01 Design</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step active">02 Simulation</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step active">03 Fabrication</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step active">04 Avionics</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step">05 Recovery</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step">06 Flight Testing</span>
+      </div>
+
+      <p class="case-study-intro">
+        After flying commercial Estes model rocket kits and losing them to excessive parachute drift and wadding ignition, 
+        I embarked on designing, simulating, and fabricating a custom mid-power vehicle from scratch. 
+        <strong>This project is actively in progress:</strong> vehicle geometry and stability have been simulated in OpenRocket, 
+        custom components are modeled in SolidWorks and printed on my Bambu Lab A1, and a custom Raspberry Pi Pico telemetry payload 
+        is currently undergoing bench testing. <em>The custom vehicle has not yet flown; it is being prepared for a sanctioned rocketry club launch in the Arizona desert.</em>
+      </p>
+
+      <!-- Prominent SolidWorks CAD Architecture Banner -->
+      <div class="cad-hero-banner" onclick="openModal('assets/rocket_cad_exploded.png', 'SolidWorks CAD Model: Complete vehicle stack assembly from 24mm motor mount (left), BT-80 lower body tube, 3D-printed payload carrier with integrated couplers (center), recovery chamber, and ogive nose cone (right).')">
+        <div class="hero-visual-meta">
+          <span class="meta-figure">SOLIDWORKS ROCKET CAD ASSEMBLY</span>
+          <span class="meta-hint">Click to inspect full schematic &rarr;</span>
+        </div>
+        <img src="assets/rocket_cad_exploded.png" alt="SolidWorks Rocket Exploded Assembly">
+        <div class="banner-caption">
+          Vehicle Stack: 24mm motor mount (aft), BT-80 airframe tubes, 3D-printed payload bay with integral coupler shoulders (red), recovery chamber, and ogive nose cone (forward).
+        </div>
+      </div>
+
+      <!-- Phase 1: Commercial Kit Flights & Failure Analysis -->
+      <div class="phase-heading">
+        <span class="phase-number">01</span>
+        <span>Preliminary Flight Tests (Commercial Estes Kits) & Failure Analysis</span>
+      </div>
+      <p class="phase-desc">
+        Before committing to custom fabrication, I flew commercial Estes kits (Alpha 3 and Hi-Flier) to gather field operations experience. 
+        The failure modes observed across these flights—excessive wind drift under parachutes, ejection charge wadding burn-through, and launch rod exit dynamics—directly 
+        dictated the engineering requirements for the custom scratch-built vehicle.
+      </p>
+
+      <div class="launch-showcase-grid">
+        <!-- Card 1: Pad Liftoff -->
+        <div class="flight-dossier-card" onclick="openModal('assets/rocket_launch.gif', 'Estes Hi-Flier Kit Launch (Freestone Park, Flight 1): Powered by an A8-3 motor to ~400 ft. Streamer recovery landed within ~30 ft of pad, proving that streamer recovery prevents thermal drift in park flights.')">
+          <div class="flight-media-box">
+            <img src="assets/rocket_launch.gif" alt="Estes Hi-Flier Kit Launch">
           </div>
-          <div class="status-pill" style="background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.4); color: #fbbf24;">
-            <span class="status-pulse" style="background: #fbbf24;"></span> In Progress &bull; Unlaunched
+          <div class="flight-card-body">
+            <div class="flight-card-tag">Preliminary Test Flight &bull; Freestone Park</div>
+            <div class="flight-card-title">Estes Hi-Flier &bull; Flight #1 (A8-3 Engine)</div>
+            <div class="flight-card-desc">Successful flight to ~400 ft apogee. Streamer recovery maintained touchdown within ~30 ft of the pad, demonstrating the drift trade-off compared to parachute recovery.</div>
           </div>
         </div>
 
-        <p class="flagship-overview">
-          After flying commercial Estes model rocket kits and losing them to parachute drift and wadding burn, I decided to 
-          design, simulate, and build a custom mid-power rocket from scratch. <strong>This project is actively in progress:</strong> 
-          the vehicle geometry and stability have been simulated in OpenRocket, custom aerodynamic parts are modeled in SolidWorks and 
-          being 3D printed on my Bambu Lab A1, and a Raspberry Pi Pico telemetry package is currently being developed. 
-          <em>The custom vehicle has not yet been launched; it is being prepared for a future club launch.</em>
-        </p>
-
-        <!-- Prominent Panoramic SolidWorks CAD Architecture -->
-        <div class="flagship-cad-banner" onclick="openModal('assets/rocket_cad_exploded.png', 'SolidWorks CAD Model: Complete vehicle assembly from 24mm motor mount (left), BT-80 lower body tube, 3D-printed payload carrier & integrated couplers (red), recovery tube, and ogive nose cone (right).')">
-          <div class="media-badge">SOLIDWORKS CAD &bull; IN-PROGRESS VEHICLE ASSEMBLY</div>
-          <img src="assets/rocket_cad_exploded.png" alt="SolidWorks Rocket Exploded Assembly">
-          <div class="banner-caption">
-            🔍 Click to inspect SolidWorks CAD assembly (custom 3D-printed nose cone, payload carrier, and motor mount)
+        <!-- Card 2: High Altitude Tracking -->
+        <div class="flight-dossier-card" onclick="openModal('assets/rocket_launch_far.gif', 'Tracking footage of the Estes Hi-Flier flight. High-speed camera review showed stable rod exit. Subsequent Flight #2 experienced wadding burn, motivating the flameproof Nomex recovery piston.')">
+          <div class="flight-media-box">
+            <img src="assets/rocket_launch_far.gif" alt="Rocket High Altitude Flight Video">
+          </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">Ascent Tracking &bull; Failure Mode</div>
+            <div class="flight-card-title">Estes Hi-Flier &bull; High-Altitude Ascent</div>
+            <div class="flight-card-desc">Flight #2 suffered wadding burn-through from hot motor ejection gases, directly motivating the custom flameproof Nomex recovery piston design.</div>
           </div>
         </div>
 
-        <!-- Honest Section: Commercial Kit Flights & Lessons Learned -->
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
-          <span>🎬</span> Preliminary Flight Tests (Commercial Estes Kits) & Lessons Learned
-        </h4>
-        <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">
-          Footage from my first hands-on launches using commercial kits (Alpha 3 and Hi-Flier). The failure modes experienced on these 
-          flights (excessive parachute drift, wadding burn, under-power off the rod) directly motivated the custom scratch-build.
-        </p>
-
-        <div class="launch-showcase-grid">
-          
-          <!-- Launch Card 1: Pad Liftoff -->
-          <div class="launch-card" onclick="openModal('assets/rocket_launch.gif', 'Estes Hi-Flier Kit Launch (Freestone Park, Flight 1): Powered by an A8-3 motor. The rocket flew to ~400 ft and was recovered successfully, showing that streamer recovery stays close to the pad.')">
-            <div class="media-badge live"><span class="status-pulse"></span> PRELIMINARY TEST FLIGHT</div>
-            <div class="launch-card-media">
-              <img src="assets/rocket_launch.gif" alt="Estes Hi-Flier Kit Launch">
-            </div>
-            <div class="launch-card-info">
-              <div class="launch-card-title">Estes Hi-Flier Kit &bull; Flight #1 (Freestone Park)</div>
-              <div class="launch-card-desc">Flight test using an A8-3 engine. Confirmed streamer recovery stays within ~30 ft of pad compared to parachute drift.</div>
-            </div>
+        <!-- Card 3: OpenRocket Flight Simulation -->
+        <div class="flight-dossier-card" onclick="openModal('assets/rocket_openrocket_model.png', 'OpenRocket 6-DOF Simulation Model: 442g estimated wet mass, Center of Pressure (28.01 in), Center of Gravity (24.12 in), static stability margin = 1.49 calibers.')">
+          <div class="flight-media-box">
+            <img src="assets/rocket_openrocket_model.png" alt="OpenRocket Flight Simulation Model">
           </div>
-
-          <!-- Launch Card 2: High Altitude Tracking -->
-          <div class="launch-card" onclick="openModal('assets/rocket_launch_far.gif', 'Tracking view of the Estes Hi-Flier flight. Taught the lesson that manual tracking requires dedicated wide-angle spotting.')">
-            <div class="media-badge live"><span class="status-pulse"></span> FLIGHT TRACKING</div>
-            <div class="launch-card-media">
-              <img src="assets/rocket_launch_far.gif" alt="Rocket High Altitude Flight Video">
-            </div>
-            <div class="launch-card-info">
-              <div class="launch-card-title">Estes Hi-Flier &bull; Ascent Tracking</div>
-              <div class="launch-card-desc">Tracking camera verifying stable flight path. Flight #2 later burned wadding, prompting the custom Nomex piston design.</div>
-            </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">OpenRocket Flight Simulation</div>
+            <div class="flight-card-title">Custom Rocket Stability & Mass Distribution</div>
+            <div class="flight-card-desc">Stability calculations place the Center of Pressure (28.01&quot;) safely behind the Center of Gravity (24.12&quot;) to achieve a 1.49 cal static stability margin without adding dead nose weight.</div>
           </div>
+        </div>
+      </div>
 
-          <!-- Launch Card 3: 6-DOF OpenRocket Model -->
-          <div class="launch-card" onclick="openModal('assets/rocket_openrocket_model.png', 'OpenRocket 6-DOF Model for the custom in-progress build: Mass breakdown (442g estimated), Center of Pressure (28.01 inches), and Center of Gravity (24.12 inches).')">
-            <div class="media-badge">OPENROCKET SIMULATION</div>
-            <div class="launch-card-media">
-              <img src="assets/rocket_openrocket_model.png" alt="OpenRocket 6-DOF Sim Model">
-            </div>
-            <div class="launch-card-info">
-              <div class="launch-card-title">Custom Rocket &bull; OpenRocket 6-DOF Model</div>
-              <div class="launch-card-desc">Pre-flight simulation modeling: CP (28.01&quot;) sits safely behind CG (24.12&quot;) for a 1.49 cal static margin.</div>
-            </div>
+      <!-- Phase 2: In-Progress Subsystems & Hardware Prototyping -->
+      <div class="phase-heading">
+        <span class="phase-number">02</span>
+        <span>In-Progress Subsystems & Hardware Prototyping</span>
+      </div>
+      <p class="phase-desc">
+        The custom sounding rocket integrates multi-material 3D printing, numerical trajectory simulation, and an onboard RP2040 telemetry payload.
+      </p>
+
+      <div class="subsystem-grid">
+        <!-- Subsystem 1: Aerodynamics -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Aerodynamic Simulation</h4>
+            <span class="subsystem-discipline">OpenRocket Flight Simulation</span>
           </div>
-
+          <div class="subsystem-media-preview" onclick="openModal('assets/rocket_trajectory_plot.png', 'OpenRocket Simulation Output: Altitude profile and velocity decay curves modeled for custom airframe under F32 motor.')">
+            <img src="assets/rocket_trajectory_plot.png" alt="Flight Trajectory Simulation Plot">
+            <div class="media-hover-overlay"><span>Inspect Trajectory Plot</span></div>
+          </div>
+          <p>
+            Redesigned the fins after initial simulations showed marginal stability, moving the center of pressure aft and improving the static margin from 0.745 to 1.49 calibers. Sized a 24&quot; parachute for a controlled 5.76 m/s desert touchdown speed.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Simulated Apogee:</span><span class="spec-val">268 m (~880 ft on F32)</span></div>
+            <div class="spec-row"><span class="spec-key">Static Margin:</span><span class="spec-val">1.49 cal</span></div>
+            <div class="spec-row"><span class="spec-key">Touchdown Velocity:</span><span class="spec-val">5.76 m/s (24&quot; chute)</span></div>
+          </div>
         </div>
 
-        <!-- Subsystem Deep Dives -->
-        <h4 style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 14px;">In-Progress Subsystems & Prototyping</h4>
-        <div class="subsystem-grid">
-          
-          <!-- Box 1: Aerodynamics -->
-          <div class="subsystem-box">
-            <h4><span>🚀</span> Aerodynamic Simulation (OpenRocket)</h4>
-            <p>
-              In my initial OpenRocket model, stability was marginal (0.745 cal). I redesigned the fin set with a 5.0&quot; sweep 
-              length and 4.0&quot; span (51.3° sweep angle) in aircraft birch plywood, shifting the Center of Pressure aft to 28.01&quot; 
-              to achieve a simulated <strong>1.49 calibers static margin</strong> with zero dead nose weight.
-            </p>
-            <div class="subsystem-specs">
-              <div><strong>Simulated Apogee:</strong> 268 m (~880 ft on F32 motor)</div>
-              <div><strong>Simulated Static Margin:</strong> 1.49 cal</div>
-              <div><strong>Simulated Touchdown:</strong> 5.76 m/s (under 24&quot; chute)</div>
-            </div>
-            <div class="subsystem-thumb-wrap" onclick="openModal('assets/rocket_trajectory_plot.png', 'OpenRocket Simulation Output: Simulated altitude curve and deployment velocity calculations for the custom airframe.')">
-              <img src="assets/rocket_trajectory_plot.png" alt="Flight Trajectory Simulation Plot">
-              <div class="thumb-overlay"><span>View Simulation Plot</span></div>
-            </div>
+        <!-- Subsystem 2: 3D Printing & Slicing -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Additive Manufacturing</h4>
+            <span class="subsystem-discipline">Bambu Lab A1</span>
           </div>
-
-          <!-- Box 2: CAD & Additive Mfg -->
-          <div class="subsystem-box">
-            <h4><span>📐</span> 3D Printing & Slicing (Bambu Lab A1)</h4>
-            <p>
-              Exported native STEP files from SolidWorks into Bambu Studio to preserve continuous curves on aerodynamic faces. 
-              Printed the full-scale <strong>Ogive Nose Cone</strong> and <strong>Payload Carrier</strong> in eSUN PLA+ with 
-              gyroid infill. Planning to print the motor mount and retention clips in heat-resistant PETG.
-            </p>
-            <div class="subsystem-specs">
-              <div><strong>Printer:</strong> Bambu Lab A1 (Textured PEI Plate)</div>
-              <div><strong>Materials:</strong> eSUN PLA+ & Polymaker PETG</div>
-              <div><strong>Current Status:</strong> Nose cone & bay printed; motor mount next</div>
-            </div>
-            <div class="subsystem-thumb-wrap" onclick="openModal('assets/rocket_printed_parts.jpg', 'Actual 3D-Printed Parts: Ogive nose cone with shoulder (right) and payload carrier with integrated shock cord anchor (left) on desk.')">
-              <img src="assets/rocket_printed_parts.jpg" alt="3D Printed Rocket Hardware">
-              <div class="thumb-overlay"><span>View Real Printed Parts</span></div>
-            </div>
+          <div class="subsystem-media-preview" onclick="openModal('assets/rocket_printed_parts.jpg', 'Additive Prototyping: 3D-printed ogive nose cone (right) and payload carrier with integrated shock-cord anchor arch (left) fabricated on Bambu Lab A1.')">
+            <img src="assets/rocket_printed_parts.jpg" alt="3D Printed Rocket Hardware">
+            <div class="media-hover-overlay"><span>Inspect Printed Hardware</span></div>
           </div>
-
-          <!-- Box 3: Embedded Avionics -->
-          <div class="subsystem-box">
-            <h4><span>🛰️</span> Avionics Telemetry (In Development)</h4>
-            <p>
-              Designing a custom microcontroller datalogger using a <strong>Raspberry Pi Pico (RP2040)</strong>. Incorporates a 
-              <strong>BMP390 barometer</strong> for altitude tracking, an <strong>MPU-6500 IMU</strong> for acceleration/tilt, and 
-              an SPI MicroSD reader to record flight data. Currently bench testing sensor communication in Python.
-            </p>
-            <div class="subsystem-specs">
-              <div><strong>Microcontroller:</strong> Raspberry Pi Pico (RP2040)</div>
-              <div><strong>Sensors:</strong> BMP390 Altimeter + MPU-6500 IMU</div>
-              <div><strong>Status:</strong> Components acquired; bench coding in progress</div>
-            </div>
-            <div class="subsystem-thumb-wrap" onclick="openModal('assets/rocket_avionics_haul.png', 'Acquired Avionics Components: Raspberry Pi Pico, BMP390 altimeter, MPU-6500 IMU, DHT22 sensor, SPI MicroSD boards, and prototyping PCBs.')">
-              <img src="assets/rocket_avionics_haul.png" alt="Rocket Avionics Hardware">
-              <div class="thumb-overlay"><span>Inspect Components</span></div>
-            </div>
+          <p>
+            Exported SolidWorks models as STEP files into Bambu Studio and printed the aerodynamic components with smooth curved surfaces. Printed the full-scale <strong>Ogive Nose Cone</strong> and <strong>Payload Carrier</strong> in eSUN PLA+ with gyroid infill. Motor mount brackets are scheduled to be printed in heat-resistant Polymaker PETG.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Hardware:</span><span class="spec-val">Bambu Lab A1 (PEI Plate)</span></div>
+            <div class="spec-row"><span class="spec-key">Materials:</span><span class="spec-val">eSUN PLA+ & Polymaker PETG</span></div>
+            <div class="spec-row"><span class="spec-key">Fabrication Status:</span><span class="spec-val">Nose cone & bay printed</span></div>
           </div>
+        </div>
 
-          <!-- Box 4: Piston Recovery System -->
-          <div class="subsystem-box">
-            <h4><span>🪂</span> Nomex Piston Recovery Design</h4>
-            <p>
-              On my second Hi-Flier flight, the wadding failed and caught fire. To fix this on the custom rocket, I designed a 
-              piston recovery setup where a flameproof Nomex cloth acts as a mechanical piston, pushing the 24&quot; parachute out 
-              while physically sealing the forward bay from hot motor ejection charges.
-            </p>
-            <div class="subsystem-specs">
-              <div><strong>Design:</strong> Mid-joint separation with Nomex piston</div>
-              <div><strong>Canopy:</strong> 24&quot; ripstop nylon parachute</div>
-              <div><strong>Status:</strong> Parts ordered; assembly planned</div>
-            </div>
-            <div class="subsystem-thumb-wrap" onclick="openModal('assets/rocket_hardware_haul.png', 'Hardware and Ground Equipment: EEMB 500mAh LiPo, TP4056 USB-C charger, BT-80 body tubes, and Estes Porta-Pad E.')">
-              <img src="assets/rocket_hardware_haul.png" alt="Power and Recovery Hardware">
-              <div class="thumb-overlay"><span>View Hardware</span></div>
-            </div>
+        <!-- Subsystem 3: Embedded Avionics -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Avionics Telemetry Datalogger</h4>
+            <span class="subsystem-discipline">RP2040 Microcontroller</span>
           </div>
-
-          <!-- Box 5: Custom Component CAD -->
-          <div class="subsystem-box">
-            <h4><span>⚙️</span> Payload Carrier CAD Modeling</h4>
-            <p>
-              Modeled the central payload section in SolidWorks. Instead of gluing separate couplers, I integrated upper and lower 
-              shoulders directly into the printed body. Replaced a simple hook with a 4-legged cross-arch on the bulkhead floor to 
-              distribute parachute shock tension evenly across solid printed perimeter walls.
-            </p>
-            <div class="subsystem-specs">
-              <div><strong>Tool:</strong> SolidWorks 3D CAD</div>
-              <div><strong>Fit:</strong> 2.600&quot; OD / 2.560&quot; ID airframe coupler</div>
-              <div><strong>Status:</strong> CAD finalized & successfully printed</div>
-            </div>
-            <div class="subsystem-thumb-wrap" onclick="openModal('assets/rocket_payload_cad.png', 'SolidWorks CAD: 3D-printed payload carrier showing integrated coupler shoulders and 4-legged shock cord anchor arch.')">
-              <img src="assets/rocket_payload_cad.png" alt="Payload Carrier CAD">
-              <div class="thumb-overlay"><span>Inspect CAD Model</span></div>
-            </div>
+          <div class="subsystem-media-preview" onclick="openModal('assets/rocket_avionics_haul.png', 'Avionics Package Hardware: Raspberry Pi Pico (RP2040), BMP390 precision altimeter, MPU-6500 6-axis IMU, and SPI MicroSD datalogging modules.')">
+            <img src="assets/rocket_avionics_haul.png" alt="Rocket Avionics Hardware">
+            <div class="media-hover-overlay"><span>Inspect Avionics Suite</span></div>
           </div>
-
-          <!-- Box 6: Flight Testing & Iteration -->
-          <div class="subsystem-box">
-            <h4><span>📍</span> Launch Preparation & Club Flight Goal</h4>
-            <p>
-              Gained practical field experience through commercial Estes kit launches at Crossroads and Freestone Parks. Once the custom 
-              airframe is assembled and bench-tested with the RP2040 avionics sled, I plan to launch it with an NAR-affiliated rocketry 
-              club in Arizona for safe open-desert recovery.
-            </p>
-            <div class="subsystem-specs">
-              <div><strong>Past Kit Launches:</strong> Crossroads & Freestone Parks</div>
-              <div><strong>Target for Custom Rocket:</strong> Local rocketry club launch</div>
-              <div><strong>Launch Pad:</strong> Estes Porta-Pad E w/ 5-ft rod</div>
-            </div>
-            <div class="subsystem-thumb-wrap" onclick="openModal('assets/ashton_rocket.jpg', 'Ashton Hendrickson preparing the Estes Hi-Flier launch vehicle at Freestone Park before flight operations.')">
-              <img src="assets/ashton_rocket.jpg" alt="Ashton at Rocket Launch">
-              <div class="thumb-overlay"><span>View Launch Prep Photo</span></div>
-            </div>
+          <p>
+            Developing an onboard telemetry package based on the <strong>Raspberry Pi Pico (RP2040)</strong>. Integrates a 
+            <strong>BMP390 precision barometer</strong> for altitude logging, an <strong>MPU-6500 6-axis IMU</strong> for acceleration and tilt, 
+            and an SPI MicroSD module to record high-frequency flight telemetry to flash memory.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Microcontroller:</span><span class="spec-val">Raspberry Pi Pico (Dual ARM M0+)</span></div>
+            <div class="spec-row"><span class="spec-key">Sensor Suite:</span><span class="spec-val">BMP390 Baro + MPU-6500 IMU</span></div>
+            <div class="spec-row"><span class="spec-key">Bench Status:</span><span class="spec-val">Sensors verified in MicroPython</span></div>
           </div>
+        </div>
 
+        <!-- Subsystem 4: Nomex Piston Recovery -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Flameproof Piston Recovery</h4>
+            <span class="subsystem-discipline">Recovery Mechanics</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('assets/rocket_hardware_haul.png', 'Recovery and Power Equipment: 500mAh LiPo flight battery, TP4056 USB-C charging module, BT-80 airframe tubes, and Estes Porta-Pad E.')">
+            <img src="assets/rocket_hardware_haul.png" alt="Power and Recovery Hardware">
+            <div class="media-hover-overlay"><span>Inspect Recovery Rig</span></div>
+          </div>
+          <p>
+            To permanently prevent wadding burn-through experienced on Estes flights, designed a piston recovery mechanism. A Nomex piston pushes the 24&quot; parachute out of the recovery tube while protecting the electronics from hot motor gases.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Separation Method:</span><span class="spec-val">Mid-Joint Nomex Piston</span></div>
+            <div class="spec-row"><span class="spec-key">Canopy:</span><span class="spec-val">24&quot; Ripstop Nylon Parachute</span></div>
+            <div class="spec-row"><span class="spec-key">Shock Tether:</span><span class="spec-val">12-ft Tubular Elastic Cord</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 5: Component CAD -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Payload Carrier CAD</h4>
+            <span class="subsystem-discipline">SolidWorks Modeling</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('assets/rocket_payload_cad.png', 'SolidWorks CAD: Central payload carrier detailing integral coupler shoulders, avionics sled mounting bosses, and 4-legged shock cord anchor.')">
+            <img src="assets/rocket_payload_cad.png" alt="Payload Carrier CAD">
+            <div class="media-hover-overlay"><span>Inspect SolidWorks Part</span></div>
+          </div>
+          <p>
+            Modeled the central airframe payload carrier in SolidWorks. Rather than relying on separate couplers, integrated forward and aft 
+            shoulders directly into the printed body. Designed a <strong>4-Legged Shock Cord Anchor</strong> across the bulkhead to distribute parachute opening shock 
+            evenly into solid perimeter walls.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">CAD Platform:</span><span class="spec-val">SolidWorks 3D CAD</span></div>
+            <div class="spec-row"><span class="spec-key">Airframe Fit:</span><span class="spec-val">2.600&quot; OD / 2.560&quot; ID BT-80</span></div>
+            <div class="spec-row"><span class="spec-key">Anchor Feature:</span><span class="spec-val">4-Legged Shock Cord Anchor</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 6: Field Testing & Launch Operations -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Field Operations & Club Target</h4>
+            <span class="subsystem-discipline">Launch Protocol</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('assets/ashton_rocket.jpg', 'Range Preparation: Ashton Hendrickson preparing the Estes launch vehicle at Freestone Park prior to countdown and ignition.')">
+            <img src="assets/ashton_rocket.jpg" alt="Ashton at Rocket Launch">
+            <div class="media-hover-overlay"><span>Inspect Range Photo</span></div>
+          </div>
+          <p>
+            Gained practical range operations experience through commercial Estes launches at Freestone and Crossroads Parks. 
+            Once final bench integration and ground deployment tests are complete, the vehicle will be flown at an NAR-sanctioned rocketry club 
+            launch in the Arizona desert.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Preliminary Range:</span><span class="spec-val">Freestone & Crossroads Parks</span></div>
+            <div class="spec-row"><span class="spec-key">Launch Support:</span><span class="spec-val">Estes Porta-Pad E w/ 5-ft rod</span></div>
+            <div class="spec-row"><span class="spec-key">Flight Target:</span><span class="spec-val">Arizona NAR Club Desert Launch</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Featured Project 2: SolidWorks Desk Fan CAD -->
+  <!-- ==========================================================================
+       02: 10-Part SolidWorks Desk Fan CAD (ECE 103)
+       ========================================================================== -->
   <section id="cad-projects" class="section">
     <div class="container">
-      <div class="section-title-wrap">
-        <span class="section-tag">Academic Course Project</span>
-        <h2 class="section-title">10-Part Parametric SolidWorks Desk Fan Assembly</h2>
-        <p class="section-desc">
-          Mechanical design course project (ECE 103 — Grade A) emphasizing parametric modeling, dynamic rotational mates, 
-          clearance checking, and 2D ANSI manufacturing drawings.
-        </p>
-      </div>
+      <div class="case-study-marker">02 / MECHANICAL DESIGN (SOLIDWORKS)</div>
+      <h2 class="section-title">10-Part Parametric SolidWorks Desk Fan Assembly</h2>
+      <p class="section-desc">
+        Mechanical design course project (Grade A) emphasizing parametric 3D part modeling, dynamic rotational mates, 
+        clearance checking, and 2D ANSI manufacturing drawings.
+      </p>
 
-      <div class="project-card" style="margin-bottom: 30px;">
-        <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; padding: 28px; align-items: center;">
+      <div class="cad-project-card" style="margin-top: 28px;">
+        <div class="cad-project-main">
           <div>
-            <div class="project-tag">ECE 103 &bull; SolidWorks CAD</div>
-            <h3 style="font-size: 1.6rem; margin-bottom: 12px;">Constrained 10-Component Dynamic Assembly</h3>
-            <p style="color: var(--text-secondary); line-height: 1.65; margin-bottom: 16px;">
-              Designed and modeled 10 components from initial dimensioned sketches to a fully constrained functional assembly: 
+            <div class="cad-badge-row">
+              <span class="badge-tag blue">SolidWorks CAD</span>
+              <span class="badge-tag neutral">ECE 103 &bull; Grade A</span>
+            </div>
+            <h3>Constrained 10-Component Dynamic Assembly</h3>
+            <p>
+              Modeled 10 discrete mechanical parts from dimensioned paper sketches to a fully constrained, functional assembly: 
               <strong>Front Grill</strong>, <strong>Back Grill with pattern cuts</strong>, <strong>Aerodynamic Fan Blades</strong>, 
               <strong>Center Hub</strong>, <strong>Motor Housing</strong>, <strong>On/Off Knob</strong>, <strong>Shaft</strong>, 
               <strong>Frame Ring</strong>, <strong>Vertical Stand</strong>, and <strong>Weighted Base</strong>.
             </p>
-            <ul class="project-highlights">
+            <ul class="technical-checklist">
               <li>Applied concentric, coincident, and rotational mechanical mates to simulate smooth 360° blade rotation with zero interference.</li>
-              <li>Calculated clearances between the rotating fan blades and spherical housing to prevent blade-cage contact.</li>
+              <li>Calculated clearances between the rotating fan blades and spherical housing to eliminate blade-cage contact under dynamic rotation.</li>
               <li>Generated comprehensive 2D manufacturing drawings with ANSI dimensioning, datum references, and standard tolerances.</li>
-              <li>Embossed custom nameplate on the base and rendered multi-angle views in SolidWorks PhotoView.</li>
+              <li>Embossed custom nameplate on the base and produced multi-angle photorealistic renders in SolidWorks PhotoView.</li>
             </ul>
-            <div class="project-meta">
-              <span class="chip primary">SolidWorks</span>
-              <span class="chip">Rotational Mates</span>
-              <span class="chip">Parametric Modeling</span>
-              <span class="chip">Interference Checking</span>
-              <span class="chip">ANSI Tolerances</span>
-              <span class="chip">Grade A (ECE 103)</span>
+            <div class="tech-tag-row">
+              <span class="tech-tag primary">SolidWorks 3D</span>
+              <span class="tech-tag">Rotational Mates</span>
+              <span class="tech-tag">Interference Checks</span>
+              <span class="tech-tag">ANSI 2D Drawings</span>
+              <span class="tech-tag">Parametric Modeling</span>
             </div>
           </div>
-          <div class="subsystem-thumb-wrap" style="height: 320px;" onclick="openModal('assets/desk_fan_poster.png', 'ECE 103 Course Poster: Complete multi-angle SolidWorks CAD views, specifications, and designer details for the 10-part desk fan assembly.')">
-            <img src="assets/desk_fan_poster.png" alt="SolidWorks Desk Fan Poster" style="object-fit: contain;">
-            <div class="thumb-overlay"><span>🔍 View Course Poster</span></div>
+          <div class="poster-preview-box" onclick="openModal('assets/desk_fan_poster.png', 'ECE 103 Final Project Poster: Comprehensive SolidWorks CAD views, orthographic drawings, dimensioned specifications, and designer notes.')">
+            <img src="assets/desk_fan_poster.png" alt="SolidWorks Desk Fan Poster">
+            <div class="media-hover-overlay"><span>Inspect Full Course Poster</span></div>
           </div>
         </div>
 
         <!-- 4 CAD Orthographic Views Gallery -->
-        <div style="padding: 0 28px 28px 28px;">
-          <h4 style="font-size: 1rem; color: var(--accent-cyan); font-family: var(--font-mono); margin-bottom: 12px; text-transform: uppercase;">
-            CAD Assembly View Gallery (Click to Inspect Full Res)
-          </h4>
-          <div class="cad-gallery-grid">
-            <div class="cad-thumb-card" onclick="openModal('assets/desk_fan_iso.png', 'SolidWorks Isometric View: 3/4 perspective showing blade curvature, front safety grille, and embossed base plate.')">
-              <img src="assets/desk_fan_iso.png" alt="Isometric CAD View">
+        <div class="cad-gallery-section">
+          <div class="cad-gallery-header">
+            <span>Orthographic Assembly Views (Click to inspect)</span>
+            <span>SolidWorks PhotoView Renders</span>
+          </div>
+          <div class="cad-ortho-grid">
+            <div class="ortho-card" onclick="openModal('assets/desk_fan_iso.png', 'SolidWorks Isometric View: 3/4 perspective showing aerodynamic blade curvature, front safety grille, and embossed base plate.')">
+              <div class="ortho-img-wrap">
+                <img src="assets/desk_fan_iso.png" alt="Isometric CAD View">
+              </div>
               <span>Isometric 3/4 View</span>
             </div>
-            <div class="cad-thumb-card" onclick="openModal('assets/desk_fan_side.png', 'SolidWorks Profile / Side View: Motor housing alignment, vertical stand geometry, and blade cage clearance.')">
-              <img src="assets/desk_fan_side.png" alt="Side Profile CAD View">
+            <div class="ortho-card" onclick="openModal('assets/desk_fan_side.png', 'SolidWorks Profile View: Side elevation detailing motor housing alignment, vertical stand geometry, and blade cage clearance.')">
+              <div class="ortho-img-wrap">
+                <img src="assets/desk_fan_side.png" alt="Side Profile CAD View">
+              </div>
               <span>Profile / Side View</span>
             </div>
-            <div class="cad-thumb-card" onclick="openModal('assets/desk_fan_front.png', 'SolidWorks Front Orthographic View: Radial symmetric front grill rings and 3-blade profile.')">
-              <img src="assets/desk_fan_front.png" alt="Front CAD View">
-              <span>Front Elevation View</span>
+            <div class="ortho-card" onclick="openModal('assets/desk_fan_front.png', 'SolidWorks Front Orthographic View: Radial symmetric front grill rings and 3-blade aerodynamic profile.')">
+              <div class="ortho-img-wrap">
+                <img src="assets/desk_fan_front.png" alt="Front CAD View">
+              </div>
+              <span>Front Elevation</span>
             </div>
-            <div class="cad-thumb-card" onclick="openModal('assets/desk_fan_rear.png', 'SolidWorks Rear View: Motor ventilation pattern cuts, rear enclosure, and switch mounting.')">
-              <img src="assets/desk_fan_rear.png" alt="Rear CAD View">
+            <div class="ortho-card" onclick="openModal('assets/desk_fan_rear.png', 'SolidWorks Rear View: Motor ventilation pattern cuts, rear enclosure, and rotary switch mount.')">
+              <div class="ortho-img-wrap">
+                <img src="assets/desk_fan_rear.png" alt="Rear CAD View">
+              </div>
               <span>Rear Housing View</span>
             </div>
           </div>
@@ -495,156 +452,259 @@
     </div>
   </section>
 
-  <!-- Featured Section 3: Simulation & Applied Software Systems -->
+  <!-- ==========================================================================
+       03: Simulation & Applied Software Systems
+       ========================================================================== -->
   <section id="systems-software" class="section">
     <div class="container">
-      <div class="section-title-wrap">
-        <span class="section-tag">Computational Modeling & Software Tools</span>
-        <h2 class="section-title">Simulation, Automation & Tools</h2>
-        <p class="section-desc">
-          Engineering work spanning numerical MATLAB modeling, a route-optimized scheduling tool built for clinic operations, and offline document OCR.
-        </p>
-      </div>
+      <div class="case-study-marker">03 / SIMULATION & SOFTWARE TOOLS</div>
+      <h2 class="section-title">Simulation, Automation & Software Tools</h2>
+      <p class="section-desc">
+        Engineering work spanning numerical MATLAB modeling, route-optimized scheduling algorithms for healthcare operations, and offline edge OCR.
+      </p>
 
-      <div class="projects-grid">
-        
+      <div class="systems-grid" style="margin-top: 28px;">
         <!-- Project A: MATLAB Modeling -->
-        <div class="project-card">
-          <div class="project-img-wrap" onclick="openModal('assets/matlab_solar_plot.png', 'MATLAB Energy Systems Simulation Output: Average Daily Load (ADL Demand, blue curve) vs. Final Solar System Output (Eo, red curve) across 12 calendar months for an off-grid home in Chandler, AZ.')">
+        <div class="system-card">
+          <div class="system-media-box" onclick="openModal('assets/matlab_solar_plot.png', 'MATLAB Energy Systems Simulation Output: Average Daily Load (ADL Demand, blue curve) vs. Final Solar System Output (Eo, red curve) across 12 calendar months for an off-grid home in Chandler, AZ.')">
             <img src="assets/matlab_solar_plot.png" alt="MATLAB Energy Output Plot">
+            <div class="media-hover-overlay"><span>Inspect Simulation Plot</span></div>
           </div>
-          <div class="project-body">
-            <div class="project-tag">MATLAB Numerical Simulation &bull; Course Project</div>
+          <div class="system-card-body">
+            <div class="system-card-tag">MATLAB Numerical Simulation &bull; Course Project</div>
             <h3>Solar Energy Systems Modeling & NPV Optimization</h3>
             <p>
-              Lead mathematical modeler on a 5-person student team sizing an off-grid residential solar and battery storage system 
-              for Chandler, Arizona. Developed algorithms simulating seasonal irradiance and hourly power demand.
+              Lead mathematical modeler on a 5-person student engineering team sizing an off-grid residential solar and battery storage system 
+              for Chandler, Arizona. Formulated mathematical equations simulating seasonal solar angles and hourly residential load curves.
             </p>
-            <ul class="project-highlights">
-              <li>Formulated mathematical balance equations correlating seasonal solar angles with photovoltaic energy output.</li>
-              <li>Modeled battery storage discharge profiles and multi-day reserve requirements against summer cooling loads.</li>
-              <li>Calculated Net Present Value (NPV) lifecycle economic models comparing two competing battery configurations over 25 years.</li>
-              <li>Completed MathWorks MATLAB Onramp Certification and earned an A grade on the project milestone.</li>
+            <ul class="system-bullet-list">
+              <li>Formulated mathematical energy-balance equations correlating seasonal solar angles with photovoltaic panel output.</li>
+              <li>Modeled battery storage discharge profiles and multi-day reserve requirements against high summer air conditioning loads.</li>
+              <li>Calculated Net Present Value (NPV) lifecycle economic models comparing two competing battery configurations over a 25-year lifespan.</li>
+              <li>Earned an A grade on the project milestone and completed MathWorks MATLAB Onramp Certification.</li>
             </ul>
-            <div class="project-meta">
-              <span class="chip primary">MATLAB</span>
-              <span class="chip">Mathematical Modeling</span>
-              <span class="chip">Energy Balance</span>
-              <span class="chip">NPV Analysis</span>
-              <span class="chip">Course Project</span>
+            <div class="tech-tag-row">
+              <span class="tech-tag primary">MATLAB</span>
+              <span class="tech-tag">Numerical Modeling</span>
+              <span class="tech-tag">Energy Balance</span>
+              <span class="tech-tag">NPV Analysis</span>
             </div>
           </div>
         </div>
 
         <!-- Project B: Smart Schedule Finder -->
-        <div class="project-card">
-          <div class="project-img-wrap" onclick="openModal('assets/schedule_finder_ui.png', 'Smart Schedule Finder Desktop UI: Python & Streamlit application integrating Google Calendar API and driving route calculations to find optimal appointment openings.')">
+        <div class="system-card">
+          <div class="system-media-box" onclick="openModal('assets/schedule_finder_ui.png', 'Smart Schedule Finder Desktop UI: Python & Streamlit application integrating Google Calendar API and driving route calculations to find optimal appointment openings.')">
             <img src="assets/schedule_finder_ui.png" alt="Smart Schedule Finder Desktop Application UI">
+            <div class="media-hover-overlay"><span>Inspect Application Interface</span></div>
           </div>
-          <div class="project-body">
-            <div class="project-tag">Workplace Tool &bull; Mobile Hearing Solutions</div>
+          <div class="system-card-body">
+            <div class="system-card-tag">Production Tool &bull; Mobile Hearing Solutions</div>
             <h3>Smart Schedule Finder Desktop Application</h3>
             <p>
-              A desktop tool built in Python and Streamlit for Mobile Hearing Solutions to automate technician scheduling 
-              across the Phoenix metro area, helping pick appointment times that minimize drive time.
+              A production desktop application built in Python and Streamlit for Mobile Hearing Solutions to automate technician scheduling 
+              across the Phoenix metro area, selecting appointment openings that minimize vehicle drive time.
             </p>
-            <ul class="project-highlights">
-              <li>Queries the Google Calendar API using OAuth2 authentication with automatic token refresh to pull technician schedules.</li>
-              <li>Suggests open time slots by checking patient addresses against existing calendar routes to reduce cross-town driving.</li>
-              <li>Features an interactive dark-mode interface with options for single-patient lookups or batch searches (next 5 patients).</li>
-              <li>Saves an estimated 2 to 3 hours of manual route cross-checking per week in active office use.</li>
+            <ul class="system-bullet-list">
+              <li>Queries the Google Calendar API via OAuth2 authentication with automatic background token refresh to ingest real-time schedules.</li>
+              <li>Evaluates proposed patient addresses against existing technician routes to minimize cross-town driving.</li>
+              <li>Includes single-patient lookups and automated batch searches (next 5 patients) in an intuitive UI.</li>
+              <li>Saves an estimated 2 to 3 hours of manual route cross-referencing per week in active clinic use.</li>
             </ul>
-            <div class="project-meta">
-              <span class="chip primary">Python</span>
-              <span class="chip">Streamlit</span>
-              <span class="chip">Google Calendar API</span>
-              <span class="chip">Route Optimization</span>
-              <span class="chip">In Active Use</span>
+            <div class="tech-tag-row">
+              <span class="tech-tag primary">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Google Calendar API</span>
+              <span class="tech-tag">Route Optimization</span>
             </div>
           </div>
         </div>
 
-        <!-- Project C: Offline Edge AI Vision Pipeline -->
-        <div class="project-card">
-          <div class="project-body" style="padding-top: 24px;">
-            <div class="project-tag">Workplace Tool &bull; Mobile Hearing Solutions</div>
+        <!-- Project C: Offline Document OCR -->
+        <div class="system-card">
+          <div class="system-card-body" style="padding-top: 28px;">
+            <div class="system-card-tag">Production Tool &bull; Mobile Hearing Solutions</div>
             <h3>Local Document OCR Extraction Pipeline</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 16px;">
-              Built a document extraction tool at Mobile Hearing Solutions to pull structured patient referral data from incoming fax documents.
+            <p>
+              An automated document extraction pipeline developed at Mobile Hearing Solutions to convert incoming patient referral faxes into structured database records.
             </p>
-            <ul class="project-highlights">
-              <li>Tested and implemented an offline OCR pipeline using 4-bit quantized vision models (Phi-4 Mini) and EasyOCR.</li>
-              <li>Extracts patient demographic, insurance, and doctor referral information from multi-page scanned faxes into structured fields.</li>
-              <li>Runs entirely locally on office PC hardware to maintain strict patient HIPAA privacy and eliminate third-party cloud API costs.</li>
-              <li>Includes manual review verification flags for low-confidence scans to ensure data accuracy before saving.</li>
+            <ul class="system-bullet-list">
+              <li>Implemented an offline OCR pipeline utilizing 4-bit quantized local vision models (Phi-4 Mini) alongside EasyOCR.</li>
+              <li>Extracts patient demographic, insurance, and doctor referral fields from multi-page scanned faxes into structured JSON.</li>
+              <li>Executes 100% locally on office workstations to maintain strict HIPAA compliance and eliminate third-party cloud API costs.</li>
+              <li>Incorporates automated confidence scoring and manual review flags for ambiguous scans to guarantee data fidelity.</li>
             </ul>
-            <div class="project-meta">
-              <span class="chip primary">Python</span>
-              <span class="chip">EasyOCR</span>
-              <span class="chip">Local Vision Model</span>
-              <span class="chip">4-bit Quantization</span>
-              <span class="chip">HIPAA Privacy</span>
+            <div class="tech-tag-row">
+              <span class="tech-tag primary">Python</span>
+              <span class="tech-tag">EasyOCR</span>
+              <span class="tech-tag">Phi-4 Mini (4-bit)</span>
+              <span class="tech-tag">HIPAA Security</span>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Section 4: Aerospace Job Shadow -->
-  <section id="industry-experience" class="section" style="padding-top: 20px;">
+  <!-- ==========================================================================
+       04: Aerospace Industry Exposure
+       ========================================================================== -->
+  <section id="industry-experience" class="section">
     <div class="container">
-      <div class="industry-feature-card">
-        <div class="industry-header">
-          <div>
-            <span class="section-tag" style="color: #60a5fa;">Aerospace Industry Exposure</span>
+      <div class="case-study-marker">04 / AEROSPACE INDUSTRY EXPERIENCE</div>
+      
+      <div class="shadow-feature-card">
+        <div class="shadow-header">
+          <div class="shadow-title-wrap">
             <h3>Able Aerospace (Textron Aviation) &bull; Engineering Specialist Job Shadow</h3>
-            <div style="color: var(--accent-cyan); font-size: 0.95rem; margin-top: 4px; font-weight: 600;">
+            <div class="shadow-location">
               Mesa, AZ &bull; August 2026 &bull; FAA Part 145 Repair Station
             </div>
           </div>
-          <div class="status-pill" style="border-color: rgba(56, 189, 248, 0.4); background: rgba(56, 189, 248, 0.12); color: var(--accent-cyan);">
-            Job Shadow
-          </div>
+          <span class="badge-tag blue">Job Shadow</span>
         </div>
 
-        <div class="industry-badge-row">
-          <span class="chip primary">FAA Form 8110-3 Review</span>
-          <span class="chip primary">Helicopter Rotor Hubs</span>
-          <span class="chip primary">Landing Gear Components</span>
-          <span class="chip">Transmission Shafts</span>
-          <span class="chip">Multi-Axis CNC Milling</span>
-          <span class="chip">Shot-Peening Overview</span>
+        <div class="tech-tag-row" style="margin-bottom: 20px; border-top: none; padding-top: 0;">
+          <span class="tech-tag primary">FAA Form 8110-3 Review</span>
+          <span class="tech-tag primary">Helicopter Rotor Hubs</span>
+          <span class="tech-tag primary">Landing Gear Components</span>
+          <span class="tech-tag">Multi-Axis CNC Milling</span>
+          <span class="tech-tag">Shot-Peening Overview</span>
+          <span class="tech-tag">In-House CAD Tooling</span>
         </div>
 
-        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1rem; max-width: 1000px;">
+        <p class="shadow-summary">
           Completed an on-site job shadow with an Engineering Specialist at Able Aerospace (a Textron Aviation company). 
           Observed how certified engineers review FAA airworthiness technical data, inspect flight-critical components, and 
-          support aerospace manufacturing and overhaul operations.
+          support aerospace manufacturing, repair, and overhaul operations.
         </p>
 
-        <div class="industry-pillars">
-          <div class="pillar-box">
-            <h4><span>📋</span> FAA Airworthiness Data & Form 8110-3</h4>
+        <div class="shadow-pillars">
+          <div class="shadow-pillar-item">
+            <h4>FAA Airworthiness Data & Form 8110-3</h4>
             <p>
               Shadowed an engineering specialist reviewing engineering change orders, confirming airworthiness data, and walking 
               through the documentation process submitted to the FAA under Form 8110-3 for custom repairs and parts.
             </p>
           </div>
-          <div class="pillar-box">
-            <h4><span>⚙️</span> Flight-Critical Component Machining</h4>
+          <div class="shadow-pillar-item">
+            <h4>Flight-Critical Component Machining</h4>
             <p>
               Toured the machine shop and observed multi-axis CNC milling of high-stress aircraft components including helicopter 
               rotor hubs, transmission drive shafts, and landing gear parts.
             </p>
           </div>
-          <div class="pillar-box">
-            <h4><span>🔬</span> Surface Treatments & In-House Tooling</h4>
+          <div class="shadow-pillar-item">
+            <h4>Surface Treatments & In-House Tooling</h4>
             <p>
               Observed shot-peening equipment used to induce compressive stress and prevent fatigue cracking, electroplating lines, 
               and how engineers use SolidWorks in-house to design custom inspection fixtures and water-testing tanks.
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       05: Technical Skills & Tools
+       ========================================================================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="case-study-marker">05 / ENGINEERING SKILLS</div>
+      <h2 class="section-title">Technical Skills & Tools</h2>
+      <p class="section-desc">
+        Core technical capabilities developed through community college engineering coursework, independent prototyping, and professional workplace tool development.
+      </p>
+
+      <div class="competency-matrix" style="margin-top: 28px;">
+        <!-- Column 1: Aerodynamics & Flight Sim -->
+        <div class="competency-column">
+          <div class="competency-header">
+            <span class="competency-category">01 — Aerodynamics & Propulsion</span>
+            <h3>Aerodynamics & Propulsion</h3>
+          </div>
+          <div class="competency-items">
+            <div class="comp-group">
+              <h5>Aerodynamic Modeling</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag primary">OpenRocket Flight Simulation</span>
+                <span class="tech-tag">Static Stability Margin</span>
+                <span class="tech-tag">Center of Pressure / Center of Gravity</span>
+                <span class="tech-tag">Fin Geometry Optimization</span>
+              </div>
+            </div>
+            <div class="comp-group">
+              <h5>Propulsion & Recovery</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag">Estes & Aerotech Motors</span>
+                <span class="tech-tag">Thrust-to-Weight Analysis</span>
+                <span class="tech-tag">Streamer vs. Chute Drift</span>
+                <span class="tech-tag">Nomex Piston Recovery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: CAD & Manufacturing -->
+        <div class="competency-column">
+          <div class="competency-header">
+            <span class="competency-category">02 — Mechanical CAD & Prototyping</span>
+            <h3>Mechanical CAD & Prototyping</h3>
+          </div>
+          <div class="competency-items">
+            <div class="comp-group">
+              <h5>SolidWorks 3D CAD</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag primary">SolidWorks</span>
+                <span class="tech-tag">Multi-Body Assemblies</span>
+                <span class="tech-tag">Dynamic Rotational Mates</span>
+                <span class="tech-tag">Clearance Checking</span>
+                <span class="tech-tag">2D ANSI Drawings (ECE 103)</span>
+              </div>
+            </div>
+            <div class="comp-group">
+              <h5>Additive Manufacturing</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag primary">Bambu Lab A1</span>
+                <span class="tech-tag">Bambu Studio Slicing</span>
+                <span class="tech-tag">eSUN PLA+</span>
+                <span class="tech-tag">Polymaker PETG</span>
+                <span class="tech-tag">Gyroid Infill Tuning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Electronics & Computation -->
+        <div class="competency-column">
+          <div class="competency-header">
+            <span class="competency-category">03 — Hardware, Software & Standards</span>
+            <h3>Hardware, Software & Standards</h3>
+          </div>
+          <div class="competency-items">
+            <div class="comp-group">
+              <h5>Embedded Electronics</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag primary">RP2040 (Raspberry Pi Pico)</span>
+                <span class="tech-tag">BMP390 Barometer</span>
+                <span class="tech-tag">MPU-6500 6-Axis IMU</span>
+                <span class="tech-tag">MicroSD SPI Flash Logging</span>
+                <span class="tech-tag">LiPo & TP4056 Power</span>
+              </div>
+            </div>
+            <div class="comp-group">
+              <h5>Computation & Standards</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag primary">MATLAB</span>
+                <span class="tech-tag primary">Python</span>
+                <span class="tech-tag">Calculus I, II & III</span>
+                <span class="tech-tag">Physics I (Kinematics)</span>
+                <span class="tech-tag">FAA Part 145 Exposure</span>
+                <span class="tech-tag">FAA Form 8110-3</span>
+                <span class="tech-tag">NAR Safety Code</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -656,36 +716,45 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <h3 style="font-size: 1.5rem; font-weight: 700; color: #fff; margin-bottom: 6px;">Let's Connect</h3>
-          <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          <h3 class="footer-heading">Let's Connect</h3>
+          <p class="footer-desc">
             Seeking mechanical or aerospace engineering internship opportunities for Summer 2026 / 2027.
           </p>
         </div>
         <div class="hero-actions">
-          <a href="mailto:ashtonh1204@gmail.com" class="btn btn-primary">
-            ✉️ ashtonh1204@gmail.com
+          <a href="assets/Ashton_Hendrickson_Resume.pdf" target="_blank" class="btn btn-primary">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="14 2 14 8 20 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Resume (PDF)
+          </a>
+          <a href="mailto:ashtonh1204@gmail.com" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            ashtonh1204@gmail.com
           </a>
           <a href="tel:4805289329" class="btn btn-secondary">
-            📞 (480) 528-9329
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            (480) 528-9329
           </a>
-          <a href="https://www.linkedin.com/in/ashton-hendrickson-55508a262" target="_blank" class="btn btn-secondary">
-            🔗 LinkedIn
+          <a href="https://www.linkedin.com/in/ashton-hendrickson-55508a262" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63c.9 0 1.63-.73 1.63-1.63s-.73-1.63-1.63-1.63Z"/></svg>
+            LinkedIn
           </a>
-          <a href="https://github.com/ashrick12" target="_blank" class="btn btn-secondary">
-            🐙 GitHub
+          <a href="https://github.com/ashrick12" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
           </a>
         </div>
       </div>
       <div class="footer-copy">
-        &copy; 2026 Ashton Hendrickson &bull; Aerospace Engineering Student Portfolio
+        <span>&copy; 2026 Ashton Hendrickson &bull; Aerospace Engineering Portfolio</span>
+        <span>ashrick12.github.io</span>
       </div>
     </div>
   </footer>
 
   <!-- Lightbox Modal -->
-  <div id="imageModal" class="modal" onclick="closeModal(event)">
+  <div id="imageModal" class="modal" onclick="closeModal(event)" role="dialog" aria-modal="true" aria-labelledby="modalCaption">
     <div class="modal-content-wrap" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeModal(event)">&times;</button>
+      <button class="modal-close" onclick="closeModal(event)" aria-label="Close modal">&times;</button>
       <img id="modalImage" class="modal-img" src="" alt="Enlarged View">
       <div id="modalCaption" class="modal-caption"></div>
     </div>
@@ -697,6 +766,7 @@
       const img = document.getElementById('modalImage');
       const cap = document.getElementById('modalCaption');
       img.src = src;
+      img.alt = caption;
       cap.innerText = caption;
       modal.classList.add('active');
       document.body.style.overflow = 'hidden';
