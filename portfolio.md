@@ -1,8 +1,7 @@
 # Ashton Hendrickson &mdash; Aerospace Engineering Portfolio
 
-> **Aerospace Engineering Student &bull; CAD, Flight Simulation & Prototyping**  
-> **GPA:** 3.711 / 4.0 &bull; **Honors:** Member, Phi Theta Kappa National Honor Society  
-> **Institution:** Chandler-Gilbert Community College (Engineering Transfer) &rarr; Transferring to **Arizona State University (ASU)** (B.S. Aerospace Engineering &bull; Astronautics Track)  
+> **Aerospace Engineering Student &bull; CAD, Flight Simulation & Additive Prototyping**  
+> **Education:** Chandler-Gilbert Community College &rarr; Transferring to **Arizona State University (ASU)** (B.S. Aerospace Engineering &bull; Astronautics Track)  
 > **Contact:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com) &bull; [LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [GitHub](https://github.com/ashrick12) &bull; [Live Website](https://ashrick12.github.io/)
 
 ---
@@ -12,9 +11,9 @@
 Aerospace Engineering transfer student with practical hands-on experience in **SolidWorks 3D CAD**, **OpenRocket flight simulation**, **Bambu Lab 3D printing**, and **Python automation**. Currently designing and prototyping a custom scratch-built sounding rocket while working as a Technical Assistant at Mobile Hearing Solutions and preparing to transfer to Arizona State University.
 
 ### Key Highlights
-- **3.711 Cumulative GPA** (Phi Theta Kappa National Honor Society; A's in Calculus I & II, Physics I Kinematics).
 - **1.49 cal Static Stability Margin** in OpenRocket for custom in-progress sounding rocket airframe.
-- **10-Part Constrained SolidWorks Assembly** with dynamic rotational mates and 2D ANSI manufacturing drawings (ECE 103 &mdash; Grade A).
+- **10-Part Constrained SolidWorks Assembly** with dynamic rotational mates and 2D ANSI manufacturing drawings.
+- **Additive Prototyping:** Direct-drive 3D printing of thin-wall aerodynamic components in eSUN PLA+ and high-temperature motor mounts in Polymaker PETG.
 - **Aerospace Job Shadow at Able Aerospace (Textron Aviation)** observing FAA airworthiness data confirmation (Form 8110-3) and dynamic flight component manufacturing.
 - **Clinic Automation Tools:** Developed a Python route-optimization scheduling tool and an offline edge OCR pipeline for healthcare operations.
 
@@ -92,7 +91,7 @@ Hands-on launch experience with commercial kits (Alpha 3 and Hi-Flier) at Freest
 
 ## 02 / Mechanical Design: 10-Part SolidWorks Desk Fan Assembly
 
-**Role:** Mechanical CAD Designer &bull; **Course:** ECE 103 (Grade A) &bull; **Tool:** SolidWorks 3D CAD
+**Role:** Mechanical CAD Designer &bull; **Discipline:** Parametric Design &bull; **Tool:** SolidWorks 3D CAD
 
 ![Desk Fan CAD Poster](assets/desk_fan_poster.png)
 
@@ -111,15 +110,15 @@ Hands-on launch experience with commercial kits (Alpha 3 and Hi-Flier) at Freest
 ## 03 / Simulation & Software Tools
 
 ### 1. Solar Energy Systems Modeling & NPV Optimization (MATLAB)
-**Role:** Lead Mathematical Modeler &bull; **Course Project** &bull; **Tool:** MATLAB
+**Role:** Lead Mathematical Modeler &bull; **Domain:** Renewable Energy Systems &bull; **Tool:** MATLAB
 
 ![MATLAB Energy Simulation Plot](assets/matlab_solar_plot.png)
 
-- Served as primary mathematical modeler on a 5-person engineering student team sizing an off-grid residential solar and battery storage system for Chandler, Arizona.
+- Served as primary mathematical modeler on a 5-person engineering team sizing an off-grid residential solar and battery storage system for Chandler, Arizona.
 - Formulated mathematical energy-balance equations correlating seasonal solar angles with photovoltaic panel output.
 - Modeled battery storage discharge profiles and multi-day reserve requirements against summer cooling loads.
 - Calculated Net Present Value (NPV) lifecycle economic models comparing two competing battery configurations over a 25-year lifespan.
-- Completed MathWorks MATLAB Onramp Certification and earned an A grade on the project milestone.
+- Completed MathWorks MATLAB Onramp Certification and validated multi-day storage balance models.
 
 ---
 
@@ -162,7 +161,7 @@ Hands-on launch experience with commercial kits (Alpha 3 and Hi-Flier) at Freest
 | :--- | :--- |
 | **01 — Aerodynamics & Propulsion** | OpenRocket Flight Simulation, Center of Pressure / Center of Gravity, Static Stability Margin Tuning, Fin Geometry Optimization, Motor Sizing (Estes / Aerotech), Streamer vs. Parachute Drift Analysis, Nomex Piston Recovery |
 | **02 — Mechanical CAD & Prototyping** | SolidWorks (Parametric Part Modeling, Multi-Body Assemblies, Dynamic Rotational Mates, Clearance Verification, 2D ANSI Manufacturing Drawings), Bambu Lab A1, Bambu Studio STEP Slicing, eSUN PLA+, Polymaker PETG, Gyroid Infill Optimization |
-| **03 — Hardware, Software & Standards** | Raspberry Pi Pico (RP2040), BMP390 Barometer, MPU-6500 6-Axis IMU, SPI MicroSD Flash Logging, LiPo Battery & TP4056 Power, MATLAB, Python, Calculus I-III, Kinematics (Physics I), FAA Part 145 Exposure, FAA Form 8110-3, NAR Safety Code |
+| **03 — Hardware, Software & Standards** | Raspberry Pi Pico (RP2040), BMP390 Barometer, MPU-6500 6-Axis IMU, SPI MicroSD Flash Logging, LiPo Battery & TP4056 Power, MATLAB, Python, Kinematics & Dynamics, Numerical Modeling, NPV Analysis, FAA Part 145 Exposure, FAA Form 8110-3, NAR Safety Code |
 
 ---
 

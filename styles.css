@@ -188,13 +188,6 @@ body::before {
   border: 1px solid var(--border-medium);
   box-shadow: var(--shadow-sm);
   flex-shrink: 0;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.hero-avatar:hover {
-  border-color: var(--border-bright);
-  transform: translateY(-1px);
 }
 
 .hero-name-wrap h1 {
@@ -232,7 +225,7 @@ body::before {
 /* Editorial Academic Path */
 .academic-path-row {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   gap: 8px;
   font-size: 0.88rem;
@@ -256,6 +249,17 @@ body::before {
   color: var(--text-primary);
 }
 
+.academic-grad {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-medium);
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  font-weight: 500;
+}
+
 .academic-badge {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -264,6 +268,30 @@ body::before {
   border: 1px solid rgba(56, 189, 248, 0.2);
   padding: 2px 7px;
   border-radius: var(--radius-xs);
+}
+
+.code-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  text-decoration: none;
+  padding: 5px 11px;
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: var(--radius-xs);
+  margin-top: 14px;
+  transition: var(--transition);
+  width: fit-content;
+}
+
+.code-link-btn:hover {
+  background: rgba(56, 189, 248, 0.12);
+  border-color: var(--accent-cyan);
+  transform: translateY(-1px);
 }
 
 /* Action Buttons */
