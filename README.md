@@ -1,7 +1,7 @@
 # Ashton Hendrickson 🚀
 **Aerospace Engineering Student | CAD • Flight Simulation • Automation**
 
-[Portfolio](https://ashrick12.github.io/) • [Resume (PDF)](assets/Ashton_Hendrickson_Resume.pdf) • [LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) • [Email](mailto:ashtonh1204@gmail.com)
+[Portfolio](https://ashrick12.github.io/) • [LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) • [Email](mailto:ashtonh1204@gmail.com)
 
 ---
 
@@ -171,7 +171,7 @@ Eliminated third-party OCR API fees while keeping sensitive patient healthcare d
 
 ```text
 .
-├── assets/             # CAD renders, flight media, circuit photos, and resume
+├── assets/             # CAD renders, flight media, and circuit photos
 ├── index.html          # Interactive dark-mode web portfolio
 ├── styles.css          # Modern engineering stylesheet
 ├── portfolio.md        # Comprehensive technical dossier (markdown)
@@ -184,4 +184,3 @@ Eliminated third-party OCR API fees while keeping sensitive patient healthcare d
 - **LinkedIn:** [linkedin.com/in/ashton-hendrickson-55508a262](https://www.linkedin.com/in/ashton-hendrickson-55508a262)
 - **GitHub:** [github.com/ashrick12](https://github.com/ashrick12)
 - **Portfolio:** [ashrick12.github.io](https://ashrick12.github.io/)
-- **Resume:** [Download PDF](assets/Ashton_Hendrickson_Resume.pdf)
