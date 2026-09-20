@@ -170,6 +170,51 @@
         The rocket completed a clean flight, deployed its parachute near apogee, and was recovered intact on the grass with no visible structural damage.
       </p>
 
+      <!-- Maiden Flight Video Feature Banner -->
+      <div class="flight-video-banner" id="flight-video">
+        <div class="flight-video-inner">
+          <div class="flight-video-player-wrap">
+            <video controls playsinline preload="metadata" poster="assets/rocket_flight_midlaunch.jpg" class="flight-video-element">
+              <source src="assets/rocket_test_flight_1.mp4" type="video/mp4">
+              Your browser does not support the video tag. <a href="assets/rocket_test_flight_1.mp4">Download the test flight MP4</a>.
+            </video>
+          </div>
+          <div class="flight-video-info">
+            <div class="flight-video-badge">
+              <span class="status-dot-green"></span>
+              MAIDEN FLIGHT FOOTAGE &bull; SEPTEMBER 19, 2026
+            </div>
+            <h3 class="flight-video-title">Maiden Test Flight Recording</h3>
+            <p class="flight-video-desc">
+              Uncut handheld recording of the maiden flight at Freestone Park under Estes D12-3 power. 
+              The rocket launched from a 5-ft steel rod angled 5&deg; into the ~7 mph breeze with an empty payload bay to focus on basic vehicle flight performance. 
+              The vehicle flew straight off the pad, reached apogee at ~4.79 s, deployed the 24&quot; parachute via motor ejection charge at ~5.0 s, and completed a 27.06 s flight before landing intact on the turf with all fins and motor retention secure.
+            </p>
+            <div class="flight-video-metrics-list">
+              <div class="flight-video-metric">
+                <span class="fvm-val">27.06 s</span>
+                <span class="fvm-lbl">Flight Duration</span>
+              </div>
+              <div class="flight-video-metric">
+                <span class="fvm-val">Estes D12-3</span>
+                <span class="fvm-lbl">Motor Power</span>
+              </div>
+              <div class="flight-video-metric">
+                <span class="fvm-val">5&deg; Into Wind</span>
+                <span class="fvm-lbl">Pad Launch Angle</span>
+              </div>
+              <div class="flight-video-metric">
+                <span class="fvm-val">Intact</span>
+                <span class="fvm-lbl">Touchdown State</span>
+              </div>
+            </div>
+            <p class="flight-video-note">
+              <strong>Camera note:</strong> Ambient ground temperature reached ~100&deg;F during staging, causing our primary stationary tripod camera to thermal throttle and shut down prior to ignition. This uncut tracking video was recorded on a handheld phone from behind the flight line.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <!-- Prominent SolidWorks CAD Architecture Banner -->
       <div class="cad-hero-banner" onclick="openModal('assets/rocket_cad_exploded.png', 'SolidWorks CAD Model: Complete vehicle stack assembly from 24mm motor mount (left), BT-80 lower airframe tube, 3D-printed payload carrier with integrated coupler shoulders (center), recovery chamber, and ogive nose cone (right).')">
         <div class="hero-visual-meta">
@@ -446,7 +491,7 @@
             <div class="flight-card-title">First Test Flight Liftoff</div>
             <div class="flight-card-desc">Handheld phone recording capturing liftoff and initial ascent from the 5-ft rod under Estes D12-3 power at Freestone Park.</div>
             <div style="margin-top: 10px; font-size: 0.76rem; font-family: var(--font-mono); color: var(--accent-cyan); display: flex; align-items: center; gap: 6px;" onclick="event.stopPropagation();">
-              <a href="assets/rocket_test_flight_1.mp4" target="_blank" style="color: inherit; text-decoration: none;"><span>Watch Full 39s Flight Video</span> &rarr;</a>
+              <a href="#flight-video" style="color: inherit; text-decoration: none;"><span>Play Full 39s Video in Embedded Player</span> &uarr;</a>
             </div>
           </div>
         </div>

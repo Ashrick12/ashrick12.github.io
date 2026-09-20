@@ -61,6 +61,7 @@ ashrick12.github.io/
 │   ├── rocket_d12_sim_5deg.png      # OpenRocket 5-degree tilt simulation table
 │   ├── rocket_drift_analysis.png    # Freestone Park 35m drift radius trajectory safety map
 │   ├── rocket_first_flight.gif      # Maiden test flight liftoff tracking clip at Freestone Park
+│   ├── rocket_flight_midlaunch.jpg  # Mid-launch cover frame for test flight video
 │   ├── rocket_hardware_haul.png     # Recovery & launch ground support equipment
 │   ├── rocket_launch.gif            # Subscale test flight launch liftoff gif
 │   ├── rocket_launch_far.gif        # High-altitude tracking footage

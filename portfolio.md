@@ -32,7 +32,8 @@ Aerospace Engineering transfer student with hands-on experience in **SolidWorks 
 
 After flying commercial Estes model rocket kits and running into practical issues like burned wadding and wind drift, I designed, simulated, built, and launched a 36.4" scratch-built model rocket from the ground up.
 
-> **Current Status:** On September 19, 2026, I completed the maiden test flight on an Estes D12-3 motor at Freestone Park, launching with an empty payload bay to focus the test on basic vehicle flight performance. The rocket completed a clean flight, deployed its parachute near apogee, and was recovered intact on the grass with no visible structural damage. Flight time was 27.06 s compared to 26.8 s in the 5° OpenRocket simulation. Work is now focused on integrating the onboard flight computer (RP2040 + BMP390 + MPU-6500) for Flight 2.
+> **Current Status:** On September 19, 2026, I completed the maiden test flight on an Estes D12-3 motor at Freestone Park, launching with an empty payload bay to focus the test on basic vehicle flight performance. The rocket completed a clean flight, deployed its parachute near apogee, and was recovered intact on the grass with no visible structural damage. Flight time was 27.06 s compared to 26.8 s in the 5° OpenRocket simulation. Work is now focused on integrating the onboard flight computer (RP2040 + BMP390 + MPU-6500) for Flight 2.  
+> **Flight Video:** Uncut 39-second handheld test flight recording ([mid-launch cover](assets/rocket_flight_midlaunch.jpg)) available at [rocket_test_flight_1.mp4](assets/rocket_test_flight_1.mp4).
 
 ### Vehicle Specifications
 
@@ -155,7 +156,7 @@ The rocket had a clean liftoff from the rod, a stable ascent, deployed its parac
 | Airframe on Launch Rod | Maiden Flight Liftoff | Recovered Intact on Grass |
 | :---: | :---: | :---: |
 | ![Airframe on Launch Rod](assets/rocket_launchpad_freestone.jpg) | ![Maiden Flight Liftoff](assets/rocket_first_flight.gif) | ![Rocket Recovered on Grass](assets/rocket_recovery_touchdown.jpg) |
-| *View looking up along the airframe and launch rod from the blast deflector.* | *Handheld liftoff clip ([Watch full 39s video](assets/rocket_test_flight_1.mp4)).* | *Rocket recovered intact on grass.* |
+| *View looking up along the airframe and launch rod from the blast deflector.* | *Handheld liftoff clip ([mid-launch photo](assets/rocket_flight_midlaunch.jpg) &bull; [full 39s video](assets/rocket_test_flight_1.mp4)).* | *Rocket recovered intact on grass.* |
 
 ##### 5° Angle OpenRocket Simulation vs. Observed Flight
 
