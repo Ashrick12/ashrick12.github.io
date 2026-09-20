@@ -1,105 +1,192 @@
-# 🚀 Ashton Hendrickson &mdash; Aerospace Engineering Student Portfolio
+# Ashton Hendrickson &mdash; Aerospace Engineering Portfolio
 
-> **Aerospace Engineering Student &bull; CAD, Flight Simulation & Prototyping**  
-> **GPA:** 3.711 / 4.0 &bull; **Honors:** Member, Phi Theta Kappa National Honor Society  
-> **Institution:** Chandler-Gilbert Community College (Engineering Transfer) &rarr; Transferring to **Arizona State University (ASU)** (B.S. Aerospace Engineering &bull; Astronautics Track)  
-> **Contact:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com) &bull; (480) 528-9329 &bull; [LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262) &bull; [GitHub](https://github.com/ashrick12) &bull; [Resume (PDF)](assets/Ashton_Hendrickson_Resume.pdf)
-
----
-
-## 👨‍💼 Profile Overview
-
-Aerospace Engineering transfer student with practical hands-on experience in **SolidWorks 3D CAD**, **OpenRocket 6-DOF aerodynamic simulation**, **Bambu Lab 3D printing**, and **Python automation**. Currently designing and prototyping a custom scratch-built sounding rocket while working as a Technical Assistant at Mobile Hearing Solutions and preparing to transfer to Arizona State University.
-
-### Key Highlights:
-- **3.71 Cumulative GPA** (Phi Theta Kappa National Honor Society; A's in Calculus I & II, Physics I Kinematics).
-- **1.49 cal Simulated Static Margin** in OpenRocket for custom in-progress sounding rocket airframe.
-- **10-Part Constrained SolidWorks Assembly** with dynamic rotational mates and 2D ANSI manufacturing drawings (ECE 103 — Grade A).
-- **Job Shadow at Able Aerospace (Textron Aviation)** observing FAA airworthiness data confirmation and CNC manufacturing.
-- **Clinic Automation Tools:** Developed a Python route-optimization scheduling tool and an offline document OCR pipeline.
+> **Aerospace Engineering Student &bull; CAD, Flight Dynamics & Additive Prototyping**  
+> **Education:** Chandler-Gilbert Community College &rarr; Transferring to **Arizona State University (ASU)** (B.S. Aerospace Engineering &bull; Astronautics Track)  
+> **Contact:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com) &bull; [LinkedIn](https://www.linkedin.com/in/ashton-hendrickson) &bull; [GitHub](https://github.com/ashrick12) &bull; [Live Website](https://ashrick12.github.io/)
 
 ---
 
-## 🛠️ Core Engineering Competencies
+## Profile Overview
 
-| Discipline | Key Technical Skills & Coursework |
-| :--- | :--- |
-| **Aerodynamics & Flight Sim** | OpenRocket 6-DOF Simulation, Center of Pressure (CP) / Center of Gravity (CG) Management, Static Stability Margin Tuning, Fin Geometry Sizing, Commercial Motor Curves (Estes/Aerotech) |
-| **Mechanical CAD (SolidWorks)** | SolidWorks (Part Modeling, Multi-Body Assemblies, Concentric & Rotational Mates, Clearance Verification, Parametric Surfacing, ANSI 2D Manufacturing Drawings) |
-| **Additive Manufacturing** | Bambu Lab A1 Direct-Drive, Slicing from STEP Models, eSUN PLA+ (Airframe Aerodynamics), Polymaker PETG (High-Temp Motor Mounts), Gyroid Infill Optimization |
-| **Embedded Hardware & Electronics** | Raspberry Pi Pico (RP2040), BMP390 Barometer, MPU-6500 6-Axis IMU, SPI MicroSD Flash Logging, LiPo Battery & TP4056 USB-C Charging, Breadboard Prototyping |
-| **Math & Simulation** | MATLAB for Engineers, Python, Calculus I, II & III, Physics I Kinematics, Energy Balance Equations, Net Present Value (NPV) Lifecycle Analysis |
-| **Industry Exposure & Standards** | FAA Part 145 Exposure, Form 8110-3 Review, Multi-Axis CNC Milling Observation, Shot-Peening Surface Treatment Overview, NAR Safety Code |
+![Ashton Hendrickson](assets/headshot.png)
+
+Aerospace Engineering transfer student with hands-on experience in **SolidWorks 3D CAD**, **OpenRocket flight simulation**, **Bambu Lab 3D printing**, and **Python automation**. I recently designed, built, and flew my first scratch-built sounding rocket, and I work as a Technical Assistant at Mobile Hearing Solutions while preparing to transfer to Arizona State University.
+
+### Key Highlights
+- **Completed First Test Flight:** Flew on an Estes D12-3 motor at Freestone Park with 27.06 s total flight time (+0.26 s off 5° OpenRocket sim); rocket recovered intact with no visible structural damage.
+- **1.60 cal Static Stability Margin:** Tuned Barrowman stability in OpenRocket across Estes D12-3 (maiden flight motor, 63.6 m apogee) and Aerotech F32T-6 mid-power motor (334 m / 1,095 ft apogee).
+- **Assembled 36.4" Sounding Rocket:** Custom BT-80 airframe with 309g measured empty mass (326g simulated dry mass with avionics allocation) and finished in gold livery.
+- **MicroPython Avionics Bench Testing:** Dual-core Raspberry Pi Pico (RP2040) breadboard setup tested with DHT and MPU-6500 sensors ahead of Flight 2 BMP390 barometer integration.
+- **10-Part Constrained SolidWorks Assembly:** Parametric desk fan with dynamic rotational mates, clearance verification, and 2D ANSI manufacturing drawings.
+- **Additive Prototyping & Caliper Tolerancing:** Bambu Lab A1 printing in eSUN PLA+ and Polymaker PETG; redesigned parts to match physical 65.5mm BT-80 airframe inner diameter.
+- **Aerospace Job Shadow at Able Aerospace (Textron Aviation):** Shadowed dynamic component overhaul observing FAA airworthiness data confirmation (Form 8110-3) and multi-axis CNC rotor machining.
+- **Clinic Automation Tools:** Developed a Python route-optimization scheduling tool and an offline edge OCR pipeline for healthcare operations.
 
 ---
 
-## 🚀 Independent Project: Scratch-Built Mid-Power Sounding Rocket (In Progress)
+## 01 / Aerospace Hardware: Scratch-Built Sounding Rocket
 
-**Status:** Actively in Design & Fabrication &bull; **Unlaunched**  
-**Tools & Materials:** SolidWorks 3D CAD, OpenRocket, Bambu Lab A1, eSUN PLA+, Polymaker PETG, Raspberry Pi Pico (RP2040)
+**Project Status:** First Test Flight Complete &bull; **Rocket Recovered Intact**  
+**Engineering Lifecycle:** 01 Design &rarr; 02 Simulation &rarr; 03 Fabrication &rarr; 04 Avionics &rarr; 05 Recovery &rarr; 06 Flight Testing (Flight 1 Complete &bull; Flight 2 Prep)  
+**Tools & Materials:** SolidWorks 3D CAD, OpenRocket, Bambu Lab A1, eSUN PLA+, Polymaker PETG, Raspberry Pi Pico (RP2040), MicroPython, 350 lb Braided Kevlar, JB-Weld Epoxy
 
-After flying commercial Estes model rocket kits and losing them to parachute drift and wadding burn, I decided to design, simulate, and build a custom mid-power rocket from scratch. 
+After flying commercial Estes model rocket kits and running into practical issues like burned wadding and wind drift, I designed, simulated, built, and launched a 36.4" scratch-built model rocket from the ground up.
 
-> **Current Project Status:** This project is actively in progress. The airframe geometry has been simulated in OpenRocket, key components are modeled in SolidWorks and 3D printed on my Bambu Lab A1, and a custom telemetry payload is currently being developed. The custom rocket has **not yet been launched**; it is being prepared for a future club launch in the Arizona desert.
+> **Current Status:** On September 19, 2026, I completed the maiden test flight on an Estes D12-3 motor at Freestone Park, launching with an empty payload bay to focus the test on basic vehicle flight performance. The rocket completed a clean flight, deployed its parachute near apogee, and was recovered intact on the grass with no visible structural damage. Flight time was 27.06 s compared to 26.8 s in the 5° OpenRocket simulation. Work is now focused on integrating the onboard flight computer (RP2040 + BMP390 + MPU-6500) for Flight 2.
 
-### Subsystem Breakdown:
+### Vehicle Specifications
 
-#### 1. 📐 SolidWorks CAD Airframe Architecture
-- Modeled a 2.6-inch diameter (BT-80) airframe assembly in SolidWorks housing a 24mm motor mount, payload carrier, and ogive nose cone.
-- Modeled the central **Payload Carrier** with integrated upper and lower coupler shoulders to eliminate separate parts.
-- Designed a **4-legged cross-arch anchor** on the bulkhead floor to distribute parachute shock tension across solid printed perimeters.
+| Specification | Value / Description | Engineering Context |
+| :--- | :--- | :--- |
+| **Total Length** | 36.4 in (92.4 cm) | Custom BT-80 modular airframe stack |
+| **Outer Diameter** | 2.60 in (66.0 mm) | Estes BT-80 body tube standard |
+| **Measured Inner Diameter** | 65.5 mm (2.58 in) | Caliper verified; +1.0mm over catalog, prompted CAD resize |
+| **Airframe Dry Mass (Measured)** | 309 g | Physical empty airframe on scale (no motor or payload) |
+| **Simulated Dry Mass w/ Avionics** | 326 g | OpenRocket model incorporating forward avionics allocation |
+| **Flight Mass (Estes D12-3)** | 370 g | Loaded liftoff mass for maiden test flight at Freestone Park |
+| **Flight Mass (Aerotech F32T-6)** | 390 g | Loaded liftoff mass for mid-power upgrade flight |
+| **Center of Gravity (CG)** | 23.86 in (from nose tip) | OpenRocket model with forward payload allocation |
+| **Center of Pressure (CP)** | 28.01 in (from nose tip) | Barrowman aerodynamic center of pressure |
+| **Static Stability Margin** | **1.60 cal** | Solidly within the 1.0–2.0 caliber passive stability window |
 
-![SolidWorks Exploded Assembly](assets/rocket_cad_exploded.png)
+### Engine Trade Study: Estes D12-3 vs. Aerotech F32T-6
 
-#### 2. 🎬 Preliminary Flight Tests (Commercial Estes Kits) & Lessons Learned
-Before designing the custom airframe, I launched commercial Estes kits (Alpha 3 and Hi-Flier) to gain practical flight experience:
-- **Flight 1 (Hi-Flier, A8-3 Motor, Freestone Park):** Flew straight and landed ~30 ft from the pad. Confirmed streamer recovery stays close compared to parachute drift.
-- **Flight 2 (Hi-Flier, C6-5 Motor):** Wadding burned out and caught fire in the mud, demonstrating the need for a flameproof Nomex recovery barrier.
-- **Alpha 3 (Crossroads Park):** Drifted away on a C-grade motor under a parachute, proving the need for careful motor sizing and launch rod length.
+| Propulsion Metric | Estes D12-3 (Test Flight 1) | Aerotech F32T-6 (Upgrade Target) |
+| :--- | :--- | :--- |
+| **Motor Classification** | Low-Power Black Powder (D Class) | Mid-Power Composite Propellant (F Class) |
+| **Total Impulse** | 20.0 N·s | 58.0 N·s |
+| **Simulated Apogee** | **63.6 m (209 ft)** | **334 m (1,095 ft)** |
+| **Max Velocity** | 28.8 m/s (64.4 mph) | 104 m/s (233 mph / Mach 0.31) |
+| **Max Acceleration** | 56.4 m/s² (5.75 G) | 140 m/s² (14.3 G) |
+| **Time to Apogee** | 3.86 s | 7.91 s |
+| **Flight Duration** | 15.3 s | 74.5 s |
+| **Ejection Delay** | 3 seconds (nominal) | 6 seconds (nominal) |
+| **Deployment Velocity** | 4.36 m/s | 6.84 m/s |
+| **Touchdown Velocity** | 5.65 m/s (24" chute) | 5.65 m/s (24" chute) |
+| **Nominal Wind Drift** | ~20 m (Freestone Park) | ~175 m (Desert Launch Site) |
 
-| Estes Hi-Flier Liftoff (Freestone Park) | High-Altitude Ascent Tracking | Custom Rocket OpenRocket Model |
-| :---: | :---: | :---: |
-| ![Pad Liftoff](assets/rocket_launch.gif) | ![High Altitude Tracking](assets/rocket_launch_far.gif) | ![OpenRocket Sim](assets/rocket_openrocket_model.png) |
+![OpenRocket Engine Comparison Table](assets/rocket_sim_comparison.png)
 
-#### 3. 🚀 Aerodynamic Simulation (OpenRocket)
-- In the initial OpenRocket simulation, stability was marginal (0.745 cal).
-- Redesigned the fin geometry (4.0" root chord, 4.0" span, 5.0" sweep length, 51.3° sweep angle) in aircraft birch plywood, shifting the Center of Pressure aft to 28.01" to achieve a simulated **1.49 calibers static margin** with zero dead nose weight.
-- Sized a 24" parachute for an estimated desert landing speed of **5.76 m/s** to protect printed parts on touchdown.
+---
+
+### SolidWorks CAD Mechanical Stack
+
+Modeled the complete vehicle stack assembly in SolidWorks housing a 24mm motor mount, BT-80 airframe tubes, 3D-printed modular payload carrier with integrated coupler shoulders and avionics sled bosses, recovery chamber, and an ogive nose cone.
+
+![SolidWorks Rocket CAD Assembly](assets/rocket_cad_exploded.png)
+
+---
+
+### Preliminary Commercial Kit Flight Tests & Failure Analysis
+
+Hands-on flight testing with commercial kits (Alpha 3 and Hi-Flier) at Freestone and Crossroads Parks directly established engineering requirements for the custom sounding rocket:
+- **Flight 1 (Hi-Flier, A8-3 Motor, Freestone Park):** Stable pad exit and straight ascent to ~400 ft, landing ~30 ft from pad. Confirmed low-drift recovery behavior in light surface winds.
+- **Flight 2 (Hi-Flier, C6-5 Motor):** Ejection wadding burned through and caught fire, proving standard wadding is inadequate and mandating a flame-resistant Nomex piston barrier.
+- **Alpha 3 (Crossroads Park):** Parachute drift carried vehicle off-bounds on a C-grade motor, demonstrating the critical need for trajectory dispersion modeling and field-specific drift envelopes.
+
+| Subscale Pad Liftoff | High-Altitude Optical Tracking | Passive Stability Model | Fully Assembled Rocket |
+| :---: | :---: | :---: | :---: |
+| ![Pad Liftoff](assets/rocket_launch.gif) | ![High Altitude Tracking](assets/rocket_launch_far.gif) | ![OpenRocket Sim](assets/rocket_openrocket_model.png) | ![Fully Assembled Gold Rocket](assets/rocket_assembled_gold.jpg) |
+| *Estes launch at Freestone Park.* | *Tracking optical ascent & drift.* | *OpenRocket stability model (1.60 cal).* | *36.4" airframe ready for pad.* |
+
+---
+
+### Subsystem Engineering Breakdown
+
+#### 1. Aerodynamic Simulation & Flight Dynamics
+- Re-engineered fin planform and mass distribution in OpenRocket to optimize static stability, placing the Center of Pressure at 28.01" safely behind the Center of Gravity at 23.86" for a **1.60 caliber static stability margin**.
+- Simulated the full trajectory profile for Test Flight 1 on an Estes D12-3 motor: 63.6 m (209 ft) apogee, 28.8 m/s peak velocity, and 5.65 m/s descent speed.
 
 ![OpenRocket Trajectory Plot](assets/rocket_trajectory_plot.png)
 
-#### 4. 🖨️ 3D Printing on Bambu Lab A1
-- Exported parts directly as STEP files into Bambu Studio to preserve continuous curves.
-- Printed the full-scale **Ogive Nose Cone** and **Payload Carrier** in eSUN PLA+ with gyroid infill.
-- Planning to print the aft 24mm motor mount and retention clips in heat-resistant Polymaker PETG to withstand motor heat.
+#### 2. Additive Manufacturing & Caliper Redesign (Bambu Lab A1)
+- Measured physical BT-80 airframe tubes with digital calipers and discovered a 65.5 mm inner diameter (1.0 mm larger than the 64.5 mm nominal catalog spec).
+- Re-toleranced both the payload coupler and motor mount in SolidWorks to ensure a precision friction fit without airframe slop, simultaneously reducing coupler mass to 38g and motor mount to 46g.
+- Sliced with gyroid infill in Bambu Studio and printed the ogive nose cone and payload bay in eSUN PLA+ on a textured PEI plate. Fabricated a custom 3D-printed D12 stopper ring.
 
 ![Printed Rocket Components](assets/rocket_printed_parts.jpg)
 
-#### 5. 🛰️ Avionics Telemetry (In Development)
-- Building a custom datalogger based on a **Raspberry Pi Pico (RP2040)**.
-- Integrates a **BMP390 barometer** for altitude tracking, an **MPU-6500 IMU** for acceleration/tilt, and an SPI MicroSD module to save flight data.
-- Hardware is purchased; sensor communication and datalogging code are currently being bench-tested in Python.
+#### 3. Embedded Avionics & Telemetry Bring-Up (RP2040)
+- Built the flight computer on a breadboard using a Raspberry Pi Pico running MicroPython. Validated clocking and serial communication using a DHT sensor loop, and wired up an MPU-6500 6-axis IMU to verify sensor polling.
+- The maiden test flight was launched with an empty payload bay to focus on basic vehicle flight performance. The next step is integrating a BMP390 precision barometer and MicroSD logger to record altitude and acceleration on Flight 2.
 
-![Flight Avionics Suite](assets/rocket_avionics_haul.png)
+![RP2040 MicroPython Telemetry Bring-Up](assets/rocket_pico_telemetry.jpg)
 
-#### 6. 🪂 Nomex Piston Recovery Design
-- Designed a middle-joint separation mechanism using a flameproof Nomex cloth piston to push out the parachute while protecting payload electronics from hot motor ejection gases.
-- Both airframe halves will remain tethered via a 12-foot shock cord in compliance with NAR safety guidelines.
+#### 4. High-Strength Shock Tether & Recovery Mechanics
+- Engineered to eliminate wadding burn-through experienced on earlier flights, incorporating a flame-resistant Nomex cloth piston designed to isolate recovery gear from hot ejection gases.
+- Replaced elastic cords with **9 feet of 350-lb braided Kevlar shock tether**, anchored directly to the motor mount centering ring and the payload coupler arch using high-temperature JB-Weld epoxy.
+- Sized a 24" ripstop nylon parachute for a controlled 5.65 m/s touchdown velocity.
 
 ![Hardware and Power](assets/rocket_hardware_haul.png)
 
+#### 5. Propulsion & Positive Mechanical Washer Retention
+- Designed a positive mechanical motor retention system replacing breakable plastic Z-clips with dual #6 steel machine screws and 3/8" zinc fender washers that overlap the motor casing rim.
+- Infused pre-threaded 3D-printed pilot holes with thin cyanoacrylate (CA) glue to chemically harden plastic internal threads against repeated high-torque clamp cycles.
+- Added a 3D-printed forward stopper ring to transmit motor thrust loads directly into the airframe structure.
+
+![Motor Mount Positive Washer Retention](assets/rocket_motor_mount_retained.jpg)
+
+#### 6. Payload Carrier CAD & Extraction Sled
+- Modeled the modular BT-80 payload carrier in SolidWorks with integrated upper and lower coupler shoulders to eliminate separate coupler tubes.
+- Integrated internal slide channels and mounting bosses for a pull-ribbon avionics sled, allowing rapid battery swap and USB-C MicroPython flashing without disassembling the vehicle.
+- Modeled a 4-legged shock cord anchor arch spanning the aft bulkhead to distribute parachute opening shock into the outer cylinder wall.
+
+![Payload Carrier CAD](assets/rocket_payload_cad.png)
+
+#### 7. Trajectory Drift & Range Safety Dispersion Analysis
+- Analyzed field boundaries and recovery dispersion at Freestone Park (360 &times; 240 m multi-use turf field).
+- Trajectory simulations with a 5° launch rod tilt into 7 mph ambient desert winds predict a nominal drift of ~20 m and a worst-case landing radius of **35 m (114 ft)**, safely inside the 120 m field boundary under the modeled conditions.
+
+![Freestone Park Trajectory Drift Radius Map](assets/rocket_drift_analysis.png)
+
+#### 8. Field Launch Operations & Range Protocol
+- Built a portable launch kit and followed safety procedures developed through preliminary flights at Freestone and Crossroads Parks.
+- Used an Estes Porta-Pad E with a 5-ft steel launch rod to ensure safe rod exit velocity and minimize weathercocking.
+- Completed the maiden test flight on an Estes D12-3 motor at Freestone Park, with plans for a higher-altitude flight under mid-power Aerotech F32T-6 propulsion at an NAR club launch.
+
+![Launch Prep](assets/ashton_rocket.jpg)
+
+#### 9. First Test Flight & Simulation Comparison (September 19, 2026)
+
+On September 19, 2026, I launched the rocket for the first time at Freestone Park in Gilbert, AZ. Weather was approximately 100°F with ~7 mph wind from the WSW. I launched on an Estes D12-3 motor with the 5-ft rod angled 5° into the wind, and launched with an empty payload bay to focus the test on basic vehicle flight performance.
+
+The rocket had a clean liftoff from the rod, a stable ascent, deployed its parachute near apogee, and drifted back down onto the grass.
+
+| Airframe on Launch Rod | Maiden Flight Liftoff | Recovered Intact on Grass |
+| :---: | :---: | :---: |
+| ![Airframe on Launch Rod](assets/rocket_launchpad_freestone.jpg) | ![Maiden Flight Liftoff](assets/rocket_first_flight.gif) | ![Rocket Recovered on Grass](assets/rocket_recovery_touchdown.jpg) |
+| *View looking up along the airframe and launch rod from the blast deflector.* | *Handheld liftoff clip ([Watch full 39s video](assets/rocket_test_flight_1.mp4)).* | *Rocket recovered intact on grass.* |
+
+##### 5° Angle OpenRocket Simulation vs. Observed Flight
+
+| Metric | OpenRocket Simulation (5° Tilt) | Observed Flight | Difference / Notes |
+| :--- | :---: | :---: | :--- |
+| **Total Flight Time** | **26.8 s** | **27.06 s** | **+0.26 s** (actual flight lasted 0.26 s longer than predicted) |
+| **Time to Apogee** | **4.79 s** | **~4.79 s** | Observed coast timing lined up closely with the 4.79 s prediction |
+| **Parachute Deployment** | ~4.8 s (delay charge) | **~5.0 s** | Observed ejection shortly after apogee; canopy opened cleanly |
+| **Descent with Parachute** | ~22.0 s | **~21 s** | Steady descent under 24" parachute; landed within park bounds |
+| **Recovery Condition** | Nominal recovery | **Intact** | Rocket recovered intact with no visible structural damage |
+
+![OpenRocket 5-Degree Tilt Simulation Table](assets/rocket_d12_sim_5deg.png)
+
+##### Testing Notes & Instrumentation Limitations
+- **Tripod Camera Overheating:** The dedicated tripod camera overheated in the ~100°F Arizona heat and failed to record, so the available video for analysis came from handheld phone footage.
+- **Velocity Estimate Excluded:** Video analysis produced an estimated velocity of 6.025 m/s shortly after leaving the launch rod, compared with 13.8 m/s predicted by OpenRocket. However, the video analysis was not reliable enough to determine whether this difference reflects the actual flight, so I excluded the velocity estimate from the main simulation comparison.
+- **Next Steps:** Flight 1 confirmed that the airframe geometry, 1.60 cal stability margin, motor retention, and Nomex parachute deployment work as expected in flight. The next milestone is completing the flight computer—wiring the BMP390 barometer and MPU-6500 IMU to the Raspberry Pi Pico, building the payload bay mounting sled, and recording onboard altitude and acceleration on Flight 2.
+
 ---
 
-## 📐 Course Project: 10-Part Parametric SolidWorks Desk Fan Assembly
+## 02 / Mechanical Design: 10-Part SolidWorks Desk Fan Assembly
 
-**Role:** Mechanical CAD Designer &bull; **Course:** ECE 103 (Grade A) &bull; **Tool:** SolidWorks 3D CAD
+**Role:** Mechanical CAD Designer &bull; **Discipline:** Parametric Design &bull; **Tool:** SolidWorks 3D CAD
 
 ![Desk Fan CAD Poster](assets/desk_fan_poster.png)
 
-- Modeled 10 discrete mechanical parts from dimensioned paper sketches to a fully constrained assembly: Front Grill, Back Grill with pattern cuts, Fan Blades, Center Hub, Motor Housing, On/Off Knob, Shaft, Frame Ring, Vertical Stand, and Base.
-- Applied **concentric, coincident, and rotational mates** to simulate 360° blade rotation without interference.
-- Checked clearances between rotating blades and housing to ensure no part overlap.
-- Produced **2D ANSI manufacturing drawings** detailing dimensions, datum references, and tolerances.
+- Modeled 10 discrete mechanical parts from dimensioned paper sketches to a fully constrained assembly: Front Grill, Back Grill with pattern cuts, Aerodynamic Fan Blades, Center Hub, Motor Housing, On/Off Switch Knob, Shaft, Frame Ring, Vertical Stand, and Base.
+- Applied **concentric, coincident, and rotational mechanical mates** to simulate smooth 360° blade rotation with zero interference.
+- Checked clearances between rotating blades and housing to ensure no dynamic part collision.
+- Generated comprehensive **2D ANSI manufacturing drawings** detailing dimensions, datum references, and standard tolerances.
+- Produced multi-angle photorealistic renders in SolidWorks PhotoView.
 
 | Isometric 3/4 View | Profile / Side View | Front Elevation View | Rear Housing View |
 | :---: | :---: | :---: | :---: |
@@ -107,17 +194,18 @@ Before designing the custom airframe, I launched commercial Estes kits (Alpha 3 
 
 ---
 
-## 💻 Simulation & Software Projects
+## 03 / Simulation & Software Tools
 
 ### 1. Solar Energy Systems Modeling & NPV Optimization (MATLAB)
-**Role:** Lead Mathematical Modeler &bull; **Course Project** &bull; **Tool:** MATLAB
+**Role:** Lead Mathematical Modeler &bull; **Domain:** Renewable Energy Systems &bull; **Tool:** MATLAB
 
 ![MATLAB Energy Simulation Plot](assets/matlab_solar_plot.png)
 
-- Served as primary mathematical modeler on a 5-person engineering student team sizing an off-grid residential solar and battery storage system for Chandler, Arizona.
-- Programmed mathematical equations modeling seasonal solar irradiance curves against residential energy demand.
-- Calculated Net Present Value (NPV) lifecycle costs comparing two battery storage configurations over a 25-year lifespan.
-- Completed MathWorks MATLAB Onramp Certification and earned an A grade on the project milestone.
+- Served as primary mathematical modeler on a 5-person engineering team sizing an off-grid residential solar and battery storage system for Chandler, Arizona.
+- Formulated mathematical energy-balance equations correlating seasonal solar angles with photovoltaic panel output.
+- Modeled battery storage discharge profiles and multi-day reserve requirements against summer cooling loads.
+- Calculated Net Present Value (NPV) lifecycle economic models comparing two competing battery configurations over a 25-year lifespan.
+- Completed MathWorks MATLAB Onramp Certification and validated multi-day storage balance models.
 
 ---
 
@@ -126,40 +214,50 @@ Before designing the custom airframe, I launched commercial Estes kits (Alpha 3 
 
 ![Smart Schedule Finder UI](assets/schedule_finder_ui.png)
 
-- Built a desktop application in Python and Streamlit for Mobile Hearing Solutions to automate patient appointment scheduling across the Phoenix metro area.
-- Interfaces with the Google Calendar API via OAuth2 authentication with automatic token refresh.
-- Suggests available appointment slots by checking patient locations against existing technician routes to minimize driving time.
-- Features single-patient search and batch lookup modes (next 5 patients), saving an estimated 2 to 3 hours of manual route checking weekly in active office use.
+- Built a desktop application in Python and Streamlit for Mobile Hearing Solutions to automate technician scheduling across the Phoenix metro area.
+- Queries the Google Calendar API via OAuth2 authentication with automatic background token refresh to ingest real-time schedules.
+- Evaluates proposed patient addresses against existing technician routes to minimize cross-town driving time.
+- Features single-patient lookups and automated batch searches (next 5 patients), saving an estimated 2 to 3 hours of manual route cross-referencing weekly in active office use.
 
 ---
 
 ### 3. Local Document OCR Extraction Pipeline
-**Role:** Technical Assistant &bull; **Workplace:** Mobile Hearing Solutions &bull; **Tools:** Python, EasyOCR, Phi-4 Mini LLM
+**Role:** Technical Assistant &bull; **Workplace:** Mobile Hearing Solutions &bull; **Tools:** Python, EasyOCR, Phi-4 Mini (4-bit)
 
-- Implemented an offline document extraction pipeline to pull patient demographic, insurance, and doctor referral data from incoming faxed PDFs into structured records.
+- Implemented an offline document extraction pipeline to pull patient demographic, insurance, and doctor referral fields from incoming faxed PDFs into structured records.
 - Tested and ran 4-bit quantized local vision models (Phi-4 Mini) alongside EasyOCR.
-- Operates 100% locally on office PC hardware to preserve patient privacy in compliance with HIPAA guidelines and eliminate cloud API fees.
-- Includes manual verification flags for low-confidence scans to ensure data accuracy.
+- Operates 100% locally on office workstations to maintain strict patient privacy in compliance with HIPAA guidelines and eliminate cloud API fees.
+- Includes manual verification flags for low-confidence scans to ensure data accuracy before database ingestion.
 
 ---
 
-## ✈️ Aerospace Industry Exposure: Able Aerospace (Textron Aviation)
+## 04 / Aerospace Industry Experience: Able Aerospace (Textron Aviation)
 
 **Role:** Engineering Specialist Job Shadow &bull; **Location:** Mesa, AZ &bull; **Date:** August 2026  
 **Facility:** FAA Part 145 Repair Station & Aerospace Manufacturing Facility
 
-- **FAA Airworthiness Documentation:** Shadowed an engineering specialist reviewing engineering change orders, confirming airworthiness data, and walking through documentation submitted to the FAA under **Form 8110-3**.
+- **FAA Airworthiness Documentation:** Shadowed an engineering specialist reviewing engineering change orders, confirming airworthiness data, and walking through documentation submitted to the FAA under **Form 8110-3** for custom repairs and parts.
 - **Flight-Critical Component Machining:** Toured the machine shop and observed multi-axis CNC milling of high-stress aircraft components including helicopter rotor hubs, transmission drive shafts, and landing gear parts.
 - **Surface Treatments & Tooling:** Observed shot-peening processes used to induce compressive stress and prevent fatigue cracking, electroplating lines, and how engineers use SolidWorks in-house to design custom inspection fixtures and water-testing tanks.
 
 ---
 
-## 📬 Contact & Links
+## 05 / Technical Skills & Tools
+
+| Category | Core Skills, Tools & Methods |
+| :--- | :--- |
+| **01 — Aerodynamics & Propulsion** | OpenRocket Flight Simulation, Center of Pressure / Center of Gravity, Static Stability Margin Tuning, Fin Geometry Optimization, Motor Sizing (Estes D12-3 / Aerotech F32T-6), Trajectory Drift Dispersion, Nomex Piston Recovery, Positive Washer Retention |
+| **02 — Mechanical CAD & Prototyping** | SolidWorks (Parametric Part Modeling, Multi-Body Assemblies, Dynamic Rotational Mates, Clearance Verification, 2D ANSI Manufacturing Drawings), Bambu Lab A1, Bambu Studio STEP Slicing, eSUN PLA+, Polymaker PETG, Gyroid Infill Optimization, Digital Caliper Tolerancing |
+| **03 — Hardware, Software & Standards** | Raspberry Pi Pico (RP2040), MicroPython, DHT-22 Sensor, BMP390 Barometer, MPU-6500 6-Axis IMU, SPI MicroSD Flash Logging, 350 lb Braided Kevlar, JB-Weld Epoxy, MATLAB, Python, Kinematics & Dynamics, Numerical Modeling, NPV Analysis, FAA Part 145 Exposure, FAA Form 8110-3, NAR Safety Code |
+
+---
+
+## Contact & Links
 
 - **Email:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com)
-- **Phone:** (480) 528-9329
-- **LinkedIn:** [linkedin.com/in/ashton-hendrickson-55508a262](https://www.linkedin.com/in/ashton-hendrickson-55508a262)
+- **LinkedIn:** [linkedin.com/in/ashton-hendrickson](https://www.linkedin.com/in/ashton-hendrickson)
 - **GitHub:** [github.com/ashrick12](https://github.com/ashrick12)
-- **Resume:** [Download PDF](assets/Ashton_Hendrickson_Resume.pdf)
 - **Live Portfolio Website:** [ashrick12.github.io](https://ashrick12.github.io/)
 - **Interactive Webpage:** [Open index.html](index.html)
+
+[![Portfolio Website Preview](assets/portfolio_preview.png)](https://ashrick12.github.io/)
