@@ -7,8 +7,7 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 .DS_Store
-LINKEDIN_PROFILE_GUIDE.md
-PROFILE_README.md
+
 # Editor & IDE Files
 .vscode/
 .idea/
@@ -16,7 +15,15 @@ PROFILE_README.md
 *.swo
 *~
 
-# Temporary & Log Files
+# Temporary, Scratch & Python Files
 *.log
 *.tmp
+*.bak
+__pycache__/
+*.pyc
+scratch/
 
+# External / Local-Only Files (Not to be pushed to ashrick12.github.io)
+PROFILE_README.md
+LINKEDIN_PROFILE_GUIDE.md
+portfolio_update.md

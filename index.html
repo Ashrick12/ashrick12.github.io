@@ -24,11 +24,12 @@
       </a>
       <ul class="nav-links">
         <li><a href="#flagship">Sounding Rocket</a></li>
+        <li><a href="#openrocket-visualizer">3D Visualizer</a></li>
+        <li><a href="#physics-simulation">Physics Sim</a></li>
         <li><a href="#cad-projects">SolidWorks CAD</a></li>
-        <li><a href="#systems-software">Simulation & Software</a></li>
-        <li><a href="#industry-experience">Able Aerospace Shadow</a></li>
+        <li><a href="#systems-software">Automation</a></li>
+        <li><a href="#industry-experience">Industry Experience</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -581,11 +582,216 @@
   </section>
 
   <!-- ==========================================================================
-       02: 10-Part SolidWorks Desk Fan CAD (ECE 103)
+       02: OpenRocket 3D Flight Visualizer
+       ========================================================================== -->
+  <section id="openrocket-visualizer" class="section">
+    <div class="container">
+      <div class="case-study-marker">02 / COMPUTATIONAL AEROSPACE &bull; SIMULATION</div>
+      <div class="case-study-header">
+        <div class="case-study-title-wrap">
+          <h2 class="section-title">OpenRocket 3D Flight Visualizer</h2>
+        </div>
+        <div class="status-indicator-mono">
+          <span class="status-dot-green"></span>
+          COMPLETE &bull; THREE.JS WEBGL SIMULATION REPLAY
+        </div>
+      </div>
+      <p class="section-desc">
+        Interactive 3D flight replay engine that transforms OpenRocket simulation CSV exports into an animated visual trajectory over calibrated geographic terrain.
+      </p>
+
+      <div class="sim-project-card">
+        <div class="sim-project-main">
+          <div class="sim-left-col">
+            <div class="sim-preview-box" onclick="openModal('assets/openrocket_3d_visualizer.png', 'OpenRocket 3D Flight Visualizer: Three-dimensional OpenRocket flight simulation replay over calibrated Freestone Park terrain showing the modeled rocket trajectory.')">
+              <img src="assets/openrocket_3d_visualizer.png" alt="Three-dimensional OpenRocket flight simulation replay over calibrated Freestone Park terrain showing the modeled rocket trajectory.">
+              <div class="media-hover-overlay"><span>Inspect Full Simulation Interface</span></div>
+            </div>
+            <div class="sim-preview-box" onclick="openModal('assets/openrocket_trajectory_view.png', 'OpenRocket 3D Flight Visualizer: Satellite perspective of the Freestone Park launch domain showing the predicted trajectory arc to 93.3 m apogee, simulation data HUD, and flight event markers.')">
+              <img src="assets/openrocket_trajectory_view.png" alt="Satellite perspective of the Freestone Park launch domain showing the predicted trajectory arc to 93.3 m apogee, simulation data HUD, and flight event markers.">
+              <div class="media-hover-overlay"><span>Inspect Trajectory &amp; Simulation HUD</span></div>
+            </div>
+            <div class="sim-metric-strip">
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">60 FPS</span>
+                <span class="sim-metric-lbl">Replay Target</span>
+              </div>
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">10–50 ms</span>
+                <span class="sim-metric-lbl">Simulation Sample Spacing</span>
+              </div>
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">4095² px</span>
+                <span class="sim-metric-lbl">Terrain Raster</span>
+                <span class="sim-metric-sub">0.1247 m/px</span>
+              </div>
+            </div>
+            <div class="sim-sub-strip">
+              <span class="sim-sub-strip-label">Replay Modes</span>
+              <div class="sim-sub-strip-items">
+                <span class="sim-sub-pill">Chase</span>
+                <span class="sim-sub-pill">Pad</span>
+                <span class="sim-sub-pill">Apogee</span>
+                <span class="sim-sub-pill">Free Orbit</span>
+              </div>
+            </div>
+          </div>
+          <div class="sim-content-wrap">
+            <div class="cad-badge-row">
+              <span class="badge-tag blue">Three.js WebGL</span>
+              <span class="badge-tag neutral">Simulation Processing</span>
+              <span class="badge-tag neutral">Web Audio API</span>
+            </div>
+            <h3>Predicted Trajectory Replay &amp; Simulation Readout</h3>
+            <p class="sim-lead-desc">
+              OpenRocket generates detailed numerical simulation output and standard 2D plots. This client-side tool transforms those CSV exports into an interactive 3D flight replay over calibrated satellite terrain to evaluate predicted trajectory turnover and landing dispersion.
+            </p>
+            <ul class="technical-checklist">
+              <li><strong>Simulation Data Parser &amp; Interpolation:</strong> Ingests raw OpenRocket CSV files with automatic delimiter and event detection. Uses binary-search sample lookup and linear interpolation (<code>lerp</code>) to generate smooth 60 FPS replay from discrete 10&ndash;50 ms simulation samples at 0.25&times;&ndash;10&times; playback.</li>
+              <li><strong>Calibrated Launch Environment:</strong> Maps a 4095&times;4095 px aerial orthophoto of Freestone Park (0.1247 m/px, 510.7 m domain) to OpenRocket's coordinate conventions (+X East, &minus;Z North), providing a calibrated visualization environment with 50 m range rings.</li>
+              <li><strong>Procedural Vehicle Attitude Visualization:</strong> Procedurally aligns the rendered airframe along the instantaneous trajectory velocity tangent (&Delta;P/&Delta;t) through boost and apogee turnover, deploying a 12-line parachute with modeled descent pendulum oscillation.</li>
+              <li><strong>Simulation Data HUD &amp; Procedural Audio:</strong> Displays predicted altitude, velocity, acceleration, thrust, drag, and downrange drift. Uses Web Audio API synthesis to modulate motor rumble from thrust (N) and airflow rush from total velocity (m/s).</li>
+              <li><strong>Pre-Loaded Datasets:</strong> Pre-configured with simulation models for Ashton's sounding rocket builds, including the Freestone Park Estes D12-3 maiden flight baseline and the Aerotech F32T-6 mid-power upgrade trajectory.</li>
+            </ul>
+            <div class="sim-footer-row">
+              <div class="tech-tag-row">
+                <span class="tech-tag primary">Three.js</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">Trajectory Interpolation</span>
+                <span class="tech-tag">Simulation Data Processing</span>
+                <span class="tech-tag">Web Audio API</span>
+                <span class="tech-tag">OpenRocket CSV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       03: Electric Potential vs. Electric Potential Energy Simulation
+       ========================================================================== -->
+  <section id="physics-simulation" class="section">
+    <div class="container">
+      <div class="case-study-marker">03 / COMPUTATIONAL PHYSICS &bull; NUMERICAL MODELING</div>
+      <div class="case-study-header">
+        <div class="case-study-title-wrap">
+          <h2 class="section-title">Electric Potential (V) vs. Electric Potential Energy (U)</h2>
+        </div>
+        <div class="status-indicator-mono">
+          <span class="status-dot-green"></span>
+          COMPLETE &bull; SINGLE-FILE APPLICATION WITH EMBEDDED LIBRARIES
+        </div>
+      </div>
+      <p class="section-desc">
+        Interactive 3D WebGL physics tool demonstrating the conceptual and mathematical distinction between Electric Potential (V) and Electric Potential Energy (U).
+      </p>
+
+      <div class="sim-project-card">
+        <div class="sim-project-main">
+          <div class="sim-left-col">
+            <div class="sim-preview-box" onclick="openModal('assets/electric_potential_3d_sim.png', 'Electric Potential vs Electric Potential Energy: Interactive 3D electrostatic potential simulation showing a test charge above a mapped potential surface with electric field and force vectors.')">
+              <img src="assets/electric_potential_3d_sim.png" alt="Interactive 3D electrostatic potential simulation showing a test charge above a mapped potential surface with electric field and force vectors.">
+              <div class="media-hover-overlay"><span>Inspect Full Simulation Interface</span></div>
+            </div>
+            <div class="sim-preview-box" onclick="openModal('assets/electric_potential_attractive_well.png', 'Electric Potential vs. Electric Potential Energy: Inverted attractive electric potential well (-5.0 &mu;C source charge) with orbiting test charge demonstrating negative potential (V = -12.08 kV) and bound system energy (U = -12.08 mJ).')">
+              <img src="assets/electric_potential_attractive_well.png" alt="Inverted attractive electric potential well (-5.0 &mu;C source charge) with orbiting test charge demonstrating negative potential (V = -12.08 kV) and bound system energy (U = -12.08 mJ).">
+              <div class="media-hover-overlay"><span>Inspect Attractive Potential Well</span></div>
+            </div>
+            <div class="sim-metric-strip">
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">+7.25 kV</span>
+                <span class="sim-metric-lbl">Modeled Potential</span>
+                <span class="sim-metric-sub">at r = 3.0 m</span>
+              </div>
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">&plusmn;21.75 mJ</span>
+                <span class="sim-metric-lbl">Potential-Energy Range</span>
+                <span class="sim-metric-sub">q = &minus;3.0 to +3.0 &mu;C</span>
+              </div>
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">&lt;0.1%</span>
+                <span class="sim-metric-lbl">Energy Drift</span>
+                <span class="sim-metric-sub">Tested Simulation Intervals</span>
+              </div>
+            </div>
+            <div class="sim-sub-strip">
+              <span class="sim-sub-strip-label">Invariance Principle</span>
+              <div class="sim-sub-strip-relation">
+                <span class="sim-sub-term"><em>q</em> varied</span>
+                <span class="sim-sub-arrow">&rarr;</span>
+                <span class="sim-sub-term highlight"><em>V</em> unchanged</span>
+                <span class="sim-sub-arrow">&rarr;</span>
+                <span class="sim-sub-term"><em>U = qV</em> changes</span>
+              </div>
+            </div>
+          </div>
+          <div class="sim-content-wrap">
+            <div class="cad-badge-row">
+              <span class="badge-tag blue">Three.js WebGL</span>
+              <span class="badge-tag neutral">Velocity Verlet</span>
+              <span class="badge-tag neutral">Numerical Integration</span>
+            </div>
+            <h3>The Core Invariance Experiment</h3>
+            <p class="sim-lead-desc">
+              Electric Potential (<em>V</em>) is a spatial property established by the source-charge configuration, while Electric Potential Energy (<em>U</em>) also depends on the test charge. This simulation demonstrates that distinction through a controlled parameter experiment.
+            </p>
+
+            <div class="invariance-callout-box">
+              <div class="invariance-title">The Fundamental Invariance Principle:</div>
+              <div class="invariance-cols-grid">
+                <div class="invariance-col">
+                  <span class="inv-col-label">Source &bull; Position Fixed</span>
+                  <span class="inv-col-val font-mono"><strong>Q = +3.0 &mu;C</strong></span>
+                  <span class="inv-col-sub font-mono">r = 3.0 m</span>
+                </div>
+                <div class="invariance-col invariance-col-center">
+                  <span class="inv-col-label">Electric Potential (Field)</span>
+                  <span class="inv-col-val highlight-cyan font-mono">V &approx; +7.25 kV</span>
+                  <span class="inv-col-status">UNCHANGED</span>
+                </div>
+                <div class="invariance-col">
+                  <span class="inv-col-label">Test Charge <em>q</em> Varied &bull; <em>U = qV</em></span>
+                  <div class="inv-math-list font-mono">
+                    <span>q = &minus;3.0 &mu;C &rarr; <strong>U &approx; &minus;21.75 mJ</strong></span>
+                    <span>q = 0 &rarr; <strong>U = 0</strong></span>
+                    <span>q = +3.0 &mu;C &rarr; <strong>U &approx; +21.75 mJ</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="technical-checklist">
+              <li><strong>Invariant Demonstration:</strong> For fixed source charge <em>Q</em> and spatial position <em>r</em>, varying test charge <em>q</em> leaves modeled potential <em>V</em> invariant (&approx; +7.25 kV), while stored system energy (<em>U = qV</em>) scales proportionally from &minus;21.75 mJ to +21.75 mJ and reverses sign with charge polarity.</li>
+              <li><strong>Softened Potential Kernel:</strong> Formulates electrostatic potential using a softened Plummer-type kernel <em>V(r) = k<sub>e</sub>Q / &radic;(r&sup2; + a&sup2;)</em> with core radius <em>a</em> = 2.2 m (Coulomb constant <em>k<sub>e</sub></em> = 8.98755 &times; 10<sup>9</sup> N&middot;m&sup2;/C&sup2;), removing the <em>r</em> = 0 singularity while approaching classical 1/r behavior for <em>r</em> &gg; <em>a</em>.</li>
+              <li><strong>Velocity Verlet Numerical Integration:</strong> Particle dynamics are integrated in the horizontal <em>xz</em>-plane under spatial gradient forces (<em>E</em> = &minus;&nabla;<em>V</em>, <em>F</em> = <em>qE</em>) via Velocity Verlet; numerical tests showed total mechanical energy drift below 0.1% over tested simulation intervals.</li>
+              <li><strong>Bound States &amp; Precession:</strong> In the modeled attractive potential with <em>U</em>(&infin;) = 0, negative total mechanical energy (<em>E</em><sub>tot</sub> &lt; 0) forms precessing rosette trajectories rather than closed Keplerian ellipses due to departure from pure 1/r symmetry at small radius.</li>
+              <li><strong>Self-Contained Application:</strong> Single-file web application with embedded libraries (Three.js, KaTeX) and no build step, featuring a 6-step guided tour, 3D raycast charge manipulation, and engineering prefix auto-formatting (kV, mJ, &mu;J).</li>
+            </ul>
+            <div class="sim-footer-row">
+              <div class="tech-tag-row">
+                <span class="tech-tag primary">Three.js</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">Velocity Verlet</span>
+                <span class="tech-tag">Numerical Integration</span>
+                <span class="tech-tag">Coulomb Potential</span>
+                <span class="tech-tag">KaTeX</span>
+                <span class="tech-tag">Computational Physics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       04: 10-Part SolidWorks Desk Fan CAD (ECE 103)
        ========================================================================== -->
   <section id="cad-projects" class="section">
     <div class="container">
-      <div class="case-study-marker">02 / MECHANICAL DESIGN (SOLIDWORKS)</div>
+      <div class="case-study-marker">04 / MECHANICAL DESIGN (SOLIDWORKS)</div>
       <h2 class="section-title">10-Part Parametric SolidWorks Desk Fan Assembly</h2>
       <p class="section-desc">
         Parametric mechanical assembly emphasizing 3D part modeling, dynamic rotational mates, 
@@ -619,10 +825,6 @@
               <span class="tech-tag">ANSI 2D Drawings</span>
               <span class="tech-tag">Parametric Modeling</span>
             </div>
-            <a href="https://github.com/Ashrick12/ashrick12.github.io/tree/main/assets" target="_blank" rel="noopener noreferrer" class="code-link-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Repository Assets &rarr;
-            </a>
           </div>
           <div class="poster-preview-box" onclick="openModal('assets/desk_fan_poster.png', 'Comprehensive SolidWorks CAD Poster: Detailed assembly views, orthographic drawings, dimensioned specifications, and design callouts.')">
             <img src="assets/desk_fan_poster.png" alt="SolidWorks Desk Fan Poster">
@@ -668,11 +870,11 @@
   </section>
 
   <!-- ==========================================================================
-       03: Simulation & Applied Software Systems
+       05: Simulation & Applied Software Systems
        ========================================================================== -->
   <section id="systems-software" class="section">
     <div class="container">
-      <div class="case-study-marker">03 / SIMULATION & SOFTWARE TOOLS</div>
+      <div class="case-study-marker">05 / SIMULATION &amp; SOFTWARE TOOLS</div>
       <h2 class="section-title">Simulation, Automation & Software Tools</h2>
       <p class="section-desc">
         Engineering work spanning numerical MATLAB modeling, route-optimized scheduling algorithms for healthcare operations, and offline edge OCR.
@@ -704,10 +906,6 @@
               <span class="tech-tag">Energy Balance</span>
               <span class="tech-tag">NPV Analysis</span>
             </div>
-            <a href="https://github.com/Ashrick12" target="_blank" rel="noopener noreferrer" class="code-link-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Simulation Source &rarr;
-            </a>
           </div>
         </div>
 
@@ -736,10 +934,6 @@
               <span class="tech-tag">Google Calendar API</span>
               <span class="tech-tag">Route Optimization</span>
             </div>
-            <a href="https://github.com/anushton/scheduling-app" target="_blank" rel="noopener noreferrer" class="code-link-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Repository &rarr;
-            </a>
           </div>
         </div>
 
@@ -763,10 +957,6 @@
               <span class="tech-tag">Phi-4 Mini (4-bit)</span>
               <span class="tech-tag">HIPAA Security</span>
             </div>
-            <a href="https://github.com/Ashrick12" target="_blank" rel="noopener noreferrer" class="code-link-btn">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Pipeline Architecture &rarr;
-            </a>
           </div>
         </div>
       </div>
@@ -774,11 +964,11 @@
   </section>
 
   <!-- ==========================================================================
-       04: Aerospace Industry Exposure
+       06: Aerospace Industry Exposure
        ========================================================================== -->
   <section id="industry-experience" class="section">
     <div class="container">
-      <div class="case-study-marker">04 / AEROSPACE INDUSTRY EXPERIENCE</div>
+      <div class="case-study-marker">06 / AEROSPACE INDUSTRY EXPERIENCE</div>
       
       <div class="shadow-feature-card">
         <div class="shadow-header">
@@ -834,12 +1024,12 @@
   </section>
 
   <!-- ==========================================================================
-       05: Technical Skills & Tools
+       07: Technical Skills & Tools
        ========================================================================== -->
   <section id="skills" class="section">
     <div class="container">
-      <div class="case-study-marker">05 / ENGINEERING SKILLS</div>
-      <h2 class="section-title">Technical Skills & Tools</h2>
+      <div class="case-study-marker">07 / ENGINEERING SKILLS &amp; TOOLS</div>
+      <h2 class="section-title">Technical Skills &amp; Tools</h2>
       <p class="section-desc">
         Core technical capabilities developed through community college engineering coursework, independent prototyping, and professional workplace tool development.
       </p>
@@ -848,8 +1038,8 @@
         <!-- Column 1: Aerodynamics & Flight Sim -->
         <div class="competency-column">
           <div class="competency-header">
-            <span class="competency-category">01 — Aerodynamics & Propulsion</span>
-            <h3>Aerodynamics & Propulsion</h3>
+            <span class="competency-category">01 — Aerodynamics &amp; Propulsion</span>
+            <h3>Aerodynamics &amp; Propulsion</h3>
           </div>
           <div class="competency-items">
             <div class="comp-group">
@@ -862,9 +1052,18 @@
               </div>
             </div>
             <div class="comp-group">
-              <h5>Propulsion & Recovery</h5>
+              <h5>Trajectory Replay &amp; Simulation Data</h5>
               <div class="comp-tag-cloud">
-                <span class="tech-tag">Estes & Aerotech Motors</span>
+                <span class="tech-tag primary">OpenRocket Simulation Data Processing</span>
+                <span class="tech-tag">3D Trajectory Replay</span>
+                <span class="tech-tag">Trajectory Interpolation</span>
+                <span class="tech-tag">Vehicle Attitude Visualization</span>
+              </div>
+            </div>
+            <div class="comp-group">
+              <h5>Propulsion &amp; Recovery</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag">Estes &amp; Aerotech Motors</span>
                 <span class="tech-tag">Thrust-to-Weight Analysis</span>
                 <span class="tech-tag">Streamer vs. Chute Drift</span>
                 <span class="tech-tag">Nomex Piston Recovery</span>
@@ -873,11 +1072,11 @@
           </div>
         </div>
 
-        <!-- Column 2: CAD & Manufacturing -->
+        <!-- Column 2: CAD & Prototyping -->
         <div class="competency-column">
           <div class="competency-header">
-            <span class="competency-category">02 — Mechanical CAD & Prototyping</span>
-            <h3>Mechanical CAD & Prototyping</h3>
+            <span class="competency-category">02 — Mechanical CAD &amp; 3D Graphics</span>
+            <h3>Mechanical CAD &amp; 3D Graphics</h3>
           </div>
           <div class="competency-items">
             <div class="comp-group">
@@ -900,14 +1099,22 @@
                 <span class="tech-tag">Gyroid Infill Tuning</span>
               </div>
             </div>
+            <div class="comp-group">
+              <h5>Interactive 3D Visualization</h5>
+              <div class="comp-tag-cloud">
+                <span class="tech-tag primary">Three.js WebGL</span>
+                <span class="tech-tag">Computational 3D Visualization</span>
+                <span class="tech-tag">Web Audio API Synthesis</span>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- Column 3: Electronics & Computation -->
         <div class="competency-column">
           <div class="competency-header">
-            <span class="competency-category">03 — Hardware, Software & Standards</span>
-            <h3>Hardware, Software & Standards</h3>
+            <span class="competency-category">03 — Hardware, Computation &amp; Standards</span>
+            <h3>Hardware, Computation &amp; Standards</h3>
           </div>
           <div class="competency-items">
             <div class="comp-group">
@@ -917,17 +1124,24 @@
                 <span class="tech-tag">BMP390 Barometer</span>
                 <span class="tech-tag">MPU-6500 6-Axis IMU</span>
                 <span class="tech-tag">MicroSD SPI Flash Logging</span>
-                <span class="tech-tag">LiPo & TP4056 Power</span>
+                <span class="tech-tag">LiPo &amp; TP4056 Power</span>
               </div>
             </div>
             <div class="comp-group">
-              <h5>Computation & Standards</h5>
+              <h5>Numerical Modeling &amp; Computation</h5>
               <div class="comp-tag-cloud">
                 <span class="tech-tag primary">MATLAB</span>
                 <span class="tech-tag primary">Python</span>
-                <span class="tech-tag">Kinematics & Dynamics</span>
-                <span class="tech-tag">Numerical Methods</span>
+                <span class="tech-tag">Numerical Modeling</span>
+                <span class="tech-tag">Velocity Verlet Numerical Integration</span>
+                <span class="tech-tag">Electrostatic Potential Modeling</span>
+                <span class="tech-tag">Energy Conservation Checks</span>
                 <span class="tech-tag">NPV Lifecycle Modeling</span>
+              </div>
+            </div>
+            <div class="comp-group">
+              <h5>Regulatory &amp; Industry Standards</h5>
+              <div class="comp-tag-cloud">
                 <span class="tech-tag">FAA Part 145 Exposure</span>
                 <span class="tech-tag">FAA Form 8110-3</span>
                 <span class="tech-tag">NAR Safety Code</span>

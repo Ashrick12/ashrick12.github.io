@@ -14,6 +14,8 @@ Aerospace Engineering transfer student with hands-on experience in **SolidWorks 
 
 ### Key Highlights
 - **Completed First Test Flight:** Flew on an Estes D12-3 motor at Freestone Park with 27.06 s total flight time (+0.26 s off 5° OpenRocket sim); rocket recovered intact with no visible structural damage.
+- **OpenRocket 3D Flight Visualizer:** Developed an interactive Three.js WebGL trajectory replay engine transforming OpenRocket CSV exports into 3D flight replays over calibrated Freestone Park satellite terrain.
+- **Computational Physics Simulation:** Built an interactive 3D WebGL electrostatic simulation demonstrating the mathematical invariance of Electric Potential ($V$) vs. Potential Energy ($U$) using Velocity Verlet integration.
 - **1.60 cal Static Stability Margin:** Tuned Barrowman stability in OpenRocket across Estes D12-3 (maiden flight motor, 63.6 m apogee) and Aerotech F32T-6 mid-power motor (334 m / 1,095 ft apogee).
 - **Assembled 36.4" Sounding Rocket:** Custom BT-80 airframe with 309g measured empty mass (326g simulated dry mass with avionics allocation) and finished in gold livery.
 - **MicroPython Avionics Bench Testing:** Dual-core Raspberry Pi Pico (RP2040) breadboard setup tested with DHT and MPU-6500 sensors ahead of Flight 2 BMP390 barometer integration.
@@ -177,7 +179,56 @@ The rocket had a clean liftoff from the rod, a stable ascent, deployed its parac
 
 ---
 
-## 02 / Mechanical Design: 10-Part SolidWorks Desk Fan Assembly
+## 02 / Computational Aerospace &bull; Simulation: OpenRocket 3D Flight Visualizer
+
+**Project Status:** Complete &bull; **Three.js WebGL Simulation Replay**  
+**Role:** Computational Tools Developer &bull; **Tools:** Three.js (WebGL), Web Audio API, Vanilla JavaScript, OpenRocket CSV
+
+![OpenRocket 3D Flight Visualizer Interface](assets/openrocket_3d_visualizer.png)
+![OpenRocket 3D Trajectory Replay & Apogee View](assets/openrocket_trajectory_view.png)
+
+OpenRocket provides numerical simulation output and standard 2D Cartesian plots (altitude vs. time, velocity vs. time). While valuable for engineering analysis, interpreting how tabular CSV rows correspond to three-dimensional vehicle dynamics, apogee turnover, and downrange drift relative to a specific launch field is difficult from 2D plots alone.
+
+I developed the **OpenRocket 3D Flight Visualizer** to transform simulation CSV exports into an interactive 3D flight replay:
+- **Simulation Data Parser & Temporal Interpolator:** Ingests raw OpenRocket CSV exports with delimiter auto-detection and comment/event parsing. Uses binary search lookup and linear interpolation (`lerp`) across predicted physical states to generate smooth 60 FPS playback from discrete 10–50 ms simulation steps at variable speeds ($0.25\times$ to $10.0\times$).
+- **Calibrated Geographic Launch Environment:** Renders an aerial satellite map of Freestone Park ($4095 \times 4095\text{ px}$ at $0.1247\text{ m/pixel}$, spanning a $510.7\text{ m} \times 510.7\text{ m}$ domain) aligned with OpenRocket's $+X$ (East) and $-Z$ (North) coordinate frame, with an optional dark engineering grid and 50m range rings.
+- **Vehicle Attitude Visualization:** The airframe attitude is procedurally derived from the trajectory's instantaneous velocity vector tangent ($\frac{d\vec{P}}{dt}$) through boost and apogee turnover; a procedural 12-line hemispherical parachute canopy deploys with a modeled pendulum oscillation to visually represent descent dynamics.
+- **Real-Time Simulation Data HUD & Procedural Audio:** Displays predicted flight state variables (altitude, vertical/total velocity, acceleration, G-force, thrust, drag, Mach, downrange drift). Synthesizes flight acoustics in real time using the browser Web Audio API, modulating motor rumble from simulation thrust ($N$) and airflow rushing from total velocity ($m/s$). Audio is entirely procedural; it is not recorded acoustic telemetry.
+- **Pre-Loaded Rocket Datasets:** Pre-configured with actual simulation data from my sounding rocket builds, including the Freestone Park Estes D12-3 maiden flight model and the Aerotech F32T-6 mid-power upgrade trajectory.
+
+> **Scope Note:** This application visualizes predicted simulation models exported from OpenRocket. It is a simulation visualization engine, not a hardware telemetry receiver or measured flight tracking station.
+
+---
+
+## 03 / Computational Physics &bull; Numerical Modeling: Electric Potential ($V$) vs. Potential Energy ($U$)
+
+**Project Status:** Complete &bull; **Single-File Application with Embedded Libraries**  
+**Role:** Computational Physics Modeler &bull; **Context:** University Physics (PHY 121 / 131)  
+**Tools:** Three.js (WebGL), Velocity Verlet Integrator, KaTeX Typesetting, HTML5 / CSS3
+
+![Electric Potential vs Electric Potential Energy Simulation Interface](assets/electric_potential_3d_sim.png)
+![Electric Potential Inverted Attractive Well Simulation](assets/electric_potential_attractive_well.png)
+
+In introductory university physics, students routinely conflate **Electric Potential** ($V$) with **Electric Potential Energy** ($U$). I designed and built an interactive 3D WebGL physics tool to make their fundamental mathematical distinction clear through a single, verifiable experiment:
+
+### The Core Invariance Experiment
+For a fixed source-charge configuration $Q$ and a fixed spatial position $r$, the modeled electric potential field ($V$) remains strictly unchanged regardless of the test charge $q$ placed at that position.
+
+In the simulation model:
+- Source charge $Q = +3.0\ \mu\text{C}$ and test position $r = 3.0\text{ m}$ are held fixed.
+- Varying test charge $q$ from $-3.0\ \mu\text{C} \to 0 \to +3.0\ \mu\text{C}$ leaves the modeled electric potential terrain elevation ($V \approx +7.25\text{ kV}$) completely invariant.
+- Meanwhile, the stored system potential energy ($U = q \cdot V$) scales proportionally from $-21.75\text{ mJ}$ to $0\text{ mJ}$ to $+21.75\text{ mJ}$, reversing sign when $q$ flips polarity.
+
+### Mathematical Formulation & Numerical Methods
+1. **Softened Plummer-Type Potential:** Uses $V(r) = \frac{k_e Q}{\sqrt{r^2 + a^2}}$ with core radius $a = 2.2\text{ m}$ (standard Coulomb constant value $k_e = 8.98755 \times 10^9\text{ N}\cdot\text{m}^2/\text{C}^2$) to eliminate $r=0$ singularities in this numerical model while approaching classic $1/r$ behavior asymptotically ($r \gg a$).
+2. **Velocity Verlet Numerical Integration:** Particle dynamics occur strictly in the horizontal $xz$-plane under spatial gradient forces ($\vec{F}_{xz} = q\vec{E}_{xz} = -q\nabla V$, with $\vec{E}(x, z) = \frac{k_e Q}{(r^2 + a^2)^{3/2}}(x\hat{i} + z\hat{k})$). Numerical tests showed total mechanical energy ($E_{\text{tot}} = U + K$) drift below 0.1% over tested simulation intervals.
+3. **Decoupled Visual Terrain Elevation:** The vertical dimension ($y_{\text{render}} = V_{\text{SI}} / 2500$) is purely a visual elevation mapping of the scalar potential, **not a physical spatial degree of freedom**. The particle does not roll down a gravitational slope.
+4. **Attraction vs. Bound States & Precession:** Visualizes that for the modeled attractive potential with $U(\infty) = 0$, negative total mechanical energy ($E_{\text{tot}} < 0$) corresponds to energetically bound trajectories, while nonnegative-energy trajectories escape. Departure from pure $1/r$ symmetry at small radii produces precessing rosette orbits rather than closed Keplerian ellipses.
+5. **Self-Contained Single-File Architecture:** Single-file web application with embedded dependencies (Three.js, KaTeX) and no npm/build step, featuring a 6-step guided tour, 3D raycast charge repositioning, and engineering prefix auto-formatting ($\text{kV}, \text{mJ}, \mu\text{J}$).
+
+---
+
+## 04 / Mechanical Design: 10-Part SolidWorks Desk Fan Assembly
 
 **Role:** Mechanical CAD Designer &bull; **Discipline:** Parametric Design &bull; **Tool:** SolidWorks 3D CAD
 
@@ -195,7 +246,7 @@ The rocket had a clean liftoff from the rod, a stable ascent, deployed its parac
 
 ---
 
-## 03 / Simulation & Software Tools
+## 05 / Simulation & Software Tools
 
 ### 1. Solar Energy Systems Modeling & NPV Optimization (MATLAB)
 **Role:** Lead Mathematical Modeler &bull; **Domain:** Renewable Energy Systems &bull; **Tool:** MATLAB
@@ -232,7 +283,7 @@ The rocket had a clean liftoff from the rod, a stable ascent, deployed its parac
 
 ---
 
-## 04 / Aerospace Industry Experience: Able Aerospace (Textron Aviation)
+## 06 / Aerospace Industry Experience: Able Aerospace (Textron Aviation)
 
 **Role:** Engineering Specialist Job Shadow &bull; **Location:** Mesa, AZ &bull; **Date:** August 2026  
 **Facility:** FAA Part 145 Repair Station & Aerospace Manufacturing Facility
@@ -243,13 +294,13 @@ The rocket had a clean liftoff from the rod, a stable ascent, deployed its parac
 
 ---
 
-## 05 / Technical Skills & Tools
+## 07 / Technical Skills & Tools
 
 | Category | Core Skills, Tools & Methods |
 | :--- | :--- |
-| **01 — Aerodynamics & Propulsion** | OpenRocket Flight Simulation, Center of Pressure / Center of Gravity, Static Stability Margin Tuning, Fin Geometry Optimization, Motor Sizing (Estes D12-3 / Aerotech F32T-6), Trajectory Drift Dispersion, Nomex Piston Recovery, Positive Washer Retention |
-| **02 — Mechanical CAD & Prototyping** | SolidWorks (Parametric Part Modeling, Multi-Body Assemblies, Dynamic Rotational Mates, Clearance Verification, 2D ANSI Manufacturing Drawings), Bambu Lab A1, Bambu Studio STEP Slicing, eSUN PLA+, Polymaker PETG, Gyroid Infill Optimization, Digital Caliper Tolerancing |
-| **03 — Hardware, Software & Standards** | Raspberry Pi Pico (RP2040), MicroPython, DHT-22 Sensor, BMP390 Barometer, MPU-6500 6-Axis IMU, SPI MicroSD Flash Logging, 350 lb Braided Kevlar, JB-Weld Epoxy, MATLAB, Python, Kinematics & Dynamics, Numerical Modeling, NPV Analysis, FAA Part 145 Exposure, FAA Form 8110-3, NAR Safety Code |
+| **01 — Aerodynamics & Propulsion** | OpenRocket Flight Simulation, OpenRocket Simulation Data Processing, 3D Trajectory Replay, Trajectory Interpolation, Vehicle Attitude Visualization, Static Stability Margin Tuning, Center of Pressure / Center of Gravity, Fin Geometry Optimization, Motor Sizing (Estes D12-3 / Aerotech F32T-6), Trajectory Drift Dispersion, Nomex Piston Recovery, Positive Washer Retention |
+| **02 — Mechanical CAD & 3D Graphics** | SolidWorks (Parametric Part Modeling, Multi-Body Assemblies, Dynamic Rotational Mates, Clearance Verification, 2D ANSI Manufacturing Drawings), Three.js WebGL, Computational 3D Visualization, Web Audio API Synthesis, Bambu Lab A1, Bambu Studio STEP Slicing, eSUN PLA+, Polymaker PETG, Gyroid Infill Optimization, Digital Caliper Tolerancing |
+| **03 — Hardware, Computation & Standards** | Raspberry Pi Pico (RP2040), MicroPython, DHT-22 Sensor, BMP390 Barometer, MPU-6500 6-Axis IMU, SPI MicroSD Flash Logging, 350 lb Braided Kevlar, JB-Weld Epoxy, MATLAB, Python, Numerical Modeling, Velocity Verlet Numerical Integration, Electrostatic Potential Modeling, Energy Conservation Checks, Kinematics & Dynamics, NPV Analysis, FAA Part 145 Exposure, FAA Form 8110-3, NAR Safety Code |
 
 ---
 

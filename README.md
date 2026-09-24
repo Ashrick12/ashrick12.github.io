@@ -34,6 +34,8 @@ The site is built completely dependency-free to ensure instant loading times, pr
 | Project | Discipline & Tools | Live Showcase |
 | :--- | :--- | :--- |
 | **Scratch-Built Sounding Rocket** | SolidWorks 3D CAD, OpenRocket, Bambu Lab A1 3D Printing, RP2040 MicroPython, Maiden Flight Tested | [Explore Flagship Case Study](https://ashrick12.github.io/#flagship) |
+| **OpenRocket 3D Flight Visualizer** | Three.js WebGL, Trajectory Interpolation, Simulation Data Processing, Web Audio API | [Inspect Simulation Replay](https://ashrick12.github.io/#openrocket-visualizer) |
+| **Electric Potential vs Potential Energy** | Three.js WebGL, Velocity Verlet Numerical Integration, Coulomb Potential, KaTeX | [Inspect Physics Simulation](https://ashrick12.github.io/#physics-simulation) |
 | **10-Part Parametric Desk Fan** | SolidWorks 3D CAD, Rotational Mates, Interference Checking, ANSI 2D Drawings | [View CAD Gallery](https://ashrick12.github.io/#cad-projects) |
 | **Solar Systems Modeling & NPV** | MATLAB Numerical Methods, Energy Balance Modeling, 25-Year Lifecycle NPV | [View Simulation Output](https://ashrick12.github.io/#systems-software) |
 | **Smart Schedule Finder** | Python, Streamlit, Google Calendar API OAuth2, Metro Route Optimization | [Inspect Application](https://ashrick12.github.io/#systems-software) |
@@ -46,15 +48,17 @@ The site is built completely dependency-free to ensure instant loading times, pr
 
 ```text
 ashrick12.github.io/
-├── assets/                          # High-resolution engineering media (28 files)
+├── assets/                          # High-resolution engineering media (31 files)
 │   ├── ashton_rocket.jpg            # Range prep & pad setup photo at Freestone Park
 │   ├── desk_fan_front.png           # SolidWorks front orthographic CAD render
 │   ├── desk_fan_iso.png             # SolidWorks isometric CAD render
 │   ├── desk_fan_poster.png          # Full-size SolidWorks design poster & 2D drawings
 │   ├── desk_fan_rear.png            # SolidWorks rear motor housing render
 │   ├── desk_fan_side.png            # SolidWorks profile elevation CAD render
+│   ├── electric_potential_3d_sim.png # 3D potential surface & Velocity Verlet simulation interface
 │   ├── headshot.png                 # Professional profile portrait
 │   ├── matlab_solar_plot.png        # MATLAB simulation demand vs. solar generation plot
+│   ├── openrocket_3d_visualizer.png # OpenRocket 3D WebGL trajectory replay interface
 │   ├── portfolio_preview.png        # Social card / OpenGraph preview image
 │   ├── rocket_assembled_gold.jpg    # Assembled 36.4" sounding rocket in gold livery
 │   ├── rocket_cad_exploded.png      # SolidWorks exploded vehicle stack CAD render
@@ -79,7 +83,6 @@ ashrick12.github.io/
 ├── index.html                       # Semantic single-page portfolio layout
 ├── styles.css                       # Complete CSS design system & responsive styling
 ├── portfolio.md                     # Comprehensive technical case study dossier
-├── PROFILE_README.md                # GitHub user profile README for @Ashrick12
 └── README.md                        # Repository documentation and setup guide
 ```
 
