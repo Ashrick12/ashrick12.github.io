@@ -2,7 +2,7 @@
 
 > **Aerospace Engineering Student &bull; CAD, Flight Dynamics & Additive Prototyping**  
 > **Education:** Chandler-Gilbert Community College &rarr; Transferring to **Arizona State University (ASU)** (B.S. Aerospace Engineering &bull; Astronautics Track)  
-> **Contact:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com) &bull; [LinkedIn](https://www.linkedin.com/in/ashton-hendrickson) &bull; [GitHub](https://github.com/ashrick12) &bull; [Live Website](https://ashrick12.github.io/)
+> **Contact:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com) &bull; [LinkedIn](https://www.linkedin.com/in/ashton-hendrickson-55508a262/) &bull; [GitHub](https://github.com/ashrick12) &bull; [Live Website](https://ashrick12.github.io/)
 
 ---
 
@@ -307,7 +307,7 @@ In the simulation model:
 ## Contact & Links
 
 - **Email:** [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com)
-- **LinkedIn:** [linkedin.com/in/ashton-hendrickson](https://www.linkedin.com/in/ashton-hendrickson)
+- **LinkedIn:** [linkedin.com/in/ashton-hendrickson-55508a262](https://www.linkedin.com/in/ashton-hendrickson-55508a262/)
 - **GitHub:** [github.com/ashrick12](https://github.com/ashrick12)
 - **Live Portfolio Website:** [ashrick12.github.io](https://ashrick12.github.io/)
 - **Interactive Webpage:** [Open index.html](index.html)

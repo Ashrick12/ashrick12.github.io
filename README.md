@@ -9,7 +9,7 @@ The official repository for [ashrick12.github.io](https://ashrick12.github.io/),
 
 Designed as an editorial technical dossier presenting hardware prototypes, SolidWorks CAD assemblies, flight simulations, and computational tools.
 
-[🌐 Live Website](https://ashrick12.github.io/) &bull; [💼 LinkedIn Profile](https://www.linkedin.com/in/ashton-hendrickson) &bull; [💻 GitHub Profile](https://github.com/Ashrick12)
+[🌐 Live Website](https://ashrick12.github.io/) &bull; [💼 LinkedIn Profile](https://www.linkedin.com/in/ashton-hendrickson-55508a262/) &bull; [💻 GitHub Profile](https://github.com/Ashrick12)
 
 ---
 
@@ -124,6 +124,6 @@ The website is continuously deployed through **GitHub Pages**. Any changes pushe
 ## Contact & Connect
 
 - **Portfolio:** [ashrick12.github.io](https://ashrick12.github.io/)
-- **LinkedIn:** [linkedin.com/in/ashton-hendrickson](https://www.linkedin.com/in/ashton-hendrickson)
+- **LinkedIn:** [linkedin.com/in/ashton-hendrickson-55508a262](https://www.linkedin.com/in/ashton-hendrickson-55508a262/)
 - **GitHub:** [github.com/Ashrick12](https://github.com/Ashrick12)
 - **Email:** Direct contact and full engineering resume available via the [portfolio contact button](https://ashrick12.github.io/#contact) or [ashtonh1204@gmail.com](mailto:ashtonh1204@gmail.com).
