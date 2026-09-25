@@ -19,6 +19,7 @@ $RECYCLE.BIN/
 *.log
 *.tmp
 *.bak
+*.zip
 __pycache__/
 *.pyc
 scratch/
@@ -27,3 +28,5 @@ scratch/
 PROFILE_README.md
 LINKEDIN_PROFILE_GUIDE.md
 portfolio_update.md
+START_HERE.html
+RECRUITER_READ_FIRST.txt
