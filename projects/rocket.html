@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch-Built Sounding Rocket | Ashton Hendrickson</title>
+  <meta name="description" content="Detailed engineering case study: 36.4-inch scratch-built sounding rocket designed in SolidWorks, simulated in OpenRocket, and flight tested at Freestone Park.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="detail-nav">
+    <div class="container detail-nav-inner">
+      <a href="../index.html" class="nav-brand">
+        Ashton Hendrickson
+        <span class="brand-tag">AEROSPACE ENG</span>
+      </a>
+      <a href="../index.html#work" class="back-link">
+        &larr; Back to All Projects
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="detail-header-section">
+    <div class="container">
+      <div class="case-study-marker">01 / AEROSPACE HARDWARE</div>
+      
+      <div class="case-study-header">
+        <div class="case-study-title-wrap">
+          <h2>Scratch-Built Mid-Power Sounding Rocket</h2>
+        </div>
+        <!-- Quiet Technical Status Indicator -->
+        <div class="status-indicator-mono">
+          <span class="status-dot-green"></span>
+          FIRST TEST FLIGHT COMPLETE &bull; ROCKET RECOVERED INTACT
+        </div>
+      </div>
+
+      <!-- Engineering Pipeline Lifecycle -->
+      <div class="engineering-pipeline">
+        <span class="pipeline-step completed">01 Design</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step completed">02 Simulation</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step completed">03 Fabrication</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step completed">04 Avionics Bench</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step completed">05 Recovery</span>
+        <span class="pipeline-sep">&rarr;</span>
+        <span class="pipeline-step current">06 Flight Testing</span>
+      </div>
+
+      <p class="case-study-intro">
+        After flying commercial Estes model rocket kits and running into practical issues like burned wadding and wind drift, 
+        I designed, simulated, and built a 36.4&quot; scratch-built model rocket from the ground up. 
+        I modeled the airframe and internal components in SolidWorks, ran flight simulations in OpenRocket to set a 1.60 cal stability margin, 
+        and 3D-printed custom couplers and the nose cone on my Bambu Lab A1. On the scale, the empty airframe weighed in at 309g 
+        (modeled at 326g with estimated avionics weight). On September 19, 2026, I completed the maiden test flight on an Estes D12-3 motor 
+        at Freestone Park, launching with an empty payload bay to focus the test on basic vehicle flight performance. 
+        The rocket completed a clean flight, deployed its parachute near apogee, and was recovered intact on the grass with no visible structural damage.
+      </p>
+
+      <!-- Maiden Flight Video Feature Banner -->
+      <div class="flight-video-banner" id="flight-video">
+        <div class="flight-video-inner">
+          <div class="flight-video-player-wrap">
+            <video controls playsinline preload="metadata" poster="../assets/rocket_flight_midlaunch.jpg" class="flight-video-element">
+              <source src="../assets/rocket_test_flight_1.mp4" type="video/mp4">
+              Your browser does not support the video tag. <a href="../assets/rocket_test_flight_1.mp4">Download the test flight MP4</a>.
+            </video>
+          </div>
+          <div class="flight-video-info">
+            <div class="flight-video-badge">
+              <span class="status-dot-green"></span>
+              MAIDEN FLIGHT FOOTAGE &bull; SEPTEMBER 19, 2026
+            </div>
+            <h3 class="flight-video-title">Maiden Test Flight Recording</h3>
+            <p class="flight-video-desc">
+              Uncut handheld recording of the maiden flight at Freestone Park under Estes D12-3 power. 
+              The rocket launched from a 5-ft steel rod angled 5&deg; into the ~7 mph breeze with an empty payload bay to focus on basic vehicle flight performance. 
+              The vehicle flew straight off the pad, reached apogee at ~4.79 s, deployed the 24&quot; parachute via motor ejection charge at ~5.0 s, and completed a 27.06 s flight before landing intact on the turf with all fins and motor retention secure.
+            </p>
+            <div class="flight-video-metrics-list">
+              <div class="flight-video-metric">
+                <span class="fvm-val">27.06 s</span>
+                <span class="fvm-lbl">Flight Duration</span>
+              </div>
+              <div class="flight-video-metric">
+                <span class="fvm-val">Estes D12-3</span>
+                <span class="fvm-lbl">Motor Power</span>
+              </div>
+              <div class="flight-video-metric">
+                <span class="fvm-val">5&deg; Into Wind</span>
+                <span class="fvm-lbl">Pad Launch Angle</span>
+              </div>
+              <div class="flight-video-metric">
+                <span class="fvm-val">Intact</span>
+                <span class="fvm-lbl">Touchdown State</span>
+              </div>
+            </div>
+            <p class="flight-video-note">
+              <strong>Camera note:</strong> Ambient ground temperature reached ~100&deg;F during staging, causing our primary stationary tripod camera to thermal throttle and shut down prior to ignition. This uncut tracking video was recorded on a handheld phone from behind the flight line.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prominent SolidWorks CAD Architecture Banner -->
+      <div class="cad-hero-banner" onclick="openModal('../assets/rocket_cad_exploded.png', 'SolidWorks CAD Model: Complete vehicle stack assembly from 24mm motor mount (left), BT-80 lower airframe tube, 3D-printed payload carrier with integrated coupler shoulders (center), recovery chamber, and ogive nose cone (right).')">
+        <div class="hero-visual-meta">
+          <span class="meta-figure">SOLIDWORKS ROCKET CAD ASSEMBLY</span>
+          <span class="meta-hint">Click to inspect full schematic &rarr;</span>
+        </div>
+        <img src="../assets/rocket_cad_exploded.png" alt="SolidWorks Rocket Exploded Assembly">
+        <div class="banner-caption">
+          Vehicle Stack: 24mm motor mount (aft), BT-80 airframe tubes, 3D-printed payload bay with integral coupler shoulders (red), recovery chamber, and ogive nose cone (forward).
+        </div>
+      </div>
+
+      <!-- Phase 1: Commercial Kit Flights & Failure Analysis -->
+      <div class="phase-heading">
+        <span class="phase-number">01</span>
+        <span>Preliminary Flights, Stability & Airframe Build</span>
+      </div>
+      <p class="phase-desc">
+        I started by flying commercial Estes kits to see how model rockets handle on the field. The problems I encountered—burned wadding and excessive drift—directly shaped how I designed the recovery system, selected fin geometry in OpenRocket, and built the airframe.
+      </p>
+
+      <div class="launch-showcase-grid">
+        <!-- Card 1: Subscale Test Flight & Failure Analysis -->
+        <div class="flight-dossier-card" onclick="openModal('../assets/rocket_launch.gif', 'Subscale Flight Testing (Freestone Park): Test flights with commercial Estes kits identified wadding burn-through and wind drift, directly inspiring the Nomex recovery piston.')">
+          <div class="flight-media-box">
+            <img src="../assets/rocket_launch.gif" alt="Subscale Rocket Test Flight and Recovery Analysis">
+          </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">Subscale Flights &bull; Lessons Learned</div>
+            <div class="flight-card-title">Commercial Kit Flights & Failure Modes</div>
+            <div class="flight-card-desc">I flew commercial Estes kits to see pad dynamics and recovery firsthand. Hot motor gases burned right through standard recovery wadding, and desert breezes easily carried the rockets away. That showed me I needed a positive Nomex piston and realistic drift estimates.</div>
+            <div style="margin-top: 10px; font-size: 0.76rem; font-family: var(--font-mono); color: var(--accent-cyan); display: flex; align-items: center; gap: 6px;" onclick="event.stopPropagation(); openModal('../assets/rocket_launch_far.gif', 'Subscale Optical Tracking: Tracking pad liftoff, weathercocking drift, and apogee deployment at Freestone Park.')">
+              <span>Inspect Tracking Footage</span> &rarr;
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: OpenRocket Flight Simulation -->
+        <div class="flight-dossier-card" onclick="openModal('../assets/rocket_openrocket_model.png', 'OpenRocket Flight Dynamics Model: 326g simulated dry airframe with avionics allocation, Center of Pressure (28.01 in), Center of Gravity (23.86 in), static stability margin = 1.60 calibers.')">
+          <div class="flight-media-box">
+            <img src="../assets/rocket_openrocket_model.png" alt="OpenRocket Flight Simulation Model">
+          </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">OpenRocket Simulation</div>
+            <div class="flight-card-title">Vehicle Stability & Mass Balance</div>
+            <div class="flight-card-desc">I modeled the full vehicle in OpenRocket before building. With the Center of Pressure at 28.01&quot; and the Center of Gravity at 23.86&quot;, the simulated static stability margin came out to 1.60 calibers, ensuring passive stability on both D12-3 and F32T-6 motors.</div>
+          </div>
+        </div>
+
+        <!-- Card 3: Fully Assembled Scratch-Built Airframe -->
+        <div class="flight-dossier-card" onclick="openModal('../assets/rocket_assembled_gold.jpg', 'Fully Assembled Scratch-Built Sounding Rocket: 36.4-inch BT-80 airframe with 3D-printed ogive nose cone, payload coupler bay, and motor mount assembly.')">
+          <div class="flight-media-box">
+            <img src="../assets/rocket_assembled_gold.jpg" alt="Fully Assembled Gold Sounding Rocket on Launch Pad">
+          </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">Airframe Assembly &bull; Flown Vehicle</div>
+            <div class="flight-card-title">Assembled 36.4&quot; Sounding Rocket</div>
+            <div class="flight-card-desc">The completed airframe integrates BT-80 body tubes, a 3D-printed ogive nose cone, a central payload coupler bay, basswood fins, and dual launch lugs. The empty airframe weighed 309g on the scale and was painted in gold livery before launch.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2: Subsystems, Flight Dynamics & Hardware Integration -->
+      <div class="phase-heading">
+        <span class="phase-number">02</span>
+        <span>Subsystems, Flight Dynamics & Hardware Integration</span>
+      </div>
+      <p class="phase-desc">
+        The custom sounding rocket integrates multi-material additive manufacturing, numerical trajectory simulation, mechanical motor retention, and an onboard RP2040 telemetry payload.
+      </p>
+
+      <div class="subsystem-grid">
+        <!-- Subsystem 1: Aerodynamics & Trajectory -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Aerodynamics & Trajectory</h4>
+            <span class="subsystem-discipline">Flight Dynamics & Engine Trades</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/rocket_trajectory_plot.png', 'OpenRocket Trajectory Simulation: Altitude profile (blue, 63.6m / 209 ft apogee) and lateral wind drift (orange, ~20m) plotted against flight time for Estes D12-3 maiden flight test.')">
+            <img src="../assets/rocket_trajectory_plot.png" alt="Flight Trajectory Simulation Plot">
+            <div class="media-hover-overlay"><span>Inspect Trajectory Plot</span></div>
+          </div>
+          <div class="engine-trade-strip" onclick="openModal('../assets/rocket_sim_comparison.png', 'Engine Trade Study Comparison: Aerotech F32T-6 (334 m / 1,095 ft apogee, 104 m/s max velocity, Mach 0.31) vs Estes D12-3 (63.6 m apogee, 28.8 m/s max velocity, 5.65 m/s touchdown).')">
+            <div class="engine-trade-header">
+              <span>MOTOR TRADE STUDY: D12-3 VS F32T-6</span>
+              <span style="color: var(--text-muted);">&rarr; Expand Table</span>
+            </div>
+            <img src="../assets/rocket_sim_comparison.png" alt="OpenRocket Engine Comparison Table">
+          </div>
+          <p>
+            Simulated flight dynamics across two propulsion profiles. For Test Flight 1, the Estes D12-3 reaches 63.6 m (209 ft) apogee with 28.8 m/s max velocity. Upgrading to the Aerotech F32T-6 yields 334 m (1,095 ft) apogee at Mach 0.31 with 14.3 G peak acceleration.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">F32T-6 Apogee:</span><span class="spec-val">334 m (1,095 ft, Mach 0.31)</span></div>
+            <div class="spec-row"><span class="spec-key">D12-3 Apogee:</span><span class="spec-val">63.6 m (209 ft / Test Flight 1)</span></div>
+            <div class="spec-row"><span class="spec-key">Static Stability:</span><span class="spec-val">1.60 cal</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 2: 3D Printing & Redesign -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Additive Manufacturing & Sizing</h4>
+            <span class="subsystem-discipline">Bambu Lab A1</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/rocket_printed_parts.jpg', 'Additive Prototyping: 3D-printed ogive nose cone (right) and payload carrier with integrated shock-cord anchor arch (left) fabricated on Bambu Lab A1.')">
+            <img src="../assets/rocket_printed_parts.jpg" alt="3D Printed Rocket Hardware">
+            <div class="media-hover-overlay"><span>Inspect Printed Hardware</span></div>
+          </div>
+          <p>
+            Physical caliper measurements of the BT-80 airframe tubes revealed an inner diameter of 65.5 mm (1.0 mm larger than catalog spec). Redesigned both the payload coupler and motor mount in CAD to eliminate airframe slop while trimming excess mass to 38g and 46g respectively. Added a 3D-printed D12 stopper ring.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Fabricator:</span><span class="spec-val">Bambu Lab A1 (PEI Plate)</span></div>
+            <div class="spec-row"><span class="spec-key">Tolerancing:</span><span class="spec-val">Redesigned for 65.5 mm tube ID</span></div>
+            <div class="spec-row"><span class="spec-key">Component Masses:</span><span class="spec-val">Bay: 38g &bull; Motor Mount: 46g</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 3: Embedded Avionics & Telemetry Bring-Up -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Avionics Telemetry Bring-Up</h4>
+            <span class="subsystem-discipline">RP2040 MicroPython</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/rocket_pico_telemetry.jpg', 'Avionics Bench Bring-Up: Raspberry Pi Pico wired on breadboard running MicroPython with DHT and MPU-6500 sensors during bench communication testing.')">
+            <img src="../assets/rocket_pico_telemetry.jpg" alt="RP2040 MicroPython Telemetry Bring-Up">
+            <div class="media-hover-overlay"><span>Inspect Telemetry Bench</span></div>
+          </div>
+          <p>
+            I started building the avionics on a breadboard using a Raspberry Pi Pico running MicroPython. I tested clocking and serial bus communication with an initial DHT sensor loop, and wired up an MPU-6500 6-axis IMU to verify sensor polling. This bench setup proved the microcontroller logic ahead of flight. The rocket flew its first test flight with an empty payload bay, and the next step is adding a BMP390 precision barometer and MicroSD logger to record altitude and acceleration on Flight 2.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Flight Computer:</span><span class="spec-val">Raspberry Pi Pico (RP2040)</span></div>
+            <div class="spec-row"><span class="spec-key">Bench Testing:</span><span class="spec-val">MicroPython &bull; DHT &bull; MPU-6500</span></div>
+            <div class="spec-row"><span class="spec-key">Flight 2 Sensors:</span><span class="spec-val">BMP390 Baro + MPU-6500 IMU</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 4: High-Strength Shock Tether & Recovery -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Recovery System & Kevlar Harness</h4>
+            <span class="subsystem-discipline">Recovery Mechanics</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/rocket_hardware_haul.png', 'Recovery and Power Equipment: 500mAh LiPo flight battery, TP4056 USB-C charging module, BT-80 airframe tubes, and Estes Porta-Pad E.')">
+            <img src="../assets/rocket_hardware_haul.png" alt="Power and Recovery Hardware">
+            <div class="media-hover-overlay"><span>Inspect Recovery Rig</span></div>
+          </div>
+          <p>
+            Engineered to eliminate wadding burn-through experienced on earlier flights, incorporating a flame-resistant Nomex cloth piston designed to isolate recovery gear from hot ejection gases. Replaced elastic cords with 9 feet of 350-lb braided Kevlar shock cord anchored directly to the motor mount and payload coupler arch with high-temperature JB-Weld epoxy. Sized a 24&quot; ripstop nylon parachute for a controlled 5.65 m/s touchdown velocity.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Shock Tether:</span><span class="spec-val">9-ft 350 lb Braided Kevlar</span></div>
+            <div class="spec-row"><span class="spec-key">Thermal Shield:</span><span class="spec-val">Nomex Isolation Piston</span></div>
+            <div class="spec-row"><span class="spec-key">Touchdown Velocity:</span><span class="spec-val">5.65 m/s (24&quot; Parachute)</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 5: Motor Mount & Positive Washer Retention -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Propulsion & Positive Retention</h4>
+            <span class="subsystem-discipline">Mechanical Retention</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/rocket_motor_mount_retained.jpg', 'Motor Mount Hardware: 24mm motor tube with 3D-printed centering rings, dual #6 steel machine screws, and 3/8-inch zinc fender washers securing the motor casing against ejection thrust.')">
+            <img src="../assets/rocket_motor_mount_retained.jpg" alt="Motor Mount Positive Washer Retention">
+            <div class="media-hover-overlay"><span>Inspect Motor Retention</span></div>
+          </div>
+          <p>
+            Replaced fragile plastic Z-clips with dual #6 steel screws and 3/8&quot; zinc fender washers that overlap the motor casing rim. Pre-threaded pilot holes were treated with thin cyanoacrylate (CA) glue to harden plastic thread engagement. A 3D-printed D12 stopper ring absorbs forward thrust forces.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Retention Rig:</span><span class="spec-val">Dual #6 screws + 3/8&quot; washers</span></div>
+            <div class="spec-row"><span class="spec-key">Thread Hardening:</span><span class="spec-val">Thin CA glue thread infusion</span></div>
+            <div class="spec-row"><span class="spec-key">Motor Interface:</span><span class="spec-val">24mm (D12-3 / F32T-6)</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 6: Component CAD & Extraction Sled -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Payload Carrier CAD</h4>
+            <span class="subsystem-discipline">SolidWorks Modeling</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/rocket_payload_cad.png', 'SolidWorks CAD: Central payload carrier detailing integral coupler shoulders, avionics sled mounting bosses, and 4-legged shock cord anchor.')">
+            <img src="../assets/rocket_payload_cad.png" alt="Payload Carrier CAD">
+            <div class="media-hover-overlay"><span>Inspect SolidWorks Part</span></div>
+          </div>
+          <p>
+            Modeled the central airframe payload carrier in SolidWorks with integrated coupler shoulders, internal mounting bosses for a pull-ribbon avionics sled, and a heavy-duty 4-legged shock cord anchor arch spanning the aft bulkhead to evenly distribute parachute opening shock.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">CAD Platform:</span><span class="spec-val">SolidWorks 3D CAD</span></div>
+            <div class="spec-row"><span class="spec-key">Airframe Fit:</span><span class="spec-val">65.5 mm ID BT-80 airframe</span></div>
+            <div class="spec-row"><span class="spec-key">Integral Features:</span><span class="spec-val">Pull-ribbon sled & anchor arch</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 7: Trajectory Drift Analysis -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Trajectory Drift & Range Safety</h4>
+            <span class="subsystem-discipline">Freestone Park Safety</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/rocket_drift_analysis.png', 'Range Drift Analysis: Freestone Park field map with 35m (114 ft) worst-case drift radius under 7 mph wind and 5-degree rod tilt, bounded well inside the 120m safe recovery boundary.')">
+            <img src="../assets/rocket_drift_analysis.png" alt="Freestone Park Trajectory Drift Radius Map">
+            <div class="media-hover-overlay"><span>Inspect Drift Analysis</span></div>
+          </div>
+          <p>
+            Modeled wind drift and landing dispersion for Test Flight 1 at Freestone Park (360 &times; 240 m field). With a 5&deg; rod tilt into 7 mph desert wind, predicted drift is ~20 m (worst case 35 m / 114 ft), well inside the 120 m field boundary under the modeled conditions.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Launch Site:</span><span class="spec-val">Freestone Park (360 &times; 240 m)</span></div>
+            <div class="spec-row"><span class="spec-key">Nominal Drift:</span><span class="spec-val">~20 m (D12-3 @ 63.6m apogee)</span></div>
+            <div class="spec-row"><span class="spec-key">Max 7 mph Dispersion:</span><span class="spec-val">35 m (114 ft) radius</span></div>
+          </div>
+        </div>
+
+        <!-- Subsystem 8: Field Operations & Ground Setup -->
+        <div class="subsystem-card">
+          <div class="subsystem-card-header">
+            <h4>Field Operations & Pad Setup</h4>
+            <span class="subsystem-discipline">Launch Protocol</span>
+          </div>
+          <div class="subsystem-media-preview" onclick="openModal('../assets/ashton_rocket.jpg', 'Range Preparation: Ashton Hendrickson preparing the launch vehicle at Freestone Park prior to countdown and ignition.')">
+            <img src="../assets/ashton_rocket.jpg" alt="Ashton at Rocket Launch">
+            <div class="media-hover-overlay"><span>Inspect Range Photo</span></div>
+          </div>
+          <p>
+            I built a field launch kit and safety checklists based on what I learned flying kits at Freestone and Crossroads Parks. For the launch, I used an Estes Porta-Pad E with a 5-ft steel rod to ensure adequate rod exit velocity, establishing countdown protocols for the maiden launch at Freestone Park.
+          </p>
+          <div class="subsystem-spec-table">
+            <div class="spec-row"><span class="spec-key">Launch Site:</span><span class="spec-val">Freestone Park (Gilbert, AZ)</span></div>
+            <div class="spec-row"><span class="spec-key">Pad Equipment:</span><span class="spec-val">Estes Porta-Pad E w/ 5-ft rod</span></div>
+            <div class="spec-row"><span class="spec-key">Test Milestones:</span><span class="spec-val">Flight 1 Done &bull; Flight 2 Prep</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3: First Test Flight & Simulation Comparison -->
+      <div class="phase-heading">
+        <span class="phase-number">03</span>
+        <span>First Test Flight &amp; Simulation Comparison</span>
+      </div>
+      <p class="phase-desc">
+        After several months of designing and fabricating the rocket, I flew it for the first time on September 19, 2026, 
+        at Freestone Park in Gilbert, AZ. Launch conditions were approximately 100&deg;F with ~7 mph wind from the WSW. 
+        The rocket flew on an Estes D12-3 motor with the 5-ft launch rod tilted 5&deg; into the wind, and launched with an empty 
+        payload bay to focus the test on basic vehicle flight performance. The rocket had a clean liftoff from the rod, a stable 
+        ascent, deployed its parachute near apogee, and drifted back down onto the grass.
+      </p>
+
+      <div class="launch-showcase-grid">
+        <!-- Card 1: Ground-Level View Along Airframe and Launch Rod -->
+        <div class="flight-dossier-card" onclick="openModal('../assets/rocket_launchpad_freestone.jpg', 'Rocket on the Launch Rod: Ground-level view looking up along the gold airframe and launch rod from the blast deflector at Freestone Park before flight.')">
+          <div class="flight-media-box">
+            <img src="../assets/rocket_launchpad_freestone.jpg" alt="View looking up along the gold airframe and launch rod on the pad">
+          </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">Pad Setup &bull; Freestone Park</div>
+            <div class="flight-card-title">Airframe on the Launch Rod</div>
+            <div class="flight-card-desc">A ground-level view looking up along the gold airframe and launch rod from the blast deflector, showing the lower fin, 3D-printed launch lug interface, and Freestone Park in the background before launch.</div>
+          </div>
+        </div>
+
+        <!-- Card 2: Handheld Flight Liftoff Clip -->
+        <div class="flight-dossier-card" onclick="openModal('../assets/rocket_first_flight.gif', 'First Test Flight Liftoff (Freestone Park): Handheld tracking clip of the scratch-built sounding rocket launching cleanly off the 5-ft rod under Estes D12-3 power.')">
+          <div class="flight-media-box">
+            <img src="../assets/rocket_first_flight.gif" alt="First Test Flight Liftoff Clip">
+          </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">Flight Footage &bull; Liftoff Clip</div>
+            <div class="flight-card-title">First Test Flight Liftoff</div>
+            <div class="flight-card-desc">Handheld phone recording capturing liftoff and initial ascent from the 5-ft rod under Estes D12-3 power at Freestone Park.</div>
+            <div style="margin-top: 10px; font-size: 0.76rem; font-family: var(--font-mono); color: var(--accent-cyan); display: flex; align-items: center; gap: 6px;" onclick="event.stopPropagation();">
+              <a href="#flight-video" style="color: inherit; text-decoration: none;"><span>Play Full 39s Video in Embedded Player</span> &uarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Rocket Recovered Intact -->
+        <div class="flight-dossier-card" onclick="openModal('../assets/rocket_recovery_touchdown.jpg', 'Post-Flight Recovery: Full rocket recovered on the grass with no visible structural damage. All three basswood fins and the motor mount retention held.')">
+          <div class="flight-media-box">
+            <img src="../assets/rocket_recovery_touchdown.jpg" alt="Rocket Recovered on Grass">
+          </div>
+          <div class="flight-card-body">
+            <div class="flight-card-tag">Recovery &bull; Post-Flight Inspection</div>
+            <div class="flight-card-title">Rocket Recovered Intact</div>
+            <div class="flight-card-desc">Rocket recovered intact with no visible structural damage. The 24&quot; parachute deployed fully, the Nomex piston protected the recovery harness, and all three fins survived touchdown.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Simulation vs. Observed Flight Comparison Table -->
+      <div class="flight-comparison-wrapper">
+        <div class="flight-comparison-table-wrap">
+          <div class="engine-trade-strip" onclick="openModal('../assets/rocket_d12_sim_5deg.png', 'OpenRocket 5-Degree Tilt Simulation Table: Predicted flight duration 26.8 s, time to apogee 4.79 s, velocity off rod 13.8 m/s.')" style="margin-bottom: 16px;">
+            <div class="engine-trade-header">
+              <span>OPENROCKET SIMULATION DATA: 5&deg; TILT PREDICTION TABLE</span>
+              <span style="color: var(--text-muted);">&rarr; Expand Sim Table</span>
+            </div>
+            <img src="../assets/rocket_d12_sim_5deg.png" alt="OpenRocket 5 Degree Angle Simulation Table">
+          </div>
+
+          <table class="flight-table">
+            <thead>
+              <tr>
+                <th>Flight Metric</th>
+                <th>Predicted (OpenRocket 5&deg; Tilt)</th>
+                <th>Observed Flight</th>
+                <th>Difference / Flight Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="metric-name">Total Flight Time</td>
+                <td class="metric-sim">26.8 s</td>
+                <td class="metric-val">27.06 s</td>
+                <td class="metric-delta">+0.26 s (actual flight lasted 0.26 s longer than predicted)</td>
+              </tr>
+              <tr>
+                <td class="metric-name">Time to Apogee</td>
+                <td class="metric-sim">4.79 s</td>
+                <td class="metric-val">~4.79 s</td>
+                <td>Observed coast time lined up closely with the 4.79 s prediction</td>
+              </tr>
+              <tr>
+                <td class="metric-name">Parachute Deployment</td>
+                <td class="metric-sim">~4.8 s (delay charge)</td>
+                <td class="metric-val">~5.0 s</td>
+                <td>Observed ejection shortly after apogee; canopy opened cleanly</td>
+              </tr>
+              <tr>
+                <td class="metric-name">Descent with Parachute</td>
+                <td class="metric-sim">~22.0 s</td>
+                <td class="metric-val">~21 s</td>
+                <td>Steady descent under 24&quot; parachute; landed within park bounds</td>
+              </tr>
+              <tr>
+                <td class="metric-name">Recovery Condition</td>
+                <td class="metric-sim">Nominal recovery</td>
+                <td class="metric-val">Intact</td>
+                <td>Rocket recovered intact with no visible structural damage</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="flight-notes-box">
+            <h5>Testing Notes &amp; Instrumentation Limitations</h5>
+            <p>
+              <strong>Tripod Camera Overheating:</strong> The dedicated tripod camera overheated in the ~100&deg;F Arizona heat and failed to record, so the available video for analysis came from handheld phone footage.
+            </p>
+            <p>
+              <strong>Velocity Estimate Excluded:</strong> Video analysis produced an estimated velocity of 6.025 m/s shortly after leaving the launch rod, compared with 13.8 m/s predicted by OpenRocket. However, the video analysis was not reliable enough to determine whether this difference reflects the actual flight, so I excluded the velocity estimate from the main simulation comparison.
+            </p>
+            <p>
+              <strong>Next Steps:</strong> Flight 1 confirmed that the airframe geometry, 1.60 cal stability margin, motor retention, and Nomex parachute deployment work as expected in flight. The next milestone is completing the flight computer—wiring the BMP390 barometer and MPU-6500 IMU to the Raspberry Pi Pico, building the payload bay mounting sled, and recording onboard altitude and acceleration on Flight 2.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="detail-footer-nav">
+        <a href="../index.html#work" class="back-link">&larr; Back to All Projects</a>
+        <a href="openrocket-visualizer.html" class="next-project-link">Next Project: OpenRocket 3D Flight Visualizer &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-heading">Let's Connect</h3>
+          <p class="footer-desc">
+            Seeking mechanical or aerospace engineering internship opportunities for Summer 2027 (and Fall 2026 / Spring 2027 co-ops).
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary email-link" data-user="ashtonh1204" data-domain="gmail.com" title="Send Email">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Email Me
+          </a>
+          <a href="#" class="btn btn-secondary email-link" data-user="ashtonh1204" data-domain="gmail.com" data-subject="Resume Request - Ashton Hendrickson" title="Request full engineering resume via email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Request Resume
+          </a>
+          <a href="https://www.linkedin.com/in/ashton-hendrickson-55508a262/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63c.9 0 1.63-.73 1.63-1.63s-.73-1.63-1.63-1.63Z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/ashrick12" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 Ashton Hendrickson &bull; Aerospace Engineering Portfolio</span>
+        <span>ashrick12.github.io</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal(event)" role="dialog" aria-modal="true" aria-labelledby="modalCaption">
+    <div class="modal-content-wrap" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(event)" aria-label="Close modal">&times;</button>
+      <img id="modalImage" class="modal-img" src="" alt="Enlarged View">
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(src, caption) {
+      const modal = document.getElementById('imageModal');
+      const img = document.getElementById('modalImage');
+      const cap = document.getElementById('modalCaption');
+      img.src = src;
+      img.alt = caption;
+      cap.innerText = caption;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(e) {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    document.querySelectorAll('.email-link').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        const user = this.getAttribute('data-user');
+        const domain = this.getAttribute('data-domain');
+        const subject = this.getAttribute('data-subject');
+        if (user && domain) {
+          let mailto = 'mailto:' + user + '@' + domain;
+          if (subject) {
+            mailto += '?subject=' + encodeURIComponent(subject);
+          }
+          window.location.href = mailto;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

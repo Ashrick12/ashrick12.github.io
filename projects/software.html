@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulation, Automation & Software Tools | Ashton Hendrickson</title>
+  <meta name="description" content="Engineering tools spanning numerical MATLAB solar balance modeling, Python/Streamlit route-optimized scheduling, and local OCR extraction.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="detail-nav">
+    <div class="container detail-nav-inner">
+      <a href="../index.html" class="nav-brand">
+        Ashton Hendrickson
+        <span class="brand-tag">AEROSPACE ENG</span>
+      </a>
+      <a href="../index.html#work" class="back-link">
+        &larr; Back to All Projects
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="detail-header-section">
+    <div class="container">
+      <div class="case-study-marker">05 / SIMULATION &amp; SOFTWARE TOOLS</div>
+      <h2 class="section-title">Simulation, Automation & Software Tools</h2>
+      <p class="section-desc">
+        Engineering work spanning numerical MATLAB modeling, route-optimized scheduling algorithms for healthcare operations, and offline edge OCR.
+      </p>
+
+      <div class="systems-grid" style="margin-top: 28px;">
+        <!-- Project A: MATLAB Modeling -->
+        <div class="system-card">
+          <div class="system-media-box" onclick="openModal('../assets/matlab_solar_plot.png', 'MATLAB Energy Systems Simulation Output: Average Daily Load (ADL Demand, blue curve) vs. Final Solar System Output (Eo, red curve) across 12 calendar months for an off-grid home in Chandler, AZ.')">
+            <img src="../assets/matlab_solar_plot.png" alt="MATLAB Energy Output Plot">
+            <div class="media-hover-overlay"><span>Inspect Simulation Plot</span></div>
+          </div>
+          <div class="system-card-body">
+            <div class="system-card-tag">MATLAB Numerical Simulation &bull; Systems Modeling</div>
+            <h3>Solar Energy Systems Modeling & NPV Optimization</h3>
+            <p>
+              Lead mathematical modeler on a 5-person engineering team sizing an off-grid residential solar and battery storage system 
+              for Chandler, Arizona. Formulated mathematical equations simulating seasonal solar angles and hourly residential load curves.
+            </p>
+            <ul class="system-bullet-list">
+              <li>Formulated mathematical energy-balance equations correlating seasonal solar angles with photovoltaic panel output.</li>
+              <li>Modeled battery storage discharge profiles and multi-day reserve requirements against high summer air conditioning loads.</li>
+              <li>Calculated Net Present Value (NPV) lifecycle economic models comparing two competing battery configurations over a 25-year lifespan.</li>
+              <li>Validated simulation convergence against seasonal benchmarks and completed MathWorks MATLAB Onramp Certification.</li>
+            </ul>
+            <div class="tech-tag-row">
+              <span class="tech-tag primary">MATLAB</span>
+              <span class="tech-tag">Numerical Modeling</span>
+              <span class="tech-tag">Energy Balance</span>
+              <span class="tech-tag">NPV Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project B: Smart Schedule Finder -->
+        <div class="system-card">
+          <div class="system-media-box" onclick="openModal('../assets/schedule_finder_ui.png', 'Smart Schedule Finder Desktop UI: Python & Streamlit application integrating Google Calendar API and driving route calculations to find optimal appointment openings.')">
+            <img src="../assets/schedule_finder_ui.png" alt="Smart Schedule Finder Desktop Application UI">
+            <div class="media-hover-overlay"><span>Inspect Application Interface</span></div>
+          </div>
+          <div class="system-card-body">
+            <div class="system-card-tag">Production Tool &bull; Mobile Hearing Solutions</div>
+            <h3>Smart Schedule Finder Desktop Application</h3>
+            <p>
+              A production desktop application built in Python and Streamlit for Mobile Hearing Solutions to automate technician scheduling 
+              across the Phoenix metro area, selecting appointment openings that minimize vehicle drive time.
+            </p>
+            <ul class="system-bullet-list">
+              <li>Queries the Google Calendar API via OAuth2 authentication with automatic background token refresh to ingest real-time schedules.</li>
+              <li>Evaluates proposed patient addresses against existing technician routes to minimize cross-town driving.</li>
+              <li>Includes single-patient lookups and automated batch searches (next 5 patients) in an intuitive UI.</li>
+              <li>Saves an estimated 2 to 3 hours of manual route cross-referencing per week in active clinic use.</li>
+            </ul>
+            <div class="tech-tag-row">
+              <span class="tech-tag primary">Python</span>
+              <span class="tech-tag">Streamlit</span>
+              <span class="tech-tag">Google Calendar API</span>
+              <span class="tech-tag">Route Optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project C: Offline Document OCR -->
+        <div class="system-card">
+          <div class="system-card-body" style="padding-top: 28px;">
+            <div class="system-card-tag">Production Tool &bull; Mobile Hearing Solutions</div>
+            <h3>Local Document OCR Extraction Pipeline</h3>
+            <p>
+              An automated document extraction pipeline developed at Mobile Hearing Solutions to convert incoming patient referral faxes into structured database records.
+            </p>
+            <ul class="system-bullet-list">
+              <li>Implemented an offline OCR pipeline utilizing 4-bit quantized local vision models (Phi-4 Mini) alongside EasyOCR.</li>
+              <li>Extracts patient demographic, insurance, and doctor referral fields from multi-page scanned faxes into structured JSON.</li>
+              <li>Executes 100% locally on office workstations to maintain strict HIPAA compliance and eliminate third-party cloud API costs.</li>
+              <li>Incorporates automated confidence scoring and manual review flags for ambiguous scans to guarantee data fidelity.</li>
+            </ul>
+            <div class="tech-tag-row">
+              <span class="tech-tag primary">Python</span>
+              <span class="tech-tag">EasyOCR</span>
+              <span class="tech-tag">Phi-4 Mini (4-bit)</span>
+              <span class="tech-tag">HIPAA Security</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="detail-footer-nav">
+        <a href="../index.html#work" class="back-link">&larr; Back to All Projects</a>
+        <a href="able-aerospace.html" class="next-project-link">Next Project: Able Aerospace Job Shadow &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-heading">Let's Connect</h3>
+          <p class="footer-desc">
+            Seeking mechanical or aerospace engineering internship opportunities for Summer 2027 (and Fall 2026 / Spring 2027 co-ops).
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary email-link" data-user="ashtonh1204" data-domain="gmail.com" title="Send Email">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Email Me
+          </a>
+          <a href="#" class="btn btn-secondary email-link" data-user="ashtonh1204" data-domain="gmail.com" data-subject="Resume Request - Ashton Hendrickson" title="Request full engineering resume via email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Request Resume
+          </a>
+          <a href="https://www.linkedin.com/in/ashton-hendrickson-55508a262/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63c.9 0 1.63-.73 1.63-1.63s-.73-1.63-1.63-1.63Z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/ashrick12" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 Ashton Hendrickson &bull; Aerospace Engineering Portfolio</span>
+        <span>ashrick12.github.io</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal(event)" role="dialog" aria-modal="true" aria-labelledby="modalCaption">
+    <div class="modal-content-wrap" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(event)" aria-label="Close modal">&times;</button>
+      <img id="modalImage" class="modal-img" src="" alt="Enlarged View">
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(src, caption) {
+      const modal = document.getElementById('imageModal');
+      const img = document.getElementById('modalImage');
+      const cap = document.getElementById('modalCaption');
+      img.src = src;
+      img.alt = caption;
+      cap.innerText = caption;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(e) {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    document.querySelectorAll('.email-link').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        const user = this.getAttribute('data-user');
+        const domain = this.getAttribute('data-domain');
+        const subject = this.getAttribute('data-subject');
+        if (user && domain) {
+          let mailto = 'mailto:' + user + '@' + domain;
+          if (subject) {
+            mailto += '?subject=' + encodeURIComponent(subject);
+          }
+          window.location.href = mailto;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

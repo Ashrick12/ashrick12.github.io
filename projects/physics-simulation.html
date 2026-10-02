@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Potential vs. Electric Potential Energy | Ashton Hendrickson</title>
+  <meta name="description" content="Interactive 3D WebGL computational physics simulation demonstrating field potential invariance and Velocity Verlet numerical integration.">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="detail-nav">
+    <div class="container detail-nav-inner">
+      <a href="../index.html" class="nav-brand">
+        Ashton Hendrickson
+        <span class="brand-tag">AEROSPACE ENG</span>
+      </a>
+      <a href="../index.html#work" class="back-link">
+        &larr; Back to All Projects
+      </a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="detail-header-section">
+    <div class="container">
+      <div class="case-study-marker">03 / COMPUTATIONAL PHYSICS &bull; NUMERICAL MODELING</div>
+      <div class="case-study-header">
+        <div class="case-study-title-wrap">
+          <h2 class="section-title">Electric Potential (V) vs. Electric Potential Energy (U)</h2>
+        </div>
+        <div class="status-indicator-mono">
+          <span class="status-dot-green"></span>
+          COMPLETE &bull; SINGLE-FILE APPLICATION WITH EMBEDDED LIBRARIES
+        </div>
+      </div>
+      <p class="section-desc">
+        Interactive 3D WebGL physics tool demonstrating the conceptual and mathematical distinction between Electric Potential (V) and Electric Potential Energy (U).
+      </p>
+
+      <div class="sim-project-card">
+        <div class="sim-project-main">
+          <div class="sim-left-col">
+            <div class="sim-preview-box" onclick="openModal('../assets/electric_potential_3d_sim.png', 'Electric Potential vs Electric Potential Energy: Interactive 3D electrostatic potential simulation showing a test charge above a mapped potential surface with electric field and force vectors.')">
+              <img src="../assets/electric_potential_3d_sim.png" alt="Interactive 3D electrostatic potential simulation showing a test charge above a mapped potential surface with electric field and force vectors.">
+              <div class="media-hover-overlay"><span>Inspect Full Simulation Interface</span></div>
+            </div>
+            <div class="sim-preview-box" onclick="openModal('../assets/electric_potential_attractive_well.png', 'Electric Potential vs. Electric Potential Energy: Inverted attractive electric potential well (-5.0 &mu;C source charge) with orbiting test charge demonstrating negative potential (V = -12.08 kV) and bound system energy (U = -12.08 mJ).')">
+              <img src="../assets/electric_potential_attractive_well.png" alt="Inverted attractive electric potential well (-5.0 &mu;C source charge) with orbiting test charge demonstrating negative potential (V = -12.08 kV) and bound system energy (U = -12.08 mJ).">
+              <div class="media-hover-overlay"><span>Inspect Attractive Potential Well</span></div>
+            </div>
+            <div class="sim-metric-strip">
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">+7.25 kV</span>
+                <span class="sim-metric-lbl">Modeled Potential</span>
+                <span class="sim-metric-sub">at r = 3.0 m</span>
+              </div>
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">&plusmn;21.75 mJ</span>
+                <span class="sim-metric-lbl">Potential-Energy Range</span>
+                <span class="sim-metric-sub">q = &minus;3.0 to +3.0 &mu;C</span>
+              </div>
+              <div class="sim-metric-item">
+                <span class="sim-metric-val">&lt;0.1%</span>
+                <span class="sim-metric-lbl">Energy Drift</span>
+                <span class="sim-metric-sub">Tested Simulation Intervals</span>
+              </div>
+            </div>
+            <div class="sim-sub-strip">
+              <span class="sim-sub-strip-label">Invariance Principle</span>
+              <div class="sim-sub-strip-relation">
+                <span class="sim-sub-term"><em>q</em> varied</span>
+                <span class="sim-sub-arrow">&rarr;</span>
+                <span class="sim-sub-term highlight"><em>V</em> unchanged</span>
+                <span class="sim-sub-arrow">&rarr;</span>
+                <span class="sim-sub-term"><em>U = qV</em> changes</span>
+              </div>
+            </div>
+          </div>
+          <div class="sim-content-wrap">
+            <div class="cad-badge-row">
+              <span class="badge-tag blue">Three.js WebGL</span>
+              <span class="badge-tag neutral">Velocity Verlet</span>
+              <span class="badge-tag neutral">Numerical Integration</span>
+            </div>
+            <h3>The Core Invariance Experiment</h3>
+            <p class="sim-lead-desc">
+              Electric Potential (<em>V</em>) is a spatial property established by the source-charge configuration, while Electric Potential Energy (<em>U</em>) also depends on the test charge. This simulation demonstrates that distinction through a controlled parameter experiment.
+            </p>
+
+            <div class="invariance-callout-box">
+              <div class="invariance-title">The Fundamental Invariance Principle:</div>
+              <div class="invariance-cols-grid">
+                <div class="invariance-col">
+                  <span class="inv-col-label">Source &bull; Position Fixed</span>
+                  <span class="inv-col-val font-mono"><strong>Q = +3.0 &mu;C</strong></span>
+                  <span class="inv-col-sub font-mono">r = 3.0 m</span>
+                </div>
+                <div class="invariance-col invariance-col-center">
+                  <span class="inv-col-label">Electric Potential (Field)</span>
+                  <span class="inv-col-val highlight-cyan font-mono">V &approx; +7.25 kV</span>
+                  <span class="inv-col-status">UNCHANGED</span>
+                </div>
+                <div class="invariance-col">
+                  <span class="inv-col-label">Test Charge <em>q</em> Varied &bull; <em>U = qV</em></span>
+                  <div class="inv-math-list font-mono">
+                    <span>q = &minus;3.0 &mu;C &rarr; <strong>U &approx; &minus;21.75 mJ</strong></span>
+                    <span>q = 0 &rarr; <strong>U = 0</strong></span>
+                    <span>q = +3.0 &mu;C &rarr; <strong>U &approx; +21.75 mJ</strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="technical-checklist">
+              <li><strong>Invariant Demonstration:</strong> For fixed source charge <em>Q</em> and spatial position <em>r</em>, varying test charge <em>q</em> leaves modeled potential <em>V</em> invariant (&approx; +7.25 kV), while stored system energy (<em>U = qV</em>) scales proportionally from &minus;21.75 mJ to +21.75 mJ and reverses sign with charge polarity.</li>
+              <li><strong>Softened Potential Kernel:</strong> Formulates electrostatic potential using a softened Plummer-type kernel <em>V(r) = k<sub>e</sub>Q / &radic;(r&sup2; + a&sup2;)</em> with core radius <em>a</em> = 2.2 m (Coulomb constant <em>k<sub>e</sub></em> = 8.98755 &times; 10<sup>9</sup> N&middot;m&sup2;/C&sup2;), removing the <em>r</em> = 0 singularity while approaching classical 1/r behavior for <em>r</em> &gg; <em>a</em>.</li>
+              <li><strong>Velocity Verlet Numerical Integration:</strong> Particle dynamics are integrated in the horizontal <em>xz</em>-plane under spatial gradient forces (<em>E</em> = &minus;&nabla;<em>V</em>, <em>F</em> = <em>qE</em>) via Velocity Verlet; numerical tests showed total mechanical energy drift below 0.1% over tested simulation intervals.</li>
+              <li><strong>Bound States &amp; Precession:</strong> In the modeled attractive potential with <em>U</em>(&infin;) = 0, negative total mechanical energy (<em>E</em><sub>tot</sub> &lt; 0) forms precessing rosette trajectories rather than closed Keplerian ellipses due to departure from pure 1/r symmetry at small radius.</li>
+              <li><strong>Self-Contained Application:</strong> Single-file web application with embedded libraries (Three.js, KaTeX) and no build step, featuring a 6-step guided tour, 3D raycast charge manipulation, and engineering prefix auto-formatting (kV, mJ, &mu;J).</li>
+            </ul>
+            <div class="sim-footer-row">
+              <div class="tech-tag-row">
+                <span class="tech-tag primary">Three.js</span>
+                <span class="tech-tag">WebGL</span>
+                <span class="tech-tag">Velocity Verlet</span>
+                <span class="tech-tag">Numerical Integration</span>
+                <span class="tech-tag">Coulomb Potential</span>
+                <span class="tech-tag">KaTeX</span>
+                <span class="tech-tag">Computational Physics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation -->
+      <div class="detail-footer-nav">
+        <a href="../index.html#work" class="back-link">&larr; Back to All Projects</a>
+        <a href="solidworks-fan.html" class="next-project-link">Next Project: SolidWorks Desk Fan CAD &rarr;</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-heading">Let's Connect</h3>
+          <p class="footer-desc">
+            Seeking mechanical or aerospace engineering internship opportunities for Summer 2027 (and Fall 2026 / Spring 2027 co-ops).
+          </p>
+        </div>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary email-link" data-user="ashtonh1204" data-domain="gmail.com" title="Send Email">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Email Me
+          </a>
+          <a href="#" class="btn btn-secondary email-link" data-user="ashtonh1204" data-domain="gmail.com" data-subject="Resume Request - Ashton Hendrickson" title="Request full engineering resume via email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            Request Resume
+          </a>
+          <a href="https://www.linkedin.com/in/ashton-hendrickson-55508a262/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63c.9 0 1.63-.73 1.63-1.63s-.73-1.63-1.63-1.63Z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/ashrick12" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="footer-copy">
+        <span>&copy; 2026 Ashton Hendrickson &bull; Aerospace Engineering Portfolio</span>
+        <span>ashrick12.github.io</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal(event)" role="dialog" aria-modal="true" aria-labelledby="modalCaption">
+    <div class="modal-content-wrap" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal(event)" aria-label="Close modal">&times;</button>
+      <img id="modalImage" class="modal-img" src="" alt="Enlarged View">
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(src, caption) {
+      const modal = document.getElementById('imageModal');
+      const img = document.getElementById('modalImage');
+      const cap = document.getElementById('modalCaption');
+      img.src = src;
+      img.alt = caption;
+      cap.innerText = caption;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(e) {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    document.querySelectorAll('.email-link').forEach(function(el) {
+      el.addEventListener('click', function(e) {
+        e.preventDefault();
+        const user = this.getAttribute('data-user');
+        const domain = this.getAttribute('data-domain');
+        const subject = this.getAttribute('data-subject');
+        if (user && domain) {
+          let mailto = 'mailto:' + user + '@' + domain;
+          if (subject) {
+            mailto += '?subject=' + encodeURIComponent(subject);
+          }
+          window.location.href = mailto;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
